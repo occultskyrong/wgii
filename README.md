@@ -121,4 +121,4 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 > - [World Capital Cities](https://geographyfieldwork.com/WorldCapitalCities.htm)
 > - [Wiki - List of national capitals](https://en.wikipedia.org/wiki/List_of_national_capitals)
 
-[外交部 > 国家和组织] : https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/
+[外交部 > 国家和组织]: https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/
