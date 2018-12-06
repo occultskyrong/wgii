@@ -28,6 +28,14 @@ Geographic Information Integration for World，世界地理信息集成
 
 整合世界主要国家或地区的地理信息，包括但不限于以下内容：
 
+- 国名
+    - 中文名称
+    - 英文名称
+    - 缩写
+- 国家代码
+- 简称
+- 首都
+
 ### 2.2. 坐标系
 
 - 关于坐标系的说明，参见[坐标系说明书][]
@@ -106,8 +114,11 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 
 ### 6.2. 数据来源
 
+> - [外交部 > 国家和组织][]
 > - [Highmaps 地图数据集](https://img.hcharts.cn/mapdata/)
 > - [【 地图系列 】 世界地图和主要国家的 JSON 文件](http://www.ourd3js.com/wordpress/668/)
 > - [GitHub - pissang/starbucks](https://github.com/pissang/starbucks)
 > - [World Capital Cities](https://geographyfieldwork.com/WorldCapitalCities.htm)
 > - [Wiki - List of national capitals](https://en.wikipedia.org/wiki/List_of_national_capitals)
+
+[外交部 > 国家和组织] : https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/
