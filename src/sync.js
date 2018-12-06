@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable global-require */
 /* eslint-disable camelcase */
 const Promise = require('bluebird');
 const fs = require('fs');
@@ -112,8 +114,37 @@ async function checkUNinMysql() {
   console.info('--- × 缺少 ', unCountries, ' 数据');
 }
 
+/**
+ * 把首都数据写入mysql
+ */
+async function saveCapital2Mysql() {
+  const capitals = require('../resource/raw/_countries_capitals.json');
+  const countriesResults = await model.findAll({
+    attributes: ['id', 'name_english_UN', 'name_english_formal', 'name_english_abbreviation'],
+  });
+  const promises = countriesResults.map((country) => {
+    const { name_english_UN, name_english_formal, name_english_abbreviation } = country;
+    let country_name = '';
+    if (name_english_UN in capitals) {
+      country_name = name_english_UN;
+    } else if (name_english_formal in capitals) {
+      country_name = name_english_formal;
+    } else if (name_english_abbreviation in capitals) {
+      country_name = name_english_abbreviation;
+    }
+    if (country_name) {
+      country.capital_name_english = capitals[country_name];
+      delete capitals[country_name];
+      return country.save();
+    }
+    return null;
+  });
+  await Promise.all(promises);
+  console.info('--- × DB缺少 ', capitals, ' 数据');
+}
+
 async function run() {
-  const result = await checkUNinMysql();
+  const result = await saveCapital2Mysql();
   return result;
 }
 
