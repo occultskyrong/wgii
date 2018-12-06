@@ -6,11 +6,11 @@ const path = require('path');
 const { Op } = require('sequelize');
 
 // const { features } = require('./raw/_countries_1');
-const { features } = require('./raw/_countries_2');
-const model = require('../model');
-const { translateEn2Zh } = require('../common/baidu/fanyi');
-const unCountries = require('./raw/_un_countries');
-const countries = require('./results/countries_1');
+const { features } = require('../resource/raw/_countries_2');
+const model = require('./model');
+const { translateEn2Zh } = require('./common/baidu/fanyi');
+const unCountries = require('../resource/raw/_un_countries');
+const countries = require('../dist/countries_1');
 
 // console.info('共计 ', features.length, ' 个国家和地区');
 
