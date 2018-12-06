@@ -1,0 +1,23 @@
+{
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true,
+    "jquery": true
+  },
+  "globals": {
+    "GLO": true
+  },
+  "extends": "airbnb-base",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    },
+    "sourceType": "module",
+    "ecmaVersion": 2017
+  },
+  "rules": {
+    "indent": [1, 2],
+    "max-len": [2, 120]
+  }
+}
