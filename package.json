@@ -1,0 +1,27 @@
+{
+  "name": "wgii",
+  "version": "1.0.0",
+  "description": "Geographic Information Integration for World，世界地理信息集成",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/occultskyrong/wgii.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/occultskyrong/wgii/issues"
+  },
+  "homepage": "https://github.com/occultskyrong/wgii#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
