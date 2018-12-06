@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 const Sequelize = require('sequelize');
 
-const { mysql } = require('../../config');
+const { mysql } = require('../config');
 const countries = require('./models/countries');
 
 const sequelize = new Sequelize(mysql.database, mysql.username, mysql.password, {

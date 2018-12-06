@@ -44,7 +44,7 @@ async function save(data) {
 
 async function run() {
   const result = await getCapitalsList();
-  const data = resort(result);
+  const data = await resort(result);
   await save(data);
 }
 
