@@ -1,6 +1,6 @@
 {
   "name": "wgii",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Geographic Information Integration for World，世界地理信息集成",
   "main": "index.js",
   "scripts": {
