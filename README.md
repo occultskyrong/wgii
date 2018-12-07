@@ -15,7 +15,7 @@ Geographic Information Integration for World，世界地理信息集成
     - [2.5. 数据结构](#25-数据结构)
 - [3. 目录结构](#3-目录结构)
 - [4. 运行](#4-运行)
-- [5. TODO List](#5-todo-list)
+- [5. 更新历史](#5-更新历史)
 - [6. 参考](#6-参考)
     - [6.1. 参考文档](#61-参考文档)
     - [6.2. 数据来源](#62-数据来源)
@@ -29,9 +29,8 @@ Geographic Information Integration for World，世界地理信息集成
 整合世界主要国家或地区的地理信息，包括但不限于以下内容：
 
 - 国名
-    - 中文名称
-    - 英文名称
-    - 缩写
+    - 中文名称，包括官方名称、联合国名称、缩写名称
+    - 英文名称，包括官方名称、联合国名称、缩写名称
 - 国家代码
 - 简称
 - 首都
@@ -59,11 +58,6 @@ Geographic Information Integration for World，世界地理信息集成
 - 修改部分国家中文名称
 
 ### 2.5. 数据结构
-
-[百度百科 - 国家]: https://baike.baidu.com/item/%E5%9B%BD%E5%AE%B6/17205
-[百度百科 - 地区]: https://baike.baidu.com/item/%E5%9C%B0%E5%8C%BA/13841495#viewPageContent
-[United Nations » Member States]: http://www.un.org/en/member-states/index.html
-[坐标系说明书]: http://lbsyun.baidu.com/index.php?title=coordinate
 
 ## 3. 目录结构
 
@@ -102,7 +96,11 @@ yarn install
 sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 ```
 
-## 5. TODO List
+## 5. 更新历史
+
+| 版本  | 节点           | 说明                             |
+| ----- | -------------- | -------------------------------- |
+| 0.0.1 | 2018年12月09日 | 完成联合国会员国国家信息数据整理 |
 
 ## 6. 参考
 
@@ -114,11 +112,15 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 
 ### 6.2. 数据来源
 
-> - [外交部 > 国家和组织][]
+> - [中华人民共和国外交部 > 国家和组织][]
 > - [Highmaps 地图数据集](https://img.hcharts.cn/mapdata/)
 > - [【 地图系列 】 世界地图和主要国家的 JSON 文件](http://www.ourd3js.com/wordpress/668/)
 > - [GitHub - pissang/starbucks](https://github.com/pissang/starbucks)
 > - [World Capital Cities](https://geographyfieldwork.com/WorldCapitalCities.htm)
 > - [Wiki - List of national capitals](https://en.wikipedia.org/wiki/List_of_national_capitals)
 
-[外交部 > 国家和组织]: https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/
+[百度百科 - 国家]: https://baike.baidu.com/item/%E5%9B%BD%E5%AE%B6/17205
+[百度百科 - 地区]: https://baike.baidu.com/item/%E5%9C%B0%E5%8C%BA/13841495#viewPageContent
+[United Nations » Member States]: http://www.un.org/en/member-states/index.html
+[坐标系说明书]: http://lbsyun.baidu.com/index.php?title=coordinate
+[中华人民共和国外交部 > 国家和组织]: https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/
