@@ -46,8 +46,8 @@ Geographic Information Integration for World，世界地理信息集成
     - 具体有关国家的说明参见 » [百度百科 - 国家][]
       - 国家类型 `country type` 的说明
         - `Member State` 联合国会员国，来源于 [United Nations » Member States][]
-        - `Non-member State` 联合国非会员国，即观察员国，来源于 [[United Nations » Non-member States]][]
-        - `Sovereign State` 主权国家，来源于[Google翻译 » 主权国家][]
+        - `Non-member State` 联合国非会员国，即观察员国，来源于 [United Nations » Non-member States][]
+        - `Sovereign State` 主权国家，来源于 [Google翻译 » 主权国家][]
     - 具体有关地区的说明参见 » [百度百科 - 地区][]
 - 主权国家（截至2017年），共计198个
     - 联合国会员国：193个，具体名单参见 [United Nations » Member States][]
@@ -58,7 +58,7 @@ Geographic Information Integration for World，世界地理信息集成
       - 纽埃
       - 库克群岛
       - *马耳他骑士团*
-- 地区，37个
+- 地区，?个
     - 有关“台湾”，其为“中华人民共和国”一个省级区划。不在此列出
     - 有关“南沙群岛”，其为“中华人民共和国”一部分，中国对南沙群岛及其附近海域拥有无可争辩的主权。不在此列出。
 
