@@ -19,7 +19,8 @@ Geographic Information Integration for World，世界地理信息集成
 - [5. 更新历史](#5-更新历史)
 - [6. 参考](#6-参考)
     - [6.1. 参考文档](#61-参考文档)
-    - [6.2. 数据来源](#62-数据来源)
+    - [6.2. 工具](#62-工具)
+    - [6.3. 数据来源](#63-数据来源)
 
 <!-- /TOC -->
 
@@ -133,7 +134,11 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 >
 > [CSDN - echarts世界国家中英文对照](https://blog.csdn.net/u012557538/article/details/78490267)
 
-### 6.2. 数据来源
+### 6.2. 工具
+
+> [一个可以测试边界在Google地图展示效果的在线应用](http://geojson.io)
+
+### 6.3. 数据来源
 
 > - [中华人民共和国外交部 > 国家和组织][]
 > - [Highmaps 地图数据集](https://img.hcharts.cn/mapdata/)
