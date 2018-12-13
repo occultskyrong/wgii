@@ -103,6 +103,11 @@ conventional-commit-types@^2.0.0:
   resolved "https://registry.yarnpkg.com/conventional-commit-types/-/conventional-commit-types-2.2.0.tgz#5db95739d6c212acbe7b6f656a11b940baa68946"
   integrity sha1-XblXOdbCEqy+e29lahG5QLqmiUY=
 
+coordtransform@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/coordtransform/-/coordtransform-2.1.2.tgz#090349cd62b1dc05fae47b291bf9f0b7ce827f66"
+  integrity sha1-CQNJzWKx3AX65HspG/nwt86Cf2Y=
+
 core-util-is@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"

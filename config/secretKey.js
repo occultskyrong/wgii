@@ -8,4 +8,12 @@ module.exports = {
       },
     },
   },
+  gaode: {
+    api: {
+      map: {
+        // 高德开放平台，web服务秘钥 https://lbs.amap.com/dev/key/app
+        key: '',
+      },
+    },
+  },
 };
