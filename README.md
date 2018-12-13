@@ -124,9 +124,13 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 ### 6.1. 参考文档
 
 > [GitHub - wandergis/coordtransform](https://github.com/wandergis/coordtransform)
+>
 > [GitHub - johan/world.geo.json](https://github.com/johan/world.geo.json)
+>
 > [GitHub - mledoze/countries](https://github.com/mledoze/countries)
+>
 > [CSDN - echarts世界地图各个国家及中国城市的经纬度数组](https://blog.csdn.net/xiaozhi_free/article/details/79654529)
+>
 > [CSDN - echarts世界国家中英文对照](https://blog.csdn.net/u012557538/article/details/78490267)
 
 ### 6.2. 数据来源
