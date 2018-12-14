@@ -88,7 +88,7 @@ async function sparse() {
   coordinates.filter(item => item.length > 10).forEach((pointsArray) => {
     const results = douglasPeucker(pointsArray, 1);
     if (results.length > 10) { // 结果中含10个点以上
-      resultsCoordinates.push(results);
+      resultsCoordinates.push([results]);
     }
   });
   result.features[0].geometry.coordinates = resultsCoordinates;
