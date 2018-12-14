@@ -1,3 +1,5 @@
+/* eslint-disable prefer-destructuring */
+/* eslint-disable global-require */
 /**
  * 高德API查询国内行政区域
  */
@@ -7,6 +9,7 @@ const path = require('path');
 const { gcj02towgs84 } = require('coordtransform');
 const request = require('request-promise');
 
+const douglasPeucker = require('../../common/map/douglas-peucker'); // 抽稀算法
 const { gaode: { api: { map: { key } } } } = require('../../../config');
 
 const baseUrl = 'https://restapi.amap.com/v3/config/district';
@@ -66,8 +69,34 @@ async function china() {
   await fs.writeFileSync(path.join(__dirname, '../../../dist/CHN/country.wgs84.geo.json'), JSON.stringify(result));
 }
 
+/**
+ * 抽稀坐标点
+ */
+async function sparse() {
+  const result = {
+    type: 'FeatureCollection',
+    features: [{
+      type: 'Feature',
+      geometry: { type: 'MultiPolygon' },
+      properties: { name: 'China', code: 'CHN' },
+    }],
+  };
+  const resultsCoordinates = []; // 结果集
+  const { features: [{ geometry: { coordinates } }] } = require('../../../dist/CHN/country.wgs84.geo.json');
+  const pointsLength = coordinates.reduce((num, item) => num + item.length, 0);
+  console.info('--- 共计 ', coordinates.length, ' 组 ， ', pointsLength, ' 个点数据 ---');
+  coordinates.filter(item => item.length > 10).forEach((pointsArray) => {
+    const results = douglasPeucker(pointsArray, 1);
+    if (results.length > 10) { // 结果中含10个点以上
+      resultsCoordinates.push(results);
+    }
+  });
+  result.features[0].geometry.coordinates = resultsCoordinates;
+  await fs.writeFileSync(path.join(__dirname, '../../../dist/CHN/country.wgs84.sparse.geo.json'), JSON.stringify(result));
+}
+
 async function run() {
-  await china();
+  await sparse();
 }
 
 run()
