@@ -57,8 +57,8 @@ async function china() {
         wgs84Points.push(gcj02towgs84(longitude, latitude));
       }
     });
-    gcj02Coordinates.push(gcj02Points);
-    wgs84Coordinates.push(wgs84Points);
+    gcj02Coordinates.push([gcj02Points]);
+    wgs84Coordinates.push([wgs84Points]);
   });
   const { features: [{ geometry, properties }] } = result;
   geometry.coordinates = gcj02Coordinates;
@@ -81,22 +81,30 @@ async function sparse() {
       properties: { name: 'China', code: 'CHN' },
     }],
   };
-  const resultsCoordinates = []; // 结果集
-  const { features: [{ geometry: { coordinates } }] } = require('../../../dist/CHN/country.wgs84.geo.json');
+  const resultsCoordinates1 = []; // 结果集1
+  const resultsCoordinates2 = []; // 结果集2
+  const {
+    features: [
+      [{ geometry: { coordinates } }],
+    ],
+  } = require('../../../dist/CHN/country.wgs84.geo.json');
   const pointsLength = coordinates.reduce((num, item) => num + item.length, 0);
   console.info('--- 共计 ', coordinates.length, ' 组 ， ', pointsLength, ' 个点数据 ---');
-  coordinates.filter(item => item.length > 10).forEach((pointsArray) => {
+  coordinates.filter(item => item.length > 100).forEach((pointsArray) => { // 过滤100个点以上的块
+    resultsCoordinates2.push([pointsArray]);
     const results = douglasPeucker(pointsArray, 1);
     if (results.length > 10) { // 结果中含10个点以上
-      resultsCoordinates.push([results]);
+      resultsCoordinates1.push([results]);
     }
   });
-  result.features[0].geometry.coordinates = resultsCoordinates;
+  result.features[0].geometry.coordinates = resultsCoordinates1;
+  await fs.writeFileSync(path.join(__dirname, '../../../dist/CHN/country.wgs84.sparse.geo.json'), JSON.stringify(result));
+  result.features[0].geometry.coordinates = resultsCoordinates2;
   await fs.writeFileSync(path.join(__dirname, '../../../dist/CHN/country.wgs84.sparse.geo.json'), JSON.stringify(result));
 }
 
 async function run() {
-  await sparse();
+  await china();
 }
 
 run()
