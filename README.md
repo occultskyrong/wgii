@@ -109,6 +109,9 @@ git clone https://github.com/occultskyrong/wgii.git
 # 安装依赖
 yarn install
 
+# 自动生成数据
+npm run build
+
 # 使用sequelize-auto导出model
 sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 ```
