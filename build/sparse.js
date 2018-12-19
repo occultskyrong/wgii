@@ -43,8 +43,15 @@ const sparse = (filePath) => {
   const json = require(filePath);
   const { features: [{ geometry: { coordinates } }] } = json;
   _.each(MaxHeight, (maxHeight) => {
+    const resultCoorinates = [];
     const resultFilePath = filePath.replace(/\.geo\.json/g, `.sparse.${maxHeight}.geo.json`);
-    const resultCoorinates = douglasPeucker(coordinates, maxHeight);
+    coordinates
+      .filter(item => item[0].length > 100) // 过滤100个点以上的块
+      .forEach((item) => { // 依次抽稀坐标块
+        const pointsArray = item[0];
+        const result = douglasPeucker(pointsArray, maxHeight); // 抽稀
+        resultCoorinates.push([result]);
+      });
     json.features[0].geometry.coordinates = resultCoorinates;
     fs.writeFileSync(resultFilePath, JSON.stringify(json));
   });
