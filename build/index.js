@@ -2,7 +2,7 @@
  * 自动化构建
  */
 
-const { runSparse } = require('./sparse').default;
+const { runSparse } = require('./sparse');
 
 runSparse()
   .then()

@@ -39,21 +39,20 @@ async function geoJsonFiles() {
  * 读取文件内容
  * @param {*} filePath 文件路径
  */
-async function sparse(filePath) {
+const sparse = (filePath) => {
   const json = require(filePath);
   const { features: [{ geometry: { coordinates } }] } = json;
   _.each(MaxHeight, (maxHeight) => {
-    const resultFilePath = filePath.replace(/\.geo\.json/g, `.${maxHeight}.geo.json`);
+    const resultFilePath = filePath.replace(/\.geo\.json/g, `.sparse.${maxHeight}.geo.json`);
     const resultCoorinates = douglasPeucker(coordinates, maxHeight);
     json.features[0].geometry.coordinates = resultCoorinates;
     fs.writeFileSync(resultFilePath, JSON.stringify(json));
   });
-}
+};
 
 async function runSparse() {
   const filePaths = await geoJsonFiles();
-  const promises = filePaths.map(sparse);
-  await Promise.map(promises);
+  filePaths.map(sparse);
 }
 
 module.exports = {
