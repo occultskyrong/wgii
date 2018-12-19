@@ -4,6 +4,7 @@
   "description": "Geographic Information Integration for World，世界地理信息集成",
   "main": "index.js",
   "scripts": {
+    "build": "node ./build/index.js",
     "test": ""
   },
   "repository": {
