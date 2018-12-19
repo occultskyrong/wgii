@@ -19,8 +19,10 @@ Geographic Information Integration for World，世界地理信息集成
 - [5. 更新历史](#5-更新历史)
 - [6. 参考](#6-参考)
     - [6.1. 参考文档](#61-参考文档)
+        - [6.1.1. 算法](#611-算法)
     - [6.2. 工具](#62-工具)
     - [6.3. 数据来源](#63-数据来源)
+        - [6.3.1. 高德开放平台](#631-高德开放平台)
 
 <!-- /TOC -->
 
@@ -79,26 +81,36 @@ Geographic Information Integration for World，世界地理信息集成
 ## 3. 目录结构
 
 ```shell
-tree -a -L 2 -I "node_modules|*.json|.git*|.vscode|LICENSE"
+tree -a -L 2 -I "node_modules|*.json|.*|.vscode|LICENSE"
 ```
 
 ```tree
 .
-├── README.md                   # 说明文档
-├── build                       # 构建脚本
-├── config                      # 配置文件
-├── dist                        # 输出结果
-│   ├── countries.json
-│   └── countries_1.json
-├── resource                    # 源数据
-│   ├── original
-│   └── raw
-├── src                         # 源码
+├── README.md                                           # 说明文档
+├── build                                               # 构建脚本
+│   ├── index.js                                            # 执行文件
+│   └── sparse.js                                           # 抽稀脚本
+├── config                                              # 配置文件
+├── dist                                                # 输出结果
+│   └── CHN                                                 # 国家数据
+│   │   ├── country.gcj02.geo.json                              # GCJ02坐标系 - 原始数据，来源于高德开放平台
+│   │   ├── country.gcj02.sparse.1.geo.json                     # GCJ02坐标系 - 按1km抽稀后结果数据
+│   │   ├── country.wgs84.geo.json                              # WGS84坐标系 - 原始数据，来源于数据转换
+│   │   ├── country.wgs84.sparse.1.geo.json                     # WGS84坐标系 - 按1km抽稀后结果数据
+│   │   └── provinces
+├── resource                                            # 源数据
+│   ├── original                                            # 原始数据，已加工
+│   ├── raw                                                 # 原始数据，未加工
+│   └── sql                                                 # SQL数据
+├── src                                                 # 源码
+│   ├── common
 │   ├── crawler
 │   ├── index.js
 │   ├── model.js
-│   └── models
-└── test
+│   ├── models
+│   └── sync.js
+├── test
+└── yarn.lock
 ```
 
 ## 4. 运行
@@ -127,35 +139,59 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 
 ### 6.1. 参考文档
 
-> [GitHub - wandergis/coordtransform](https://github.com/wandergis/coordtransform)
->
-> [GitHub - johan/world.geo.json](https://github.com/johan/world.geo.json)
->
-> [GitHub - mledoze/countries](https://github.com/mledoze/countries)
->
-> [CSDN - echarts世界地图各个国家及中国城市的经纬度数组](https://blog.csdn.net/xiaozhi_free/article/details/79654529)
->
-> [CSDN - echarts世界国家中英文对照](https://blog.csdn.net/u012557538/article/details/78490267)
+> - [CSDN - echarts世界地图各个国家及中国城市的经纬度数组][]
+> - [CSDN - echarts世界国家中英文对照][]
+
+#### 6.1.1. 算法
+
+> - [DouglasPeucker][GitHub - LiuTangLei/Douglas-Peucker-js] 道格拉斯-普克算法，是将曲线近似表示为一系列点，并减少点的数量的一种算法
 
 ### 6.2. 工具
 
-> [一个可以测试边界在Google地图展示效果的在线应用](http://geojson.io)
+> - [geojson.io](http://geojson.io) 一个可以测试边界在Google地图展示效果的在线应用
+> - [wandergis/coordtransform][GitHub - wandergis/coordtransform] 提供了百度坐标（BD09）、国测局坐标（火星坐标，GCJ02）、和WGS84坐标系之间的转换
 
 ### 6.3. 数据来源
 
 > - [中华人民共和国外交部 > 国家和组织][]
-> - [Highmaps 地图数据集](https://img.hcharts.cn/mapdata/)
-> - [【 地图系列 】 世界地图和主要国家的 JSON 文件](http://www.ourd3js.com/wordpress/668/)
-> - [GitHub - pissang/starbucks](https://github.com/pissang/starbucks)
-> - [World Capital Cities](https://geographyfieldwork.com/WorldCapitalCities.htm)
-> - [Wiki - List of national capitals](https://en.wikipedia.org/wiki/List_of_national_capitals)
+> - [Highmaps 地图数据集][]
+> - [【 地图系列 】 世界地图和主要国家的 JSON 文件][]
+> - [GitHub - pissang/starbucks][]
+> - [World Capital Cities][]
+> - [Wiki - List of national capitals][]
+> - [GitHub - johan/world.geo.json][]
 
-[GeoJSON]: http://geojson.org/
+#### 6.3.1. 高德开放平台
+
+> - [开发 > Web服务 API > 开发指南 > API文档 > 行政区域查询][]
+
+<!-- 外交部 -->
+[中华人民共和国外交部 > 国家和组织]: https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/
+<!-- 百度 -->
 [百度百科 - 国家]: https://baike.baidu.com/item/%E5%9B%BD%E5%AE%B6/17205
 [百度百科 - 地区]: https://baike.baidu.com/item/%E5%9C%B0%E5%8C%BA/13841495#viewPageContent
 [百度百科 - 藏南地区]: https://baike.baidu.com/item/%E8%97%8F%E5%8D%97%E5%9C%B0%E5%8C%BA/5372008?fr=aladdin
+[坐标系说明书]: http://lbsyun.baidu.com/index.php?title=coordinate
+<!-- 高德 -->
+[开发 > Web服务 API > 开发指南 > API文档 > 行政区域查询]: https://lbs.amap.com/api/webservice/guide/api/district
+<!-- Google -->
+[Google翻译 » 主权国家]: https://translate.google.com/#view=home&op=translate&sl=zh-CN&tl=en&text=%E4%B8%BB%E6%9D%83%E5%9B%BD%E5%AE%B6
+<!-- 联合国 -->
 [United Nations » Member States]: http://www.un.org/en/member-states/index.html
 [United Nations » Non-member States]: http://www.un.org/en/sections/member-states/non-member-states/index.html
-[Google翻译 » 主权国家]: https://translate.google.com/#view=home&op=translate&sl=zh-CN&tl=en&text=%E4%B8%BB%E6%9D%83%E5%9B%BD%E5%AE%B6
-[坐标系说明书]: http://lbsyun.baidu.com/index.php?title=coordinate
-[中华人民共和国外交部 > 国家和组织]: https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/
+<!-- Wiki -->
+[Wiki - List of national capitals]: https://en.wikipedia.org/wiki/List_of_national_capitals
+<!-- GitHub -->
+[GitHub - pissang/starbucks]: https://github.com/pissang/starbucks
+[GitHub - wandergis/coordtransform]: https://github.com/wandergis/coordtransform
+[GitHub - johan/world.geo.json]: https://github.com/johan/world.geo.json
+[GitHub - mledoze/countries]: https://github.com/mledoze/countries
+[GitHub - LiuTangLei/Douglas-Peucker-js]: https://github.com/LiuTangLei/Douglas-Peucker-js/blob/master/douglas.js
+<!-- CSDN -->
+[CSDN - echarts世界地图各个国家及中国城市的经纬度数组]: https://blog.csdn.net/xiaozhi_free/article/details/79654529
+[CSDN - echarts世界国家中英文对照]: https://blog.csdn.net/u012557538/article/details/78490267
+<!-- 其他 -->
+[GeoJSON]: http://geojson.org/
+[Highmaps 地图数据集]: https://img.hcharts.cn/mapdata/
+[World Capital Cities]: https://geographyfieldwork.com/WorldCapitalCities.htm
+[【 地图系列 】 世界地图和主要国家的 JSON 文件]: http://www.ourd3js.com/wordpress/668/
