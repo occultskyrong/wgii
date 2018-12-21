@@ -46,6 +46,7 @@ Geographic Information Integration for World，世界地理信息集成
 ### 2.3. 坐标系
 
 - 关于坐标系的说明，参见[坐标系说明书][]
+- 坐标系转换方法，参见[wandergis/coordtransform][GitHub - wandergis/coordtransform]
 
 ### 2.4. 政治相关
 
@@ -93,9 +94,11 @@ tree -a -L 2 -I "node_modules|*.json|.*|.vscode|LICENSE"
 ├── config                                              # 配置文件
 ├── dist                                                # 输出结果
 │   └── CHN                                                 # 国家数据
-│   │   ├── country.gcj02.geo.json                              # GCJ02坐标系 - 原始数据，来源于高德开放平台
+│   │   ├── country.bd09.geo.json                               # BD09坐标系 - 原始数据，来源于坐标系转换，适配百度地图
+│   │   ├── country.bd09.sparse.1.geo.json                      # BD09坐标系 - 按1km抽稀后结果数据
+│   │   ├── country.gcj02.geo.json                              # GCJ02坐标系 - 原始数据，来源于高德开放平台，适配高德、腾讯等国内主流地图
 │   │   ├── country.gcj02.sparse.1.geo.json                     # GCJ02坐标系 - 按1km抽稀后结果数据
-│   │   ├── country.wgs84.geo.json                              # WGS84坐标系 - 原始数据，来源于数据转换
+│   │   ├── country.wgs84.geo.json                              # WGS84坐标系 - 原始数据，来源于坐标系转换，适配Google地图
 │   │   ├── country.wgs84.sparse.1.geo.json                     # WGS84坐标系 - 按1km抽稀后结果数据
 │   │   └── provinces
 ├── resource                                            # 源数据
