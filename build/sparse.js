@@ -3,11 +3,13 @@
  * 根据多国家、多坐标体系的边界坐标点抽稀
  */
 
+
 const fs = require('fs');
 const path = require('path');
 const _ = require('lodash');
 
 const douglasPeucker = require('../src/common/map/douglas-peucker');
+const logger = require('../src/common/logger');
 
 const MaxHeight = [1, 2, 5, 10, 20];
 
@@ -54,11 +56,13 @@ const sparse = (filePath) => {
     json.features[0].geometry.coordinates = resultCoorinates;
     fs.writeFileSync(resultFilePath, JSON.stringify(json));
   });
+  logger.info(`    √ 抽稀 - ${filePath} - 完成`);
 };
 
 async function runSparse() {
   const filePaths = await geoJsonFiles();
   filePaths.map(sparse);
+  logger.info('  √ 运行 - 抽稀 - 完成');
 }
 
 module.exports = {
