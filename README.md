@@ -205,7 +205,8 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 [【 地图系列 】 世界地图和主要国家的 JSON 文件]: http://www.ourd3js.com/wordpress/668/
 
 <!-- 待归档 -->
-[]: https://stackoverflow.com/questions/9542834/geojson-world-database
-[]: https://github.com/AshKyd/geojson-regions
-[]: http://httphobo.com/all/world-country-and-state-boundaries-in-geojson/
-[]: http://mbostock.github.io/protovis/ex/countries.js
+
+[1]: https://stackoverflow.com/questions/9542834/geojson-world-database
+[2]: https://github.com/AshKyd/geojson-regions
+[3]: http://httphobo.com/all/world-country-and-state-boundaries-in-geojson/
+[4]: http://mbostock.github.io/protovis/ex/countries.js
