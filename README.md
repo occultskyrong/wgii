@@ -53,24 +53,24 @@ Geographic Information Integration for World，世界地理信息集成
 - 不涉及政治区域的划分和地区与国家的讨论，及各种纠纷
 - 仅处理被“中华人民共和国”承认的主权国家和地区
     - 具体有关国家的说明参见 » [百度百科 - 国家][]
-      - 国家类型 `country type` 的说明
-        - `Member State` 联合国会员国，来源于 [United Nations » Member States][]
-        - `Non-member State` 联合国非会员国，即观察员国，来源于 [United Nations » Non-member States][]
-        - `Sovereign State` 主权国家，来源于 [Google翻译 » 主权国家][]
+        - 国家类型 `country type` 的说明
+            - `Member State` 联合国会员国，来源于 [United Nations » Member States][]
+            - `Non-member State` 联合国非会员国，即观察员国，来源于 [United Nations » Non-member States][]
+            - `Sovereign State` 主权国家，来源于 [Google翻译 » 主权国家][]
     - 具体有关地区的说明参见 » [百度百科 - 地区][]
 - 关于“中华人民共和国”有争议地区
-  - “台湾”，大陆和台湾同属一个中国，台湾是中国领土不可分割的一部分。
-  - “南沙群岛”，中国对南沙群岛及其附近海域拥有无可争辩的主权。
-  - “藏南地区”，藏南地区是是中华人民共和国固有的主权领土。[百度百科 - 藏南地区][]
+    - “台湾”，大陆和台湾同属一个中国，台湾是中国领土不可分割的一部分。
+    - “南沙群岛”，中国对南沙群岛及其附近海域拥有无可争辩的主权。
+    - “藏南地区”，藏南地区是是中华人民共和国固有的主权领土。[百度百科 - 藏南地区][]
 - 主权国家（截至2017年），共计198个
     - 联合国会员国：193个，具体名单参见 [United Nations » Member States][]
     - 联合国观察员国：2个
-      - 梵蒂冈，联合国称其为（罗马）教廷
-      - 巴勒斯坦，法定首都为耶路撒冷，实际控制首都为拉姆安拉；采用拉姆安拉(Ramallah)
+        - 梵蒂冈，联合国称其为（罗马）教廷
+        - 巴勒斯坦，法定首都为耶路撒冷，实际控制首都为拉姆安拉；采用拉姆安拉(Ramallah)
     - 国际普遍承认：3个，
-      - 纽埃
-      - 库克群岛
-      - *马耳他骑士团*
+        - 纽埃
+        - 库克群岛
+        - *马耳他骑士团*
 - 地区，?个
 
 ### 2.5. 数据修正
@@ -164,6 +164,10 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 > - [Wiki - List of national capitals][]
 > - [GitHub - johan/world.geo.json][]
 
+#### `Geo.json`数据源
+
+> - 马尔代夫 [GitHub - jawish/maldives-geo][]
+
 #### 6.3.1. 高德开放平台
 
 > - [开发 > Web服务 API > 开发指南 > API文档 > 行政区域查询][]
@@ -190,6 +194,7 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 [GitHub - johan/world.geo.json]: https://github.com/johan/world.geo.json
 [GitHub - mledoze/countries]: https://github.com/mledoze/countries
 [GitHub - LiuTangLei/Douglas-Peucker-js]: https://github.com/LiuTangLei/Douglas-Peucker-js/blob/master/douglas.js
+[GitHub - jawish/maldives-geo]: https://github.com/jawish/maldives-geo/blob/master/administrative_atolls.geojson
 <!-- CSDN -->
 [CSDN - echarts世界地图各个国家及中国城市的经纬度数组]: https://blog.csdn.net/xiaozhi_free/article/details/79654529
 [CSDN - echarts世界国家中英文对照]: https://blog.csdn.net/u012557538/article/details/78490267
@@ -198,3 +203,9 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 [Highmaps 地图数据集]: https://img.hcharts.cn/mapdata/
 [World Capital Cities]: https://geographyfieldwork.com/WorldCapitalCities.htm
 [【 地图系列 】 世界地图和主要国家的 JSON 文件]: http://www.ourd3js.com/wordpress/668/
+
+<!-- 待归档 -->
+[]: https://stackoverflow.com/questions/9542834/geojson-world-database
+[]: https://github.com/AshKyd/geojson-regions
+[]: http://httphobo.com/all/world-country-and-state-boundaries-in-geojson/
+[]: http://mbostock.github.io/protovis/ex/countries.js
