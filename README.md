@@ -22,7 +22,8 @@ Geographic Information Integration for World，世界地理信息集成
         - [6.1.1. 算法](#611-算法)
     - [6.2. 工具](#62-工具)
     - [6.3. 数据来源](#63-数据来源)
-        - [6.3.1. 高德开放平台](#631-高德开放平台)
+        - [6.3.1. `Geo.json`数据源](#631-geojson数据源)
+        - [6.3.2. 高德开放平台](#632-高德开放平台)
 
 <!-- /TOC -->
 
@@ -46,7 +47,16 @@ Geographic Information Integration for World，世界地理信息集成
 ### 2.3. 坐标系
 
 - 关于坐标系的说明，参见[坐标系说明书][]
+
+> - `WGS84`：为一种大地坐标系，也是目前广泛使用的 `GPS` 全球卫星定位系统使用的坐标系。
+> - `GCJ02`：又称火星坐标系，是由中国国家测绘局制定的地理坐标系统，是由 `WGS84` 加密后得到的坐标系。
+> - `BD09`：为百度坐标系，在 `GCJ02` 坐标系基础上再次加密。其中 `bd09ll` 表示百度经纬度坐标，`bd09mc` 表示百度墨卡托米制坐标。
+
 - 坐标系转换方法，参见[wandergis/coordtransform][GitHub - wandergis/coordtransform]
+- 法律法规
+    - **根据[《中华人民共和国测绘法》][中华人民共和国测绘法]** 第十条、第十一条、第三十八条、第五十二条、第六十二条 之规定
+    - 国内必须使用基于 `GCJ02` 的坐标系，`BD09` 坐标系为基于 `GCJ02` 加密的坐标系，可以直接使用
+    - **请务必遵循国家法律法规，否则带来的一切问题，本人不承担任何责任**
 
 ### 2.4. 政治相关
 
@@ -66,7 +76,7 @@ Geographic Information Integration for World，世界地理信息集成
     - 联合国会员国：193个，具体名单参见 [United Nations » Member States][]
     - 联合国观察员国：2个
         - 梵蒂冈，联合国称其为（罗马）教廷
-        - 巴勒斯坦，法定首都为耶路撒冷，实际控制首都为拉姆安拉；采用拉姆安拉(Ramallah)
+        - 巴勒斯坦，法定首都为耶路撒冷，实际控制首都为拉姆安拉；采用拉姆安拉(`Ramallah`)
     - 国际普遍承认：3个，
         - 纽埃
         - 库克群岛
@@ -151,8 +161,8 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 
 ### 6.2. 工具
 
-> - [geojson.io](http://geojson.io) 一个可以测试边界在Google地图展示效果的在线应用
-> - [wandergis/coordtransform][GitHub - wandergis/coordtransform] 提供了百度坐标（BD09）、国测局坐标（火星坐标，GCJ02）、和WGS84坐标系之间的转换
+> - [geojson.io](http://geojson.io) 一个可以测试边界在`Google`地图展示效果的在线应用
+> - [wandergis/coordtransform][GitHub - wandergis/coordtransform] 提供了百度坐标（`BD09`）、国测局坐标（火星坐标，`GCJ0`2）、和`WGS84`坐标系之间的转换
 
 ### 6.3. 数据来源
 
@@ -164,16 +174,17 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 > - [Wiki - List of national capitals][]
 > - [GitHub - johan/world.geo.json][]
 
-#### `Geo.json`数据源
+#### 6.3.1. `Geo.json`数据源
 
 > - 马尔代夫 [GitHub - jawish/maldives-geo][]
 
-#### 6.3.1. 高德开放平台
+#### 6.3.2. 高德开放平台
 
 > - [开发 > Web服务 API > 开发指南 > API文档 > 行政区域查询][]
 
-<!-- 外交部 -->
+<!-- 国家机关 -->
 [中华人民共和国外交部 > 国家和组织]: https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/
+[中华人民共和国测绘法]: http://www.npc.gov.cn/npc/xinwen/2017-04/27/content_2020927.htm
 <!-- 百度 -->
 [百度百科 - 国家]: https://baike.baidu.com/item/%E5%9B%BD%E5%AE%B6/17205
 [百度百科 - 地区]: https://baike.baidu.com/item/%E5%9C%B0%E5%8C%BA/13841495#viewPageContent
