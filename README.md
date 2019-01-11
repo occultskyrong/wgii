@@ -89,6 +89,8 @@ Geographic Information Integration for World，世界地理信息集成
 
 ### 2.6. 数据结构
 
+见[./config/data-dictionary.json](./config/data-dictionary.json)
+
 ## 3. 目录结构
 
 ```shell
@@ -221,3 +223,4 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 [2]: https://github.com/AshKyd/geojson-regions
 [3]: http://httphobo.com/all/world-country-and-state-boundaries-in-geojson/
 [4]: http://mbostock.github.io/protovis/ex/countries.js
+[5]: ftp://ftp.fu-berlin.de/doc/iso/iso3166-countrycodes.txt

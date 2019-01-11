@@ -34,6 +34,6 @@
     "mysql2": "^1.6.4",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
-    "sequelize": "^4.41.2"
+    "sequelize": "^4.42.0"
   }
 }

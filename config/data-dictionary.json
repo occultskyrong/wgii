@@ -1,0 +1,20 @@
+{
+  "continent_code": "大洲编码，英文缩写",
+  "continent_name": "大洲英文名称",
+  "continent_name_chinese": "大洲中文名称",
+  "subregions": {
+    "subregion_name": "大洲下区域英文名称，如南亚、东亚等"
+  },
+  "countries": {
+    "country_iso_code": "国家ISO标准码",
+    "capital_name": "国家英文名称",
+    "country_type": "国家类型",
+    "capital_name_chinese": "国家中文名称",
+    "country_name_chinese_short": "国家中文缩写",
+    "country_name_chinese_UN": "国家中文联合国用名",
+    "country_name_english_abbreviation": "国家英文短名",
+    "country_name_english_formal": "国家英文全名",
+    "country_name_english_short": "国家英文缩写名称",
+    "country_name_english_UN": "国家英文联合国用名"
+  }
+}

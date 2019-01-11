@@ -5,7 +5,7 @@ module.exports = {
     host: 'localhost',
     logging: true,
     password: 'root',
-    port: '3306',
+    port: '33306',
     username: 'root',
   },
   redis: {
