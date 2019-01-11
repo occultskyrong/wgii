@@ -1,0 +1,29 @@
+[{
+  "continent_code": "AS",
+  "continent_name": "Asia",
+  "continent_name_chinese": "亚洲"
+}, {
+  "continent_code": "AF",
+  "continent_name": "Africa",
+  "continent_name_chinese": "非洲"
+}, {
+  "continent_code": "AN",
+  "continent_name": "Antarctica",
+  "continent_name_chinese": "南极洲"
+}, {
+  "continent_code": "OC",
+  "continent_name": "Oceania",
+  "continent_name_chinese": "大洋洲"
+}, {
+  "continent_code": "EU",
+  "continent_name": "Europe",
+  "continent_name_chinese": "欧洲"
+}, {
+  "continent_code": "NA",
+  "continent_name": "North America",
+  "continent_name_chinese": "北美洲"
+}, {
+  "continent_code": "SA",
+  "continent_name": "South America",
+  "continent_name_chinese": "南美洲"
+}]
