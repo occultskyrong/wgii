@@ -1,6 +1,6 @@
-# world-gii
+# WGII
 
-Geographic Information Integration for World，世界地理信息集成
+Geographic Information Integration of World，世界地理信息集成
 
 ## 1. 目录
 
