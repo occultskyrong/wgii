@@ -6,6 +6,7 @@
     "subregion_name": "大洲下区域英文名称，如南亚、东亚等"
   },
   "countries": {
+    "comment": "国家、地区",
     "country_iso_code": "国家ISO标准码",
     "capital_name": "国家英文名称",
     "country_type": "国家类型",
@@ -16,5 +17,15 @@
     "country_name_english_formal": "国家英文全名",
     "country_name_english_short": "国家英文缩写名称",
     "country_name_english_UN": "国家英文联合国用名"
+  },
+  "region": {
+    "comment": "国家下级行政区划，省、州",
+    "region_name": "区划英文名称",
+    "region_name_short": "区划英文缩写",
+    "region_name_abbreviation": "区划英文短名",
+    "region_name_chinese": "区划中文全名",
+    "region_name_chinese_short": "区划中文简称，车牌简称",
+    "region_name_chinese_abbreviation": "区划中文短名，日常用短名",
+    "region_code": "区划编码"
   }
 }

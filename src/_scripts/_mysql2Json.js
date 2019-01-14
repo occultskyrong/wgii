@@ -37,7 +37,7 @@ async function findAll() {
 async function run() {
   const results = await findAll();
   console.info(results.length);
-  fs.writeFileSync(path.join(__dirname, '../../dist/countries_info.json'), JSON.stringify(results));
+  fs.writeFileSync(path.join(__dirname, '../../dist/countries.info.json'), JSON.stringify(results));
 }
 
 run()
