@@ -22,12 +22,13 @@ Geographic Information Integration of World，世界地理信息集成
 - [5. 更新历史](#5-更新历史)
     - [5.1. Todo list](#51-todo-list)
 - [6. 参考](#6-参考)
-    - [6.1. 参考文档](#61-参考文档)
-        - [6.1.1. 算法](#611-算法)
-    - [6.2. 工具](#62-工具)
-    - [6.3. 数据来源](#63-数据来源)
-        - [6.3.1. `Geo.json`数据源](#631-geojson数据源)
-        - [6.3.2. 高德开放平台](#632-高德开放平台)
+    - [6.1. 基于`LICENSE`开源引用](#61-基于license开源引用)
+    - [6.2. 参考文档](#62-参考文档)
+        - [6.2.1. 算法](#621-算法)
+    - [6.3. 工具](#63-工具)
+    - [6.4. 数据来源](#64-数据来源)
+        - [6.4.1. `Geo.json`数据源](#641-geojson数据源)
+        - [6.4.2. 高德开放平台](#642-高德开放平台)
 
 <!-- /TOC -->
 
@@ -190,21 +191,28 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 
 ## 6. 参考
 
-### 6.1. 参考文档
+### 6.1. 基于`LICENSE`的开源引用
+
+- `GeoLite2`
+
+> This product includes GeoLite2 data created by MaxMind, available from
+<a href="http://www.maxmind.com">http://www.maxmind.com</a>.
+
+### 6.2. 参考文档
 
 > - [CSDN - echarts世界地图各个国家及中国城市的经纬度数组][]
 > - [CSDN - echarts世界国家中英文对照][]
 
-#### 6.1.1. 算法
+#### 6.2.1. 算法
 
 > - [DouglasPeucker][GitHub - LiuTangLei/Douglas-Peucker-js] 道格拉斯-普克算法，是将曲线近似表示为一系列点，并减少点的数量的一种算法
 
-### 6.2. 工具
+### 6.3. 工具
 
 > - [geojson.io](http://geojson.io) 一个可以测试边界在`Google`地图展示效果的在线应用
 > - [wandergis/coordtransform][GitHub - wandergis/coordtransform] 提供了百度坐标（`BD09`）、国测局坐标（火星坐标，`GCJ0`2）、和`WGS84`坐标系之间的转换
 
-### 6.3. 数据来源
+### 6.4. 数据来源
 
 > - [中华人民共和国外交部 > 国家和组织][]
 > - [Highmaps 地图数据集][]
@@ -214,11 +222,11 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 > - [Wiki - List of national capitals][]
 > - [GitHub - johan/world.geo.json][]
 
-#### 6.3.1. `Geo.json`数据源
+#### 6.4.1. `Geo.json`数据源
 
 > - 马尔代夫 [GitHub - jawish/maldives-geo][]
 
-#### 6.3.2. 高德开放平台
+#### 6.4.2. 高德开放平台
 
 > - [开发 > Web服务 API > 开发指南 > API文档 > 行政区域查询][]
 
