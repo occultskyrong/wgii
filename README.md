@@ -11,12 +11,16 @@ Geographic Information Integration of World，世界地理信息集成
     - [2.1. 项目说明](#21-项目说明)
     - [2.2. GeoJSON](#22-geojson)
     - [2.3. 坐标系](#23-坐标系)
-    - [2.4. 政治相关](#24-政治相关)
+    - [2.4. 行政区划](#24-行政区划)
     - [2.5. 数据修正](#25-数据修正)
     - [2.6. 数据结构](#26-数据结构)
 - [3. 目录结构](#3-目录结构)
+    - [3.1. 说明](#31-说明)
+    - [3.2. 生成](#32-生成)
+    - [3.3. 目录树](#33-目录树)
 - [4. 运行](#4-运行)
 - [5. 更新历史](#5-更新历史)
+    - [5.1. Todo list](#51-todo-list)
 - [6. 参考](#6-参考)
     - [6.1. 参考文档](#61-参考文档)
         - [6.1.1. 算法](#611-算法)
@@ -58,7 +62,7 @@ Geographic Information Integration of World，世界地理信息集成
     - 国内必须使用基于 `GCJ02` 的坐标系，`BD09` 坐标系为基于 `GCJ02` 加密的坐标系，可以直接使用
     - **请务必遵循国家法律法规，否则带来的一切问题，本人不承担任何责任**
 
-### 2.4. 政治相关
+### 2.4. 行政区划
 
 - 不涉及政治区域的划分和地区与国家的讨论，及各种纠纷
 - 仅处理被“中华人民共和国”承认的主权国家和地区
@@ -82,6 +86,20 @@ Geographic Information Integration of World，世界地理信息集成
         - 库克群岛
         - *马耳他骑士团*
 - 地区，?个
+- 国家政体不同，及组织形式不同，
+    - 可能导致国家名称翻译不同；
+    - 同时国家内下级行政区别不同，诸如州(state)、省(province)，具体两者的区别，此处不展开
+        - 对统一标注，使用`region_name`/`region_code`标记省州级行政区划的名称和编码
+        - 国内使用省级（自治区、直辖市）、地级（市、州、盟）、县级（区、市、旗）、乡级（镇、街道）四级区划
+            - 国内四级行政区别见[中华人民共和国民政部 > 行政区划统计表][]
+            - 具体区划内容参见[中华人民共和国民政部 > 行政区划代码][]
+            - 具体区划编码可参见[中华人民共和国统计局 > 统计用区划和城乡划分代码][]
+            - 国内省级区划整理数据见[中华人民共和国 > 省级行政区划][]
+            - 备注
+                - `宁夏回族自治区`英文名为`Ningxia Hui Autonomous Region`，又名`Ningsia Hui Autonomous Region`;
+                - `台湾省`行政编码为`71`，但根据[国务院办公厅关于印发《港澳台居民居住证申领发放办法》的通知][]，台湾身份号码地址码使用`830000`，此处暂使用`7100000`;
+                    - > 公民身份号码由公安机关按照公民身份号码国家标准编制。香港居民公民身份号码地址码使用810000，澳门居民公民身份号码地址码使用820000，台湾居民公民身份号码地址码使用830000。
+                - `陕西`的英文名为`Shaanxi`，`山西`的英文名`Shanxi`，注意区分；
 
 ### 2.5. 数据修正
 
@@ -89,13 +107,24 @@ Geographic Information Integration of World，世界地理信息集成
 
 ### 2.6. 数据结构
 
-见[./config/data-dictionary.json](./config/data-dictionary.json)
+见[数据字典][]
 
 ## 3. 目录结构
+
+### 3.1. 说明
+
+- 数据分为基础信息和`GEO`数据
+    - 标记为`*.info.json`为 基础信息（国家名称、编码、首都信息等）
+    - 标记为`*.geo.json`为 结构化`GEO`数据，具体字段见说明[数据字典][]
+    - 标记为`*.all.json`为 基于`geo.json`数据格式，整合`info.json`数据的结构化数据体
+
+### 3.2. 生成
 
 ```shell
 tree -a -L 2 -I "node_modules|*.json|.*|.vscode|LICENSE"
 ```
+
+### 3.3. 目录树
 
 ```tree
 .
@@ -145,10 +174,18 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 
 ## 5. 更新历史
 
-| version | date       | desc                              |
-| ------- | ---------- | --------------------------------- |
-| 0.0.1   | 2018-12-09 | 完成联合国会员国国家信息数据整理  |
-| 0.0.1   | 2018-12-13 | 完成中华人民共和国GeoJSON数据整理 |
+| version | date       | desc                                                           |
+| ------- | ---------- | -------------------------------------------------------------- |
+| 0.0.1   | 2018-12-09 | 完成联合国会员国国家信息数据整理                               |
+| 0.0.1   | 2018-12-13 | 完成中华人民共和国GeoJSON数据整理                              |
+| 0.0.1   | 2018-12-13 | 完成联合国会员国国家信息数据输出，见`dist/countries_info.json` |
+
+### 5.1. Todo list
+
+- [ ] 整理数据来源
+- [ ] 整理国内省份和城市对应关系，及中英文对照
+- [ ] 对比`ISO3166`整理国家和地区信息
+- [ ] 测试对比[wandergis/coordtransform][GitHub - wandergis/coordtransform]提供转换和百度官方转换结果偏差量
 
 ## 6. 参考
 
@@ -187,6 +224,10 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 <!-- 国家机关 -->
 [中华人民共和国外交部 > 国家和组织]: https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/
 [中华人民共和国测绘法]: http://www.npc.gov.cn/npc/xinwen/2017-04/27/content_2020927.htm
+[中华人民共和国统计局 > 统计用区划和城乡划分代码]: http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/
+[中华人民共和国民政部 > 行政区划代码]: http://www.mca.gov.cn/article/sj/xzqh/2018/
+[中华人民共和国民政部 > 行政区划统计表]: http://xzqh.mca.gov.cn/statistics
+[国务院办公厅关于印发《港澳台居民居住证申领发放办法》的通知]: http://www.gov.cn/zhengce/content/2018-08/19/content_5314865.htm
 <!-- 百度 -->
 [百度百科 - 国家]: https://baike.baidu.com/item/%E5%9B%BD%E5%AE%B6/17205
 [百度百科 - 地区]: https://baike.baidu.com/item/%E5%9C%B0%E5%8C%BA/13841495#viewPageContent
@@ -211,6 +252,10 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 <!-- CSDN -->
 [CSDN - echarts世界地图各个国家及中国城市的经纬度数组]: https://blog.csdn.net/xiaozhi_free/article/details/79654529
 [CSDN - echarts世界国家中英文对照]: https://blog.csdn.net/u012557538/article/details/78490267
+<!-- 输出文档 -->
+[中华人民共和国 > 省级行政区划]: ./dist/CHN/region.info.json
+[中华人民共和国 > 地级行政区划]: ./dist/CHN/cities.info.json
+[数据字典]: ./config/data-dictionary.json
 <!-- 其他 -->
 [GeoJSON]: http://geojson.org/
 [Highmaps 地图数据集]: https://img.hcharts.cn/mapdata/
