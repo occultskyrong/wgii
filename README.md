@@ -88,19 +88,17 @@ Geographic Information Integration of World，世界地理信息集成
         - *马耳他骑士团*
 - 地区，?个
 - 国家政体
-
-国家政体、国家组织形式不同，可能导致国家名称翻译不同；同时国家内下级行政区别不同，诸如州(state)、省(province)，具体两者的区别，此处不展开。
-
+    - 国家政体、国家组织形式不同，可能导致国家名称翻译不同；同时国家内下级行政区别不同，诸如州(state)、省(province)，具体两者的区别，此处不展开。
     - 为统一标注，使用`region_name`/`region_code`标记`省/州`级行政区划的名称和编码
     - 中华人民共和国所属数据，使用省级（自治区、直辖市）、地级（市、州、盟）、县级（区、市、旗）、乡级（镇、街道）四级区划
         - 国内四级行政区别见[中华人民共和国民政部 > 行政区划统计表][]
         - 具体区划内容参见[中华人民共和国民政部 > 行政区划代码][]
         - 具体区划编码可参见[中华人民共和国统计局 > 统计用区划和城乡划分代码][]
         - 国内省级区划整理数据见[中华人民共和国 > 省级行政区划][]
-        - 备注
-            - `宁夏回族自治区`英文名为`Ningxia Hui Autonomous Region`，但有使用`Ningsia Hui Autonomous Region`，如[GeoLite2免费可下载数据库][];
+        - 几点说明
+            - `宁夏回族自治区`英文名为`Ningxia Hui Autonomous Region`，但有使用`Ningsia Hui Autonomous Region`，如[GeoLite2数据库][];
             - `台湾省`行政编码为`71`，但根据[国务院办公厅关于印发《港澳台居民居住证申领发放办法》的通知][]，台湾身份号码地址码使用`830000`，此处暂使用`7100000`;
-                - > 公民身份号码由公安机关按照公民身份号码国家标准编制。香港居民公民身份号码地址码使用810000，澳门居民公民身份号码地址码使用820000，台湾居民公民身份号码地址码使用830000。
+                > 公民身份号码由公安机关按照公民身份号码国家标准编制。香港居民公民身份号码地址码使用810000，澳门居民公民身份号码地址码使用820000，台湾居民公民身份号码地址码使用830000。
             - `陕西`的英文名为`Shaanxi`，`山西`的英文名`Shanxi`，注意区分；
 
 ### 2.5. 数据修正
@@ -282,4 +280,4 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 [3]: http://httphobo.com/all/world-country-and-state-boundaries-in-geojson/
 [4]: http://mbostock.github.io/protovis/ex/countries.js
 [5]: ftp://ftp.fu-berlin.de/doc/iso/iso3166-countrycodes.txt
-[GeoLite2免费可下载数据库]: https://dev.maxmind.com/zh-hans/geoip/geoip2/geolite2/
+[GeoLite2数据库]: https://dev.maxmind.com/zh-hans/geoip/geoip2/geolite2/
