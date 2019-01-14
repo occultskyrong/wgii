@@ -96,7 +96,7 @@ Geographic Information Integration of World，世界地理信息集成
             - 具体区划编码可参见[中华人民共和国统计局 > 统计用区划和城乡划分代码][]
             - 国内省级区划整理数据见[中华人民共和国 > 省级行政区划][]
             - 备注
-                - `宁夏回族自治区`英文名为`Ningxia Hui Autonomous Region`，又名`Ningsia Hui Autonomous Region`;
+                - `宁夏回族自治区`英文名为`Ningxia Hui Autonomous Region`，但有使用`Ningsia Hui Autonomous Region`，如[GeoLite2免费可下载数据库][];
                 - `台湾省`行政编码为`71`，但根据[国务院办公厅关于印发《港澳台居民居住证申领发放办法》的通知][]，台湾身份号码地址码使用`830000`，此处暂使用`7100000`;
                     - > 公民身份号码由公安机关按照公民身份号码国家标准编制。香港居民公民身份号码地址码使用810000，澳门居民公民身份号码地址码使用820000，台湾居民公民身份号码地址码使用830000。
                 - `陕西`的英文名为`Shaanxi`，`山西`的英文名`Shanxi`，注意区分；
@@ -177,8 +177,9 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 | version | date       | desc                                                           |
 | ------- | ---------- | -------------------------------------------------------------- |
 | 0.0.1   | 2018-12-09 | 完成联合国会员国国家信息数据整理                               |
-| 0.0.1   | 2018-12-13 | 完成中华人民共和国GeoJSON数据整理                              |
-| 0.0.1   | 2018-12-13 | 完成联合国会员国国家信息数据输出，见`dist/countries_info.json` |
+| 0.0.1   | 2018-12-13 | 完成中华人民共和国国家`GeoJSON`数据整理                        |
+| 0.0.1   | 2019-01-11 | 完成联合国会员国国家信息数据输出，见`dist/countries_info.json` |
+| 0.0.1   | 2019-01-14 | 完成中华人民共和国省级信息数据整理                             |
 
 ### 5.1. Todo list
 
@@ -269,3 +270,4 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 [3]: http://httphobo.com/all/world-country-and-state-boundaries-in-geojson/
 [4]: http://mbostock.github.io/protovis/ex/countries.js
 [5]: ftp://ftp.fu-berlin.de/doc/iso/iso3166-countrycodes.txt
+[GeoLite2免费可下载数据库]: https://dev.maxmind.com/zh-hans/geoip/geoip2/geolite2/
