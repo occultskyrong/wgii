@@ -1,304 +1,341 @@
 [{
+    "region_code": "11",
     "region_name": "Beijing",
-    "region_name_short": "BJ",
     "region_name_abbreviation": "Beijing",
+    "region_name_geolite2": "Beijing",
+    "region_name_short": "BJ",
     "region_name_chinese": "北京市",
-    "region_name_chinese_short": "京",
     "region_name_chinese_abbreviation": "北京",
-    "region_code": "11"
+    "region_name_chinese_short": "京"
   },
   {
+    "region_code": "12",
     "region_name": "Tianjin",
-    "region_name_short": "TJ",
     "region_name_abbreviation": "Tianjin",
+    "region_name_geolite2": "Tianjin",
+    "region_name_short": "TJ",
     "region_name_chinese": "天津市",
-    "region_name_chinese_short": "津",
     "region_name_chinese_abbreviation": "天津",
-    "region_code": "12"
+    "region_name_chinese_short": "津"
   },
   {
+    "region_code": "13",
     "region_name": "Hebei",
-    "region_name_short": "HE",
     "region_name_abbreviation": "Hebei",
+    "region_name_geolite2": "Hebei",
+    "region_name_short": "HE",
     "region_name_chinese": "河北省",
-    "region_name_chinese_short": "冀",
     "region_name_chinese_abbreviation": "河北",
-    "region_code": "13"
+    "region_name_chinese_short": "冀"
   },
   {
+    "region_code": "14",
     "region_name": "Shanxi",
-    "region_name_short": "SX",
     "region_name_abbreviation": "Shanxi",
+    "region_name_geolite2": "Shanxi",
+    "region_name_short": "SX",
     "region_name_chinese": "山西省",
-    "region_name_chinese_short": "晋",
     "region_name_chinese_abbreviation": "山西",
-    "region_code": "14"
+    "region_name_chinese_short": "晋"
   },
   {
+    "region_code": "15",
     "region_name": "Inner Mongolia Autonomous Region",
-    "region_name_short": "NM",
     "region_name_abbreviation": "Inner Mongolia",
+    "region_name_geolite2": "Inner Mongolia Autonomous Region",
+    "region_name_short": "NM",
     "region_name_chinese": "内蒙古自治区",
-    "region_name_chinese_short": "蒙",
     "region_name_chinese_abbreviation": "内蒙古",
-    "region_code": "15"
+    "region_name_chinese_short": "蒙"
   },
   {
+    "region_code": "21",
     "region_name": "Liaoning",
-    "region_name_short": "LN",
     "region_name_abbreviation": "Liaoning",
+    "region_name_geolite2": "Liaoning",
+    "region_name_short": "LN",
     "region_name_chinese": "辽宁省",
-    "region_name_chinese_short": "辽",
     "region_name_chinese_abbreviation": "辽宁",
-    "region_code": "21"
+    "region_name_chinese_short": "辽"
   },
   {
     "region_name": "Jilin",
-    "region_name_short": "JL",
+    "region_code": "22",
     "region_name_abbreviation": "Jilin",
+    "region_name_geolite2": "Jilin",
+    "region_name_short": "JL",
     "region_name_chinese": "吉林省",
-    "region_name_chinese_short": "吉",
     "region_name_chinese_abbreviation": "吉林",
-    "region_code": "22"
+    "region_name_chinese_short": "吉"
   },
   {
+    "region_code": "23",
     "region_name": "Heilongjiang",
+    "region_name_abbreviation": "Heilongjiang",
+    "region_name_geolite2": "Heilongjiang",
     "region_name_short": "HL",
-    "region_name_abbreviation": "",
     "region_name_chinese": "黑龙江省",
-    "region_name_chinese_short": "黑",
     "region_name_chinese_abbreviation": "黑龙江",
-    "region_code": "23"
+    "region_name_chinese_short": "黑"
   },
   {
+    "region_code": "31",
     "region_name": "Shanghai",
-    "region_name_short": "SH",
     "region_name_abbreviation": "Shanghai",
+    "region_name_geolite2": "Shanghai",
+    "region_name_short": "SH",
     "region_name_chinese": "上海市",
-    "region_name_chinese_short": "沪",
     "region_name_chinese_abbreviation": "上海",
-    "region_code": "31"
+    "region_name_chinese_short": "沪"
   },
   {
+    "region_code": "32",
     "region_name": "Jiangsu",
-    "region_name_short": "JS",
     "region_name_abbreviation": "Jiangsu",
+    "region_name_geolite2": "Jiangsu",
+    "region_name_short": "JS",
     "region_name_chinese": "江苏省",
-    "region_name_chinese_short": "苏",
     "region_name_chinese_abbreviation": "江苏",
-    "region_code": "32"
+    "region_name_chinese_short": "苏"
   },
   {
+    "region_code": "33",
     "region_name": "Zhejiang",
-    "region_name_short": "ZJ",
     "region_name_abbreviation": "Zhejiang",
+    "region_name_geolite2": "Zhejiang",
+    "region_name_short": "ZJ",
     "region_name_chinese": "浙江省",
-    "region_name_chinese_short": "浙",
     "region_name_chinese_abbreviation": "浙江",
-    "region_code": "33"
+    "region_name_chinese_short": "浙"
   },
   {
+    "region_code": "34",
     "region_name": "Anhui",
-    "region_name_short": "AH",
     "region_name_abbreviation": "Anhui",
+    "region_name_geolite2": "Anhui",
+    "region_name_short": "AH",
     "region_name_chinese": "安徽省",
-    "region_name_chinese_short": "皖",
     "region_name_chinese_abbreviation": "安徽",
-    "region_code": "34"
+    "region_name_chinese_short": "皖"
   },
   {
+    "region_code": "35",
     "region_name": "Fujian",
-    "region_name_short": "FJ",
     "region_name_abbreviation": "Fujian",
+    "region_name_geolite2": "Fujian",
+    "region_name_short": "FJ",
     "region_name_chinese": "福建省",
-    "region_name_chinese_short": "闽",
     "region_name_chinese_abbreviation": "福建",
-    "region_code": "35"
+    "region_name_chinese_short": "闽"
   },
   {
+    "region_code": "36",
     "region_name": "Jiangxi",
-    "region_name_short": "JX",
     "region_name_abbreviation": "Jiangxi",
+    "region_name_geolite2": "Jiangxi",
+    "region_name_short": "JX",
     "region_name_chinese": "江西省",
-    "region_name_chinese_short": "赣",
     "region_name_chinese_abbreviation": "江西",
-    "region_code": "36"
+    "region_name_chinese_short": "赣"
   },
   {
+    "region_code": "37",
     "region_name": "Shandong",
-    "region_name_short": "SD",
     "region_name_abbreviation": "Shandong",
+    "region_name_geolite2": "Shandong",
+    "region_name_short": "SD",
     "region_name_chinese": "山东省",
-    "region_name_chinese_short": "鲁",
     "region_name_chinese_abbreviation": "山东",
-    "region_code": "37"
+    "region_name_chinese_short": "鲁"
   },
   {
+    "region_code": "41",
     "region_name": "Henan",
-    "region_name_short": "HA",
     "region_name_abbreviation": "Henan",
+    "region_name_geolite2": "Henan",
+    "region_name_short": "HA",
     "region_name_chinese": "河南省",
-    "region_name_chinese_short": "豫",
     "region_name_chinese_abbreviation": "河南",
-    "region_code": "41"
+    "region_name_chinese_short": "豫"
   },
   {
+    "region_code": "42",
     "region_name": "Hubei",
-    "region_name_short": "HB",
     "region_name_abbreviation": "Hubei",
+    "region_name_geolite2": "Hubei",
+    "region_name_short": "HB",
     "region_name_chinese": "湖北省",
-    "region_name_chinese_short": "鄂",
     "region_name_chinese_abbreviation": "湖北",
-    "region_code": "42"
+    "region_name_chinese_short": "鄂"
   },
   {
+    "region_code": "43",
     "region_name": "Hunan",
-    "region_name_short": "HN",
     "region_name_abbreviation": "Hunan",
+    "region_name_geolite2": "Hunan",
+    "region_name_short": "HN",
     "region_name_chinese": "湖南省",
-    "region_name_chinese_short": "湘",
     "region_name_chinese_abbreviation": "湖南",
-    "region_code": "43"
+    "region_name_chinese_short": "湘"
   },
   {
+    "region_code": "44",
     "region_name": "Guangdong",
-    "region_name_short": "GD",
     "region_name_abbreviation": "Guangdong",
+    "region_name_geolite2": "Guangdong",
+    "region_name_short": "GD",
     "region_name_chinese": "广东省",
-    "region_name_chinese_short": "粤",
     "region_name_chinese_abbreviation": "广东",
-    "region_code": "44"
+    "region_name_chinese_short": "粤"
   },
   {
+    "region_code": "45",
     "region_name": "Guangxi",
-    "region_name_short": "GX",
     "region_name_abbreviation": "Guangxi",
+    "region_name_geolite2": "Guangxi",
+    "region_name_short": "GX",
     "region_name_chinese": "广西壮族自治区",
-    "region_name_chinese_short": "桂",
     "region_name_chinese_abbreviation": "广西",
-    "region_code": "45"
+    "region_name_chinese_short": "桂"
   },
   {
+    "region_code": "46",
     "region_name": "Hainan",
-    "region_name_short": "HI",
     "region_name_abbreviation": "Hainan",
+    "region_name_geolite2": "Hainan",
+    "region_name_short": "HI",
     "region_name_chinese": "海南省",
-    "region_name_chinese_short": "琼",
     "region_name_chinese_abbreviation": "海南",
-    "region_code": "46"
+    "region_name_chinese_short": "琼"
   },
   {
+    "region_code": "50",
     "region_name": "Chongqing",
-    "region_name_short": "CQ",
     "region_name_abbreviation": "Chongqing",
+    "region_name_geolite2": "Chongqing",
+    "region_name_short": "CQ",
     "region_name_chinese": "重庆市",
-    "region_name_chinese_short": "渝",
     "region_name_chinese_abbreviation": "重庆",
-    "region_code": "50"
+    "region_name_chinese_short": "渝"
   },
   {
+    "region_code": "51",
     "region_name": "Sichuan",
-    "region_name_short": "SC",
     "region_name_abbreviation": "Sichuan",
+    "region_name_geolite2": "Sichuan",
+    "region_name_short": "SC",
     "region_name_chinese": "四川省",
-    "region_name_chinese_short": "川",
     "region_name_chinese_abbreviation": "四川",
-    "region_code": "51"
+    "region_name_chinese_short": "川"
   },
   {
+    "region_code": "52",
     "region_name": "Guizhou",
-    "region_name_short": "GZ",
     "region_name_abbreviation": "Guizhou",
+    "region_name_geolite2": "Guizhou",
+    "region_name_short": "GZ",
     "region_name_chinese": "贵州省",
-    "region_name_chinese_short": "贵",
     "region_name_chinese_abbreviation": "贵州",
-    "region_code": "52"
+    "region_name_chinese_short": "贵"
   },
   {
+    "region_code": "53",
     "region_name": "Yunnan",
-    "region_name_short": "YN",
     "region_name_abbreviation": "Yunnan",
+    "region_name_geolite2": "Yunnan",
+    "region_name_short": "YN",
     "region_name_chinese": "云南省",
-    "region_name_chinese_short": "云",
     "region_name_chinese_abbreviation": "云南",
-    "region_code": "53"
+    "region_name_chinese_short": "云"
   },
   {
+    "region_code": "54",
     "region_name": "Tibet",
-    "region_name_short": "XZ",
     "region_name_abbreviation": "Tibet",
+    "region_name_geolite2": "Tibet",
+    "region_name_short": "XZ",
     "region_name_chinese": "西藏自治区",
-    "region_name_chinese_short": "藏",
     "region_name_chinese_abbreviation": "西藏",
-    "region_code": "54"
+    "region_name_chinese_short": "藏"
   },
   {
+    "region_code": "61",
     "region_name": "Shaanxi",
-    "region_name_short": "SN",
     "region_name_abbreviation": "Shaanxi",
+    "region_name_geolite2": "Shaanxi",
+    "region_name_short": "SN",
     "region_name_chinese": "陕西省",
-    "region_name_chinese_short": "陕",
     "region_name_chinese_abbreviation": "陕西",
-    "region_code": "61"
+    "region_name_chinese_short": "陕"
   },
   {
+    "region_code": "62",
     "region_name": "Gansu",
-    "region_name_short": "GS",
     "region_name_abbreviation": "Gansu",
+    "region_name_geolite2": "Gansu",
+    "region_name_short": "GS",
     "region_name_chinese": "甘肃省",
-    "region_name_chinese_short": "甘",
     "region_name_chinese_abbreviation": "甘肃",
-    "region_code": "62"
+    "region_name_chinese_short": "甘"
   },
   {
+    "region_code": "63",
     "region_name": "Qinghai",
-    "region_name_short": "QH",
     "region_name_abbreviation": "Qinghai",
+    "region_name_geolite2": "Qinghai",
+    "region_name_short": "QH",
     "region_name_chinese": "青海省",
-    "region_name_chinese_short": "青",
     "region_name_chinese_abbreviation": "青海",
-    "region_code": "63"
+    "region_name_chinese_short": "青"
   },
   {
+    "region_code": "64",
     "region_name": "Ningxia Hui Autonomous Region",
-    "region_name_short": "NX",
     "region_name_abbreviation": "Ningxia",
+    "region_name_geolite2": "Ningsia Hui Autonomous Region",
+    "region_name_short": "NX",
     "region_name_chinese": "宁夏回族自治区",
-    "region_name_chinese_short": "宁",
     "region_name_chinese_abbreviation": "宁夏",
-    "region_code": "64"
+    "region_name_chinese_short": "宁"
   },
   {
+    "region_code": "65",
     "region_name": "Xinjiang",
-    "region_name_short": "XJ",
     "region_name_abbreviation": "Xinjiang",
+    "region_name_geolite2": "Xinjiang",
+    "region_name_short": "XJ",
     "region_name_chinese": "新疆维吾尔自治区",
-    "region_name_chinese_short": "新",
     "region_name_chinese_abbreviation": "新疆",
-    "region_code": "65"
+    "region_name_chinese_short": "新"
   },
   {
+    "region_code": "71",
     "region_name": "Taiwan",
-    "region_name_short": "TW",
     "region_name_abbreviation": "Taiwan",
+    "region_name_geolite2": "Taiwan",
+    "region_name_short": "TW",
     "region_name_chinese": "台湾省",
     "region_name_chinese_abbreviation": "台湾",
-    "region_code": "71"
+    "region_name_chinese_short": "台"
   },
   {
+    "region_code": "81",
     "region_name": "Hong Kong Special Administrative Region",
-    "region_name_short": "HK",
     "region_name_abbreviation": "Hong Kong",
+    "region_name_geolite2": "Hong Kong",
+    "region_name_short": "HK",
     "region_name_chinese": "香港特别行政区",
     "region_name_chinese_abbreviation": "香港",
-    "region_code": "81"
+    "region_name_chinese_short": "港"
   },
   {
+    "region_code": "82",
     "region_name": "Macao Special Administrative Region",
-    "region_name_short": "MO",
     "region_name_abbreviation": "Macao",
+    "region_name_geolite2": "Macao",
+    "region_name_short": "MO",
     "region_name_chinese": "澳门特别行政区",
     "region_name_chinese_abbreviation": "澳门",
-    "region_code": "82"
+    "region_name_chinese_short": "澳"
   }
 ]
