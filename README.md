@@ -18,17 +18,19 @@ Geographic Information Integration of World，世界地理信息集成
     - [3.1. 说明](#31-说明)
     - [3.2. 生成](#32-生成)
     - [3.3. 目录树](#33-目录树)
-- [4. 运行](#4-运行)
-- [5. 更新历史](#5-更新历史)
-    - [5.1. Todo list](#51-todo-list)
-- [6. 参考](#6-参考)
-    - [6.1. 基于`LICENSE`的开源引用](#61-基于license的开源引用)
-    - [6.2. 参考文档](#62-参考文档)
-        - [6.2.1. 算法](#621-算法)
-    - [6.3. 工具](#63-工具)
-    - [6.4. 数据来源](#64-数据来源)
-        - [6.4.1. `Geo.json`数据源](#641-geojson数据源)
-        - [6.4.2. 高德开放平台](#642-高德开放平台)
+- [4. 开发者信息](#4-开发者信息)
+    - [4.1. Build](#41-build)
+    - [4.2. Changes](#42-changes)
+    - [4.3. Todo list](#43-todo-list)
+    - [4.4. Contributions](#44-contributions)
+- [5. 参考](#5-参考)
+    - [5.1. 基于`LICENSE`的开源引用](#51-基于license的开源引用)
+    - [5.2. 参考文档](#52-参考文档)
+        - [5.2.1. 算法](#521-算法)
+    - [5.3. 工具](#53-工具)
+    - [5.4. 数据来源](#54-数据来源)
+        - [5.4.1. `Geo.json`数据源](#541-geojson数据源)
+        - [5.4.2. 高德开放平台](#542-高德开放平台)
 
 <!-- /TOC -->
 
@@ -160,7 +162,9 @@ tree -a -L 2 -I "node_modules|*.json|.*|.vscode|LICENSE|logs"
 └── yarn.lock
 ```
 
-## 4. 运行
+## 4. 开发者信息
+
+### 4.1. Build
 
 ```shell
 # 下载项目
@@ -171,11 +175,11 @@ yarn install
 # 自动生成数据
 npm run build
 
-# 使用sequelize-auto导出model
+# 【暂不可用】使用sequelize-auto导出model
 sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 ```
 
-## 5. 更新历史
+### 4.2. Changes
 
 | version | date       | desc                                                           |
 | ------- | ---------- | -------------------------------------------------------------- |
@@ -184,37 +188,55 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 | 0.0.1   | 2019-01-11 | 完成联合国会员国国家信息数据输出，见`dist/countries_info.json` |
 | 0.0.1   | 2019-01-14 | 完成中华人民共和国省级信息数据整理                             |
 
-### 5.1. Todo list
+### 4.3. Todo list
 
 - [ ] 整理数据来源
 - [ ] 整理国内省份和城市对应关系，及中英文对照
 - [ ] 对比`ISO3166`整理国家和地区信息
 - [ ] 测试对比[wandergis/coordtransform][GitHub - wandergis/coordtransform]提供转换和百度官方转换结果偏差量
 
-## 6. 参考
+### 4.4. Contributions
 
-### 6.1. 基于`LICENSE`的开源引用
+```shell
+fork https://github.com/occultskyrong/wgii
+git clone <your own repository>
+git branches <your own branch>
+git checkout <your own branch>
+yarn install -D
+# ... something change
+eslint --fix .
+# ... fix something do not eslint autofix
+git cz
+# ... step by step add commit with message
+git push
+# ... there will be eslint check pre-commit
+pull request
+```
+
+## 5. 参考
+
+### 5.1. 基于`LICENSE`的开源引用
 
 - `GeoLite2`
 
 > This product includes GeoLite2 data created by MaxMind, available from
 <a href="http://www.maxmind.com">http://www.maxmind.com</a>.
 
-### 6.2. 参考文档
+### 5.2. 参考文档
 
 > - [CSDN - echarts世界地图各个国家及中国城市的经纬度数组][]
 > - [CSDN - echarts世界国家中英文对照][]
 
-#### 6.2.1. 算法
+#### 5.2.1. 算法
 
 > - [DouglasPeucker][GitHub - LiuTangLei/Douglas-Peucker-js] 道格拉斯-普克算法，是将曲线近似表示为一系列点，并减少点的数量的一种算法
 
-### 6.3. 工具
+### 5.3. 工具
 
 > - [geojson.io](http://geojson.io) 一个可以测试边界在`Google`地图展示效果的在线应用
 > - [wandergis/coordtransform][GitHub - wandergis/coordtransform] 提供了百度坐标（`BD09`）、国测局坐标（火星坐标，`GCJ0`2）、和`WGS84`坐标系之间的转换
 
-### 6.4. 数据来源
+### 5.4. 数据来源
 
 > - [中华人民共和国外交部 > 国家和组织][]
 > - [Highmaps 地图数据集][]
@@ -224,11 +246,11 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 > - [Wiki - List of national capitals][]
 > - [GitHub - johan/world.geo.json][]
 
-#### 6.4.1. `Geo.json`数据源
+#### 5.4.1. `Geo.json`数据源
 
 > - 马尔代夫 [GitHub - jawish/maldives-geo][]
 
-#### 6.4.2. 高德开放平台
+#### 5.4.2. 高德开放平台
 
 > - [开发 > Web服务 API > 开发指南 > API文档 > 行政区域查询][]
 
