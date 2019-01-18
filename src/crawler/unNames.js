@@ -6,11 +6,11 @@ const fs = require('fs');
 const path = require('path');
 const request = require('request-promise');
 
-const { translateEn2Zh } = require('../../common/baidu/fanyi');
+const { translateEn2Zh } = require('../common/baidu/fanyi');
 
-const unCountriesChinese = require('../raw/_un_countries_chinese');
-const unCountriesEnglish = require('../raw/_un_countries_english');
-const unCountries = require('../raw/_un_countries.json');
+const unCountriesChinese = require('../../resource/raw/_un_countries_chinese');
+const unCountriesEnglish = require('../../resource/raw/_un_countries_english');
+const unCountries = require('../../resource/raw/_un_countries.json');
 
 const chineseNamesUri = 'http://www.un.org/zh/member-states/index.html';
 const englishNamesUri = 'http://www.un.org/en/member-states/index.html';
@@ -25,9 +25,15 @@ async function getNamesArray(uri) {
 // 获取原始国家名称信息
 async function getNames() {
   const englishNames = await getNamesArray(englishNamesUri);
-  await fs.writeFileSync(path.join(__dirname, './raw/_un_countries_english.json'), JSON.stringify(englishNames.map(name => name.replace(/[\\*]/gm, '').trim())));
+  await fs.writeFileSync(
+    path.join(__dirname, './raw/_un_countries_english.json'),
+    JSON.stringify(englishNames.map(name => name.replace(/[\\*]/gm, '').trim())),
+  );
   const chinessNames = await getNamesArray(chineseNamesUri);
-  await fs.writeFileSync(path.join(__dirname, './raw/_un_countries_chinese.json'), JSON.stringify(chinessNames.map(name => name.replace(/[^\u4e00-\u9fa5]/gm, ''))));
+  await fs.writeFileSync(
+    path.join(__dirname, './raw/_un_countries_chinese.json'),
+    JSON.stringify(chinessNames.map(name => name.replace(/[^\u4e00-\u9fa5]/gm, ''))),
+  );
 }
 
 // 获取国家名称翻译对照

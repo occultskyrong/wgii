@@ -12,7 +12,7 @@ const { features } = require('../resource/raw/_countries_2');
 const model = require('./model');
 const { translateEn2Zh } = require('./common/baidu/fanyi');
 const unCountries = require('../resource/raw/_un_countries');
-const countries = require('../dist/countries_1');
+const countries = require('../dist/countries.info');
 
 // console.info('共计 ', features.length, ' 个国家和地区');
 
