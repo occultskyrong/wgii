@@ -76,17 +76,6 @@ async function syncChinaBorderLines() {
   await save(polyline);
 }
 
-/**
- * 获取 - 省份 - 边界线
- */
-async function getChinaProvinceBorderLines() {
-
-}
-
-async function run() {
-  await syncChinaBorderLines();
-}
-
 module.exports = {
   syncChinaBorderLines,
 };

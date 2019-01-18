@@ -10,14 +10,17 @@
   },
   "extends": "airbnb-base",
   "parserOptions": {
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
-    },
     "sourceType": "module",
     "ecmaVersion": 2017
   },
   "rules": {
     "indent": [1, 2],
-    "max-len": [2, 150]
+    "max-len": [2, 150],
+    "no-unused-vars": "warn",
+    "class-methods-use-this": "warn",
+    "no-mixed-operators": "warn",
+    "no-underscore-dangle": "warn",
+    "object-curly-newline": "warn",
+    "no-console": "off"
   }
 }
