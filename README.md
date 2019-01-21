@@ -103,6 +103,8 @@ Geographic Information Integration of World，世界地理信息集成
                 > 公民身份号码由公安机关按照公民身份号码国家标准编制。香港居民公民身份号码地址码使用810000，澳门居民公民身份号码地址码使用820000，台湾居民公民身份号码地址码使用830000。
             - `陕西`的英文名为`Shaanxi`，`山西`的英文名`Shanxi`，注意区分；
             - `香港` 🇭🇰 、`澳门` 🇲🇴 、`台湾`的简称使用`港`、`澳`、`台`
+    - `Country_Code` 使用 `ISO3166-1` 编码，具体见[ISO3166-1][]
+
 
 ### 2.5. 数据修正
 
@@ -269,13 +271,12 @@ pull request
 [坐标系说明书]: http://lbsyun.baidu.com/index.php?title=coordinate
 <!-- 高德 -->
 [开发 > Web服务 API > 开发指南 > API文档 > 行政区域查询]: https://lbs.amap.com/api/webservice/guide/api/district
-<!-- Google -->
-[Google翻译 » 主权国家]: https://translate.google.com/#view=home&op=translate&sl=zh-CN&tl=en&text=%E4%B8%BB%E6%9D%83%E5%9B%BD%E5%AE%B6
 <!-- 联合国 -->
 [United Nations » Member States]: http://www.un.org/en/member-states/index.html
 [United Nations » Non-member States]: http://www.un.org/en/sections/member-states/non-member-states/index.html
-<!-- Wiki -->
-[Wiki - List of national capitals]: https://en.wikipedia.org/wiki/List_of_national_capitals
+<!-- CSDN -->
+[CSDN - echarts世界地图各个国家及中国城市的经纬度数组]: https://blog.csdn.net/xiaozhi_free/article/details/79654529
+[CSDN - echarts世界国家中英文对照]: https://blog.csdn.net/u012557538/article/details/78490267
 <!-- GitHub -->
 [GitHub - pissang/starbucks]: https://github.com/pissang/starbucks
 [GitHub - wandergis/coordtransform]: https://github.com/wandergis/coordtransform
@@ -283,9 +284,13 @@ pull request
 [GitHub - mledoze/countries]: https://github.com/mledoze/countries
 [GitHub - LiuTangLei/Douglas-Peucker-js]: https://github.com/LiuTangLei/Douglas-Peucker-js/blob/master/douglas.js
 [GitHub - jawish/maldives-geo]: https://github.com/jawish/maldives-geo/blob/master/administrative_atolls.geojson
-<!-- CSDN -->
-[CSDN - echarts世界地图各个国家及中国城市的经纬度数组]: https://blog.csdn.net/xiaozhi_free/article/details/79654529
-[CSDN - echarts世界国家中英文对照]: https://blog.csdn.net/u012557538/article/details/78490267
+<!-- Google -->
+[Google翻译 » 主权国家]: https://translate.google.com/#view=home&op=translate&sl=zh-CN&tl=en&text=%E4%B8%BB%E6%9D%83%E5%9B%BD%E5%AE%B6
+<!-- ISO -->
+[ISO3166-1]: https://www.iso.org/obp/ui/#search
+<!-- Wiki -->
+[Wiki - List of national capitals]: https://en.wikipedia.org/wiki/List_of_national_capitals
+
 <!-- 输出文档 -->
 [中华人民共和国 > 省级行政区划]: ./dist/CHN/region.info.json
 [中华人民共和国 > 地级行政区划]: ./dist/CHN/cities.info.json
