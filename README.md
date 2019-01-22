@@ -190,12 +190,13 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 | 0.0.1   | 2018-12-13 | 完成中华人民共和国国家`GeoJSON`数据整理                        |
 | 0.0.1   | 2019-01-11 | 完成联合国会员国国家信息数据输出，见`dist/countries_info.json` |
 | 0.0.1   | 2019-01-14 | 完成中华人民共和国省级信息数据整理                             |
+| 0.0.1   | 2019-01-22 | 完成世界国家数据与ISO3316-1的交叉比对                          |
 
 ### 4.3. Todo list
 
 - [ ] 整理数据来源
 - [ ] 整理国内省份和城市对应关系，及中英文对照
-- [ ] 对比`ISO3166`整理国家和地区信息
+- [x] 对比`ISO3166`整理国家和地区信息
 - [ ] 测试对比[wandergis/coordtransform][GitHub - wandergis/coordtransform]提供转换和百度官方转换结果偏差量
 
 ### 4.4. Contributions
