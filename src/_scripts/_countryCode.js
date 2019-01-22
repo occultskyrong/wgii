@@ -18,11 +18,11 @@ const codesList = codes.reduce((obj, code) => {
 }, {});
 
 const results = countries.map((country) => {
-  const { country_name_english_short } = country;
-  country.country_code2 = country_name_english_short;
-  country.country_code3 = country_name_english_short in codesList ? codesList[country_name_english_short].code3 : '';
+  const { country_code2 } = country;
+  country.country_code2 = country_code2;
+  country.phone_code = country_code2 in codesList ? codesList[country_code2].phoneCode : '';
   delete country.country_name_english_short;
   return country;
 });
 
-fs.writeFileSync(path.join(__dirname, '../../dist/countries.info.1.json'), JSON.stringify(results));
+fs.writeFileSync(path.join(__dirname, '../../dist/countries.info.1.json'), JSON.stringify(results).replace(/","/g, '",\n"').replace(/},{/g, '},\n{'));
