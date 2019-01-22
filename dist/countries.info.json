@@ -11,7 +11,8 @@
     "continent_name": "Asia",
     "subregion_name": "Southern Asia",
     "country_code2": "AF",
-    "country_code3": "AFG"
+    "country_code3": "AFG",
+    "phone_code": "4"
   },
   {
     "capital_name_chinese": "罗安达",
@@ -26,7 +27,8 @@
     "continent_name": "Africa",
     "subregion_name": "Middle Africa",
     "country_code2": "AO",
-    "country_code3": "AGO"
+    "country_code3": "AGO",
+    "phone_code": "24"
   },
   {
     "capital_name_chinese": "地拉那",
@@ -41,7 +43,8 @@
     "continent_name": "Europe",
     "subregion_name": "Southern Europe",
     "country_code2": "AL",
-    "country_code3": "ALB"
+    "country_code3": "ALB",
+    "phone_code": "8"
   },
   {
     "capital_name_chinese": "阿布扎比",
@@ -56,7 +59,8 @@
     "continent_name": "Asia",
     "subregion_name": "Western Asia",
     "country_code2": "AE",
-    "country_code3": "ARE"
+    "country_code3": "ARE",
+    "phone_code": "784"
   },
   {
     "capital_name_chinese": "埃里温",
@@ -71,7 +75,8 @@
     "continent_name": "Asia",
     "subregion_name": "Western Asia",
     "country_code2": "AM",
-    "country_code3": "ARM"
+    "country_code3": "ARM",
+    "phone_code": "51"
   },
   {
     "capital_name_chinese": "布宜诺斯艾利斯",
@@ -86,7 +91,8 @@
     "continent_name": "South America",
     "subregion_name": "South America",
     "country_code2": "AR",
-    "country_code3": "ARG"
+    "country_code3": "ARG",
+    "phone_code": "32"
   },
   {
     "capital_name_chinese": "安道尔城",
@@ -101,7 +107,8 @@
     "continent_name": "Europe",
     "subregion_name": "Southern Europe",
     "country_code2": "AD",
-    "country_code3": "AND"
+    "country_code3": "AND",
+    "phone_code": "20"
   },
   {
     "capital_name_chinese": "圣约翰",
@@ -116,7 +123,8 @@
     "continent_name": "North America",
     "subregion_name": "Caribbean",
     "country_code2": "AG",
-    "country_code3": "ATG"
+    "country_code3": "ATG",
+    "phone_code": "28"
   },
   {
     "capital_name_chinese": "堪培拉",
@@ -131,7 +139,8 @@
     "continent_name": "Oceania",
     "subregion_name": "Australia and New Zealand",
     "country_code2": "AU",
-    "country_code3": "AUS"
+    "country_code3": "AUS",
+    "phone_code": "36"
   },
   {
     "capital_name_chinese": "维也纳",
@@ -146,7 +155,8 @@
     "continent_name": "Europe",
     "subregion_name": "Western Europe",
     "country_code2": "AT",
-    "country_code3": "AUT"
+    "country_code3": "AUT",
+    "phone_code": "40"
   },
   {
     "capital_name_chinese": "布琼布拉",
@@ -161,7 +171,8 @@
     "continent_name": "Africa",
     "subregion_name": "Eastern Africa",
     "country_code2": "BI",
-    "country_code3": "BDI"
+    "country_code3": "BDI",
+    "phone_code": "108"
   },
   {
     "capital_name_chinese": "布鲁塞尔",
@@ -176,7 +187,8 @@
     "continent_name": "Europe",
     "subregion_name": "Western Europe",
     "country_code2": "BE",
-    "country_code3": "BEL"
+    "country_code3": "BEL",
+    "phone_code": "56"
   },
   {
     "capital_name_chinese": "波多诺伏",
@@ -191,7 +203,8 @@
     "continent_name": "Africa",
     "subregion_name": "Western Africa",
     "country_code2": "BJ",
-    "country_code3": "BEN"
+    "country_code3": "BEN",
+    "phone_code": "204"
   },
   {
     "capital_name_chinese": "巴库",
@@ -206,7 +219,8 @@
     "continent_name": "Asia",
     "subregion_name": "Western Asia",
     "country_code2": "AZ",
-    "country_code3": "AZE"
+    "country_code3": "AZE",
+    "phone_code": "31"
   },
   {
     "capital_name_chinese": "瓦加杜古",
@@ -221,7 +235,8 @@
     "continent_name": "Africa",
     "subregion_name": "Western Africa",
     "country_code2": "BF",
-    "country_code3": "BFA"
+    "country_code3": "BFA",
+    "phone_code": "854"
   },
   {
     "capital_name_chinese": "索非亚",
@@ -236,7 +251,8 @@
     "continent_name": "Europe",
     "subregion_name": "Eastern Europe",
     "country_code2": "BG",
-    "country_code3": "BGR"
+    "country_code3": "BGR",
+    "phone_code": "100"
   },
   {
     "capital_name_chinese": "达卡",
@@ -251,7 +267,8 @@
     "continent_name": "Asia",
     "subregion_name": "Southern Asia",
     "country_code2": "BD",
-    "country_code3": "BGD"
+    "country_code3": "BGD",
+    "phone_code": "50"
   },
   {
     "capital_name_chinese": "麦纳麦",
@@ -266,7 +283,8 @@
     "continent_name": "Asia",
     "subregion_name": "Western Asia",
     "country_code2": "BH",
-    "country_code3": "BHR"
+    "country_code3": "BHR",
+    "phone_code": "48"
   },
   {
     "capital_name_chinese": "拿骚",
@@ -281,7 +299,8 @@
     "continent_name": "North America",
     "subregion_name": "Caribbean",
     "country_code2": "BS",
-    "country_code3": "BHS"
+    "country_code3": "BHS",
+    "phone_code": "44"
   },
   {
     "capital_name_chinese": "萨拉热窝",
@@ -296,7 +315,8 @@
     "continent_name": "Europe",
     "subregion_name": "Southern Europe",
     "country_code2": "BA",
-    "country_code3": "BIH"
+    "country_code3": "BIH",
+    "phone_code": "70"
   },
   {
     "capital_name_chinese": "明斯克",
@@ -311,7 +331,8 @@
     "continent_name": "Europe",
     "subregion_name": "Eastern Europe",
     "country_code2": "BY",
-    "country_code3": "BLR"
+    "country_code3": "BLR",
+    "phone_code": "112"
   },
   {
     "capital_name_chinese": "贝尔莫潘",
@@ -326,7 +347,8 @@
     "continent_name": "North America",
     "subregion_name": "Central America",
     "country_code2": "BZ",
-    "country_code3": "BLZ"
+    "country_code3": "BLZ",
+    "phone_code": "84"
   },
   {
     "capital_name_chinese": "苏克雷",
@@ -341,7 +363,8 @@
     "continent_name": "South America",
     "subregion_name": "South America",
     "country_code2": "BO",
-    "country_code3": "BOL"
+    "country_code3": "BOL",
+    "phone_code": "68"
   },
   {
     "capital_name_chinese": "巴西利亚",
@@ -356,7 +379,8 @@
     "continent_name": "South America",
     "subregion_name": "South America",
     "country_code2": "BR",
-    "country_code3": "BRA"
+    "country_code3": "BRA",
+    "phone_code": "76"
   },
   {
     "capital_name_chinese": "布里奇顿",
@@ -371,7 +395,8 @@
     "continent_name": "North America",
     "subregion_name": "Caribbean",
     "country_code2": "BB",
-    "country_code3": "BRB"
+    "country_code3": "BRB",
+    "phone_code": "52"
   },
   {
     "capital_name_chinese": "斯里巴加湾",
@@ -386,7 +411,8 @@
     "continent_name": "Asia",
     "subregion_name": "South-Eastern Asia",
     "country_code2": "BN",
-    "country_code3": "BRN"
+    "country_code3": "BRN",
+    "phone_code": "96"
   },
   {
     "capital_name_chinese": "廷布",
@@ -401,7 +427,8 @@
     "continent_name": "Asia",
     "subregion_name": "Southern Asia",
     "country_code2": "BT",
-    "country_code3": "BTN"
+    "country_code3": "BTN",
+    "phone_code": "64"
   },
   {
     "capital_name_chinese": "哈博罗内",
@@ -416,7 +443,8 @@
     "continent_name": "Africa",
     "subregion_name": "Southern Africa",
     "country_code2": "BW",
-    "country_code3": "BWA"
+    "country_code3": "BWA",
+    "phone_code": "72"
   },
   {
     "capital_name_chinese": "班吉",
@@ -431,7 +459,8 @@
     "continent_name": "Africa",
     "subregion_name": "Middle Africa",
     "country_code2": "CF",
-    "country_code3": "CAF"
+    "country_code3": "CAF",
+    "phone_code": "140"
   },
   {
     "capital_name_chinese": "渥太华",
@@ -446,7 +475,8 @@
     "continent_name": "North America",
     "subregion_name": "Northern America",
     "country_code2": "CA",
-    "country_code3": "CAN"
+    "country_code3": "CAN",
+    "phone_code": "124"
   },
   {
     "capital_name_chinese": "伯尔尼",
@@ -461,7 +491,8 @@
     "continent_name": "Europe",
     "subregion_name": "Western Europe",
     "country_code2": "CH",
-    "country_code3": "CHE"
+    "country_code3": "CHE",
+    "phone_code": "756"
   },
   {
     "capital_name_chinese": "北京",
@@ -476,7 +507,8 @@
     "continent_name": "Asia",
     "subregion_name": "Eastern Asia",
     "country_code2": "CN",
-    "country_code3": "CHN"
+    "country_code3": "CHN",
+    "phone_code": "156"
   },
   {
     "capital_name_chinese": "亚穆苏克罗",
@@ -491,7 +523,8 @@
     "continent_name": "Africa",
     "subregion_name": "Western Africa",
     "country_code2": "CI",
-    "country_code3": "CIV"
+    "country_code3": "CIV",
+    "phone_code": "384"
   },
   {
     "capital_name_chinese": "雅温得",
@@ -506,7 +539,8 @@
     "continent_name": "Africa",
     "subregion_name": "Middle Africa",
     "country_code2": "CM",
-    "country_code3": "CMR"
+    "country_code3": "CMR",
+    "phone_code": "120"
   },
   {
     "capital_name_chinese": "圣地亚哥",
@@ -521,7 +555,8 @@
     "continent_name": "South America",
     "subregion_name": "South America",
     "country_code2": "CL",
-    "country_code3": "CHL"
+    "country_code3": "CHL",
+    "phone_code": "152"
   },
   {
     "capital_name_chinese": "金沙萨",
@@ -536,7 +571,8 @@
     "continent_name": "Africa",
     "subregion_name": "Middle Africa",
     "country_code2": "CD",
-    "country_code3": "COD"
+    "country_code3": "COD",
+    "phone_code": "180"
   },
   {
     "capital_name_chinese": "波哥大",
@@ -551,7 +587,8 @@
     "continent_name": "South America",
     "subregion_name": "South America",
     "country_code2": "CO",
-    "country_code3": "COL"
+    "country_code3": "COL",
+    "phone_code": "170"
   },
   {
     "capital_name_chinese": "莫罗尼",
@@ -566,7 +603,8 @@
     "continent_name": "Africa",
     "subregion_name": "Eastern Africa",
     "country_code2": "KM",
-    "country_code3": "COM"
+    "country_code3": "COM",
+    "phone_code": "174"
   },
   {
     "capital_name_chinese": "布拉柴维尔",
@@ -581,7 +619,8 @@
     "continent_name": "Africa",
     "subregion_name": "Middle Africa",
     "country_code2": "CG",
-    "country_code3": "COG"
+    "country_code3": "COG",
+    "phone_code": "178"
   },
   {
     "capital_name_chinese": "普拉亚",
@@ -596,7 +635,8 @@
     "continent_name": "Africa",
     "subregion_name": "Western Africa",
     "country_code2": "CV",
-    "country_code3": "CPV"
+    "country_code3": "CPV",
+    "phone_code": "132"
   },
   {
     "capital_name_chinese": "圣何塞",
@@ -611,7 +651,8 @@
     "continent_name": "North America",
     "subregion_name": "Central America",
     "country_code2": "CR",
-    "country_code3": "CR"
+    "country_code3": "CR",
+    "phone_code": "188"
   },
   {
     "capital_name_chinese": "哈瓦那",
@@ -626,7 +667,8 @@
     "continent_name": "North America",
     "subregion_name": "Caribbean",
     "country_code2": "CU",
-    "country_code3": "CUB"
+    "country_code3": "CUB",
+    "phone_code": "192"
   },
   {
     "capital_name_chinese": "尼科西亚",
@@ -641,7 +683,8 @@
     "continent_name": "Europe",
     "subregion_name": "Western Asia",
     "country_code2": "CY",
-    "country_code3": "CYP"
+    "country_code3": "CYP",
+    "phone_code": "196"
   },
   {
     "capital_name_chinese": "布拉格",
@@ -656,7 +699,8 @@
     "continent_name": "Europe",
     "subregion_name": "Eastern Europe",
     "country_code2": "CZ",
-    "country_code3": "CZE"
+    "country_code3": "CZE",
+    "phone_code": "203"
   },
   {
     "capital_name_chinese": "柏林",
@@ -671,7 +715,8 @@
     "continent_name": "Europe",
     "subregion_name": "Western Europe",
     "country_code2": "DE",
-    "country_code3": "DEU"
+    "country_code3": "DEU",
+    "phone_code": "276"
   },
   {
     "capital_name_chinese": "吉布提",
@@ -686,7 +731,8 @@
     "continent_name": "Africa",
     "subregion_name": "Eastern Africa",
     "country_code2": "DJ",
-    "country_code3": "DJI"
+    "country_code3": "DJI",
+    "phone_code": "262"
   },
   {
     "capital_name_chinese": "罗索",
@@ -701,7 +747,8 @@
     "continent_name": "North America",
     "subregion_name": "Caribbean",
     "country_code2": "DM",
-    "country_code3": "DMA"
+    "country_code3": "DMA",
+    "phone_code": "212"
   },
   {
     "capital_name_chinese": "哥本哈根",
@@ -716,7 +763,8 @@
     "continent_name": "Europe",
     "subregion_name": "Northern Europe",
     "country_code2": "DK",
-    "country_code3": "DNK"
+    "country_code3": "DNK",
+    "phone_code": "208"
   },
   {
     "capital_name_chinese": "阿尔及尔",
@@ -731,7 +779,8 @@
     "continent_name": "Africa",
     "subregion_name": "Northern Africa",
     "country_code2": "DZ",
-    "country_code3": "DZA"
+    "country_code3": "DZA",
+    "phone_code": "12"
   },
   {
     "capital_name_chinese": "圣多明各",
@@ -746,7 +795,8 @@
     "continent_name": "North America",
     "subregion_name": "Caribbean",
     "country_code2": "DO",
-    "country_code3": "DOM"
+    "country_code3": "DOM",
+    "phone_code": "214"
   },
   {
     "capital_name_chinese": "基多",
@@ -761,7 +811,8 @@
     "continent_name": "South America",
     "subregion_name": "South America",
     "country_code2": "EC",
-    "country_code3": "ECU"
+    "country_code3": "ECU",
+    "phone_code": "218"
   },
   {
     "capital_name_chinese": "开罗",
@@ -776,7 +827,8 @@
     "continent_name": "Africa",
     "subregion_name": "Northern Africa",
     "country_code2": "EG",
-    "country_code3": "EGY"
+    "country_code3": "EGY",
+    "phone_code": "818"
   },
   {
     "capital_name_chinese": "阿斯马拉",
@@ -791,7 +843,8 @@
     "continent_name": "Africa",
     "subregion_name": "Eastern Africa",
     "country_code2": "ER",
-    "country_code3": "ERI"
+    "country_code3": "ERI",
+    "phone_code": "232"
   },
   {
     "capital_name_chinese": "马德里",
@@ -806,7 +859,8 @@
     "continent_name": "Europe",
     "subregion_name": "Southern Europe",
     "country_code2": "ES",
-    "country_code3": "ESP"
+    "country_code3": "ESP",
+    "phone_code": "724"
   },
   {
     "capital_name_chinese": "塔林",
@@ -821,7 +875,8 @@
     "continent_name": "Europe",
     "subregion_name": "Northern Europe",
     "country_code2": "EE",
-    "country_code3": "EST"
+    "country_code3": "EST",
+    "phone_code": "233"
   },
   {
     "capital_name_chinese": "亚的斯亚贝巴",
@@ -836,7 +891,8 @@
     "continent_name": "Africa",
     "subregion_name": "Eastern Africa",
     "country_code2": "ET",
-    "country_code3": "ETH"
+    "country_code3": "ETH",
+    "phone_code": "231"
   },
   {
     "capital_name_chinese": "赫尔辛基",
@@ -851,7 +907,8 @@
     "continent_name": "Europe",
     "subregion_name": "Northern Europe",
     "country_code2": "FI",
-    "country_code3": "FIN"
+    "country_code3": "FIN",
+    "phone_code": "246"
   },
   {
     "capital_name_chinese": "苏瓦",
@@ -866,7 +923,8 @@
     "continent_name": "Oceania",
     "subregion_name": "Melanesia",
     "country_code2": "FJ",
-    "country_code3": "FJI"
+    "country_code3": "FJI",
+    "phone_code": "242"
   },
   {
     "capital_name_chinese": "巴黎",
@@ -881,7 +939,8 @@
     "continent_name": "Europe",
     "subregion_name": "Western Europe",
     "country_code2": "FR",
-    "country_code3": "FRA"
+    "country_code3": "FRA",
+    "phone_code": "250"
   },
   {
     "capital_name_chinese": "帕利基尔",
@@ -896,7 +955,8 @@
     "continent_name": "Oceania",
     "subregion_name": "Micronesia",
     "country_code2": "FM",
-    "country_code3": "FSM"
+    "country_code3": "FSM",
+    "phone_code": "583"
   },
   {
     "capital_name_chinese": "利伯维尔",
@@ -911,7 +971,8 @@
     "continent_name": "Africa",
     "subregion_name": "Middle Africa",
     "country_code2": "GA",
-    "country_code3": "GAB"
+    "country_code3": "GAB",
+    "phone_code": "266"
   },
   {
     "capital_name_chinese": "伦敦",
@@ -926,7 +987,8 @@
     "continent_name": "Europe",
     "subregion_name": "Northern Europe",
     "country_code2": "GB",
-    "country_code3": "GBR"
+    "country_code3": "GBR",
+    "phone_code": "826"
   },
   {
     "capital_name_chinese": "第比利斯",
@@ -941,7 +1003,8 @@
     "continent_name": "Asia",
     "subregion_name": "Western Asia",
     "country_code2": "GE",
-    "country_code3": "GEO"
+    "country_code3": "GEO",
+    "phone_code": "268"
   },
   {
     "capital_name_chinese": "阿克拉",
@@ -956,7 +1019,8 @@
     "continent_name": "Africa",
     "subregion_name": "Western Africa",
     "country_code2": "GH",
-    "country_code3": "GHA"
+    "country_code3": "GHA",
+    "phone_code": "288"
   },
   {
     "capital_name_chinese": "班珠尔",
@@ -971,7 +1035,8 @@
     "continent_name": "Africa",
     "subregion_name": "Western Africa",
     "country_code2": "GM",
-    "country_code3": "GMB"
+    "country_code3": "GMB",
+    "phone_code": "270"
   },
   {
     "capital_name_chinese": "科纳克里",
@@ -986,7 +1051,8 @@
     "continent_name": "Africa",
     "subregion_name": "Western Africa",
     "country_code2": "GN",
-    "country_code3": "GIN"
+    "country_code3": "GIN",
+    "phone_code": "324"
   },
   {
     "capital_name_chinese": "马拉博",
@@ -1001,7 +1067,8 @@
     "continent_name": "Africa",
     "subregion_name": "Middle Africa",
     "country_code2": "GQ",
-    "country_code3": "GNQ"
+    "country_code3": "GNQ",
+    "phone_code": "226"
   },
   {
     "capital_name_chinese": "比绍",
@@ -1016,7 +1083,8 @@
     "continent_name": "Africa",
     "subregion_name": "Western Africa",
     "country_code2": "GW",
-    "country_code3": "GNB"
+    "country_code3": "GNB",
+    "phone_code": "624"
   },
   {
     "capital_name_chinese": "雅典",
@@ -1031,7 +1099,8 @@
     "continent_name": "Europe",
     "subregion_name": "Southern Europe",
     "country_code2": "GR",
-    "country_code3": "GRC"
+    "country_code3": "GRC",
+    "phone_code": "300"
   },
   {
     "capital_name_chinese": "圣乔治",
@@ -1046,7 +1115,8 @@
     "continent_name": "North America",
     "subregion_name": "Caribbean",
     "country_code2": "GD",
-    "country_code3": "GRD"
+    "country_code3": "GRD",
+    "phone_code": "308"
   },
   {
     "capital_name_chinese": "危地马拉城",
@@ -1061,7 +1131,8 @@
     "continent_name": "North America",
     "subregion_name": "Central America",
     "country_code2": "GT",
-    "country_code3": "GTM"
+    "country_code3": "GTM",
+    "phone_code": "320"
   },
   {
     "capital_name_chinese": "乔治敦",
@@ -1076,7 +1147,8 @@
     "continent_name": "South America",
     "subregion_name": "South America",
     "country_code2": "GY",
-    "country_code3": "GUY"
+    "country_code3": "GUY",
+    "phone_code": "328"
   },
   {
     "capital_name_chinese": "萨格勒布",
@@ -1091,7 +1163,8 @@
     "continent_name": "Europe",
     "subregion_name": "Southern Europe",
     "country_code2": "HR",
-    "country_code3": "HRV"
+    "country_code3": "HRV",
+    "phone_code": "191"
   },
   {
     "capital_name_chinese": "特古西加尔巴",
@@ -1106,7 +1179,8 @@
     "continent_name": "North America",
     "subregion_name": "Central America",
     "country_code2": "HN",
-    "country_code3": "HND"
+    "country_code3": "HND",
+    "phone_code": "340"
   },
   {
     "capital_name_chinese": "太子港",
@@ -1121,7 +1195,8 @@
     "continent_name": "North America",
     "subregion_name": "Caribbean",
     "country_code2": "HT",
-    "country_code3": "HTI"
+    "country_code3": "HTI",
+    "phone_code": "332"
   },
   {
     "capital_name_chinese": "布达佩斯",
@@ -1136,7 +1211,8 @@
     "continent_name": "Europe",
     "subregion_name": "Eastern Europe",
     "country_code2": "HU",
-    "country_code3": "HUN"
+    "country_code3": "HUN",
+    "phone_code": "348"
   },
   {
     "capital_name_chinese": "雅加达",
@@ -1151,7 +1227,8 @@
     "continent_name": "Asia",
     "subregion_name": "South-Eastern Asia",
     "country_code2": "ID",
-    "country_code3": "IDN"
+    "country_code3": "IDN",
+    "phone_code": "360"
   },
   {
     "capital_name_chinese": "新德里",
@@ -1166,7 +1243,8 @@
     "continent_name": "Asia",
     "subregion_name": "Southern Asia",
     "country_code2": "IN",
-    "country_code3": "IND"
+    "country_code3": "IND",
+    "phone_code": "356"
   },
   {
     "capital_name_chinese": "都柏林",
@@ -1181,7 +1259,8 @@
     "continent_name": "Europe",
     "subregion_name": "Northern Europe",
     "country_code2": "IE",
-    "country_code3": "IRL"
+    "country_code3": "IRL",
+    "phone_code": "372"
   },
   {
     "capital_name_chinese": "德黑兰",
@@ -1196,7 +1275,8 @@
     "continent_name": "Asia",
     "subregion_name": "Southern Asia",
     "country_code2": "IR",
-    "country_code3": "IRN"
+    "country_code3": "IRN",
+    "phone_code": "364"
   },
   {
     "capital_name_chinese": "巴格达",
@@ -1211,7 +1291,8 @@
     "continent_name": "Asia",
     "subregion_name": "Western Asia",
     "country_code2": "IQ",
-    "country_code3": "IRQ"
+    "country_code3": "IRQ",
+    "phone_code": "368"
   },
   {
     "capital_name_chinese": "雷克雅未克",
@@ -1226,7 +1307,8 @@
     "continent_name": "Europe",
     "subregion_name": "Northern Europe",
     "country_code2": "IS",
-    "country_code3": "ISL"
+    "country_code3": "ISL",
+    "phone_code": "352"
   },
   {
     "capital_name_chinese": "耶路撒冷",
@@ -1241,7 +1323,8 @@
     "continent_name": "Asia",
     "subregion_name": "Western Asia",
     "country_code2": "IL",
-    "country_code3": "ISR"
+    "country_code3": "ISR",
+    "phone_code": "376"
   },
   {
     "capital_name_chinese": "罗马",
@@ -1256,7 +1339,8 @@
     "continent_name": "Europe",
     "subregion_name": "Southern Europe",
     "country_code2": "IT",
-    "country_code3": "ITA"
+    "country_code3": "ITA",
+    "phone_code": "380"
   },
   {
     "capital_name_chinese": "金斯敦",
@@ -1271,7 +1355,8 @@
     "continent_name": "North America",
     "subregion_name": "Caribbean",
     "country_code2": "JM",
-    "country_code3": "JAM"
+    "country_code3": "JAM",
+    "phone_code": "388"
   },
   {
     "capital_name_chinese": "安曼",
@@ -1286,7 +1371,8 @@
     "continent_name": "Asia",
     "subregion_name": "Western Asia",
     "country_code2": "JO",
-    "country_code3": "JOR"
+    "country_code3": "JOR",
+    "phone_code": "400"
   },
   {
     "capital_name_chinese": "东京",
@@ -1301,7 +1387,8 @@
     "continent_name": "Asia",
     "subregion_name": "Eastern Asia",
     "country_code2": "JP",
-    "country_code3": "JPN"
+    "country_code3": "JPN",
+    "phone_code": "392"
   },
   {
     "capital_name_chinese": "阿斯塔纳",
@@ -1316,7 +1403,8 @@
     "continent_name": "Asia",
     "subregion_name": "Central Asia",
     "country_code2": "KZ",
-    "country_code3": "KAZ"
+    "country_code3": "KAZ",
+    "phone_code": "398"
   },
   {
     "capital_name_chinese": "比什凯克",
@@ -1331,7 +1419,8 @@
     "continent_name": "Asia",
     "subregion_name": "Central Asia",
     "country_code2": "KG",
-    "country_code3": "KGZ"
+    "country_code3": "KGZ",
+    "phone_code": "417"
   },
   {
     "capital_name_chinese": "内罗毕",
@@ -1346,7 +1435,8 @@
     "continent_name": "Africa",
     "subregion_name": "Eastern Africa",
     "country_code2": "KE",
-    "country_code3": "KEN"
+    "country_code3": "KEN",
+    "phone_code": "404"
   },
   {
     "capital_name_chinese": "金边",
@@ -1361,7 +1451,8 @@
     "continent_name": "Asia",
     "subregion_name": "South-Eastern Asia",
     "country_code2": "KH",
-    "country_code3": "KHM"
+    "country_code3": "KHM",
+    "phone_code": "116"
   },
   {
     "capital_name_chinese": "塔拉瓦",
@@ -1376,7 +1467,8 @@
     "continent_name": "Oceania",
     "subregion_name": "Micronesia",
     "country_code2": "KI",
-    "country_code3": "KIR"
+    "country_code3": "KIR",
+    "phone_code": "296"
   },
   {
     "capital_name_chinese": "首尔",
@@ -1391,7 +1483,8 @@
     "continent_name": "Asia",
     "subregion_name": "Eastern Asia",
     "country_code2": "KR",
-    "country_code3": "KOR"
+    "country_code3": "KOR",
+    "phone_code": "410"
   },
   {
     "capital_name_chinese": "巴斯特尔",
@@ -1406,7 +1499,8 @@
     "continent_name": "North America",
     "subregion_name": "Caribbean",
     "country_code2": "KN",
-    "country_code3": "KNA"
+    "country_code3": "KNA",
+    "phone_code": "659"
   },
   {
     "capital_name_chinese": "科威特城",
@@ -1421,7 +1515,8 @@
     "continent_name": "Asia",
     "subregion_name": "Western Asia",
     "country_code2": "KW",
-    "country_code3": "KWT"
+    "country_code3": "KWT",
+    "phone_code": "414"
   },
   {
     "capital_name_chinese": "万象",
@@ -1436,7 +1531,8 @@
     "continent_name": "Asia",
     "subregion_name": "South-Eastern Asia",
     "country_code2": "LA",
-    "country_code3": "LAO"
+    "country_code3": "LAO",
+    "phone_code": "418"
   },
   {
     "capital_name_chinese": "蒙罗维亚",
@@ -1451,7 +1547,8 @@
     "continent_name": "Africa",
     "subregion_name": "Western Africa",
     "country_code2": "LR",
-    "country_code3": "LBR"
+    "country_code3": "LBR",
+    "phone_code": "430"
   },
   {
     "capital_name_chinese": "贝鲁特",
@@ -1466,7 +1563,8 @@
     "continent_name": "Asia",
     "subregion_name": "Western Asia",
     "country_code2": "LB",
-    "country_code3": "LBN"
+    "country_code3": "LBN",
+    "phone_code": "422"
   },
   {
     "capital_name_chinese": "的黎波里",
@@ -1481,7 +1579,8 @@
     "continent_name": "Africa",
     "subregion_name": "Northern Africa",
     "country_code2": "LY",
-    "country_code3": "LBY"
+    "country_code3": "LBY",
+    "phone_code": "434"
   },
   {
     "capital_name_chinese": "卡斯特里",
@@ -1496,7 +1595,8 @@
     "continent_name": "North America",
     "subregion_name": "Caribbean",
     "country_code2": "LC",
-    "country_code3": "LCA"
+    "country_code3": "LCA",
+    "phone_code": "662"
   },
   {
     "capital_name_chinese": "瓦杜兹",
@@ -1511,7 +1611,8 @@
     "continent_name": "Europe",
     "subregion_name": "Western Europe",
     "country_code2": "LI",
-    "country_code3": "LIE"
+    "country_code3": "LIE",
+    "phone_code": "438"
   },
   {
     "capital_name_chinese": "马塞卢",
@@ -1526,7 +1627,8 @@
     "continent_name": "Africa",
     "subregion_name": "Southern Africa",
     "country_code2": "LS",
-    "country_code3": "LSO"
+    "country_code3": "LSO",
+    "phone_code": "426"
   },
   {
     "capital_name_chinese": "科伦坡",
@@ -1541,7 +1643,8 @@
     "continent_name": "Asia",
     "subregion_name": "Southern Asia",
     "country_code2": "LK",
-    "country_code3": "LKA"
+    "country_code3": "LKA",
+    "phone_code": "144"
   },
   {
     "capital_name_chinese": "维尔纽斯",
@@ -1556,7 +1659,8 @@
     "continent_name": "Europe",
     "subregion_name": "Northern Europe",
     "country_code2": "LT",
-    "country_code3": "LTU"
+    "country_code3": "LTU",
+    "phone_code": "440"
   },
   {
     "capital_name_chinese": "卢森堡市",
@@ -1571,7 +1675,8 @@
     "continent_name": "Europe",
     "subregion_name": "Western Europe",
     "country_code2": "LU",
-    "country_code3": "LUX"
+    "country_code3": "LUX",
+    "phone_code": "442"
   },
   {
     "capital_name_chinese": "里加",
@@ -1586,7 +1691,8 @@
     "continent_name": "Europe",
     "subregion_name": "Northern Europe",
     "country_code2": "LV",
-    "country_code3": "LVA"
+    "country_code3": "LVA",
+    "phone_code": "428"
   },
   {
     "capital_name_chinese": "拉巴特",
@@ -1601,7 +1707,8 @@
     "continent_name": "Africa",
     "subregion_name": "Northern Africa",
     "country_code2": "MA",
-    "country_code3": "MAR"
+    "country_code3": "MAR",
+    "phone_code": "504"
   },
   {
     "capital_name_chinese": "摩纳哥",
@@ -1616,7 +1723,8 @@
     "continent_name": "Europe",
     "subregion_name": "Western Europe",
     "country_code2": "MC",
-    "country_code3": "MCO"
+    "country_code3": "MCO",
+    "phone_code": "492"
   },
   {
     "capital_name_chinese": "基希讷乌",
@@ -1631,7 +1739,8 @@
     "continent_name": "Europe",
     "subregion_name": "Eastern Europe",
     "country_code2": "MD",
-    "country_code3": "MDA"
+    "country_code3": "MDA",
+    "phone_code": "498"
   },
   {
     "capital_name_chinese": "墨西哥城",
@@ -1646,7 +1755,8 @@
     "continent_name": "North America",
     "subregion_name": "Central America",
     "country_code2": "MX",
-    "country_code3": "MEX"
+    "country_code3": "MEX",
+    "phone_code": "484"
   },
   {
     "capital_name_chinese": "塔那那利佛",
@@ -1661,7 +1771,8 @@
     "continent_name": "Africa",
     "subregion_name": "Eastern Africa",
     "country_code2": "MG",
-    "country_code3": "MDG"
+    "country_code3": "MDG",
+    "phone_code": "450"
   },
   {
     "capital_name_chinese": "马累",
@@ -1676,7 +1787,8 @@
     "continent_name": "Asia",
     "subregion_name": "Southern Asia",
     "country_code2": "MV",
-    "country_code3": "MDV"
+    "country_code3": "MDV",
+    "phone_code": "462"
   },
   {
     "capital_name_chinese": "马朱罗",
@@ -1691,7 +1803,8 @@
     "continent_name": "Oceania",
     "subregion_name": "Micronesia",
     "country_code2": "MH",
-    "country_code3": "MHL"
+    "country_code3": "MHL",
+    "phone_code": "584"
   },
   {
     "capital_name_chinese": "斯科普里",
@@ -1706,7 +1819,8 @@
     "continent_name": "Europe",
     "subregion_name": "Southern Europe",
     "country_code2": "MK",
-    "country_code3": "MKD"
+    "country_code3": "MKD",
+    "phone_code": "807"
   },
   {
     "capital_name_chinese": "巴马科",
@@ -1721,7 +1835,8 @@
     "continent_name": "Africa",
     "subregion_name": "Western Africa",
     "country_code2": "ML",
-    "country_code3": "MLI"
+    "country_code3": "MLI",
+    "phone_code": "466"
   },
   {
     "capital_name_chinese": "瓦莱塔",
@@ -1736,7 +1851,8 @@
     "continent_name": "Europe",
     "subregion_name": "Southern Europe",
     "country_code2": "MT",
-    "country_code3": "MLT"
+    "country_code3": "MLT",
+    "phone_code": "470"
   },
   {
     "capital_name_chinese": "内比都",
@@ -1751,7 +1867,8 @@
     "continent_name": "Asia",
     "subregion_name": "South-Eastern Asia",
     "country_code2": "MM",
-    "country_code3": "MMR"
+    "country_code3": "MMR",
+    "phone_code": "104"
   },
   {
     "capital_name_chinese": "波德戈里察",
@@ -1766,7 +1883,8 @@
     "continent_name": "Europe",
     "subregion_name": "Southern Europe",
     "country_code2": "ME",
-    "country_code3": "MNE"
+    "country_code3": "MNE",
+    "phone_code": "499"
   },
   {
     "capital_name_chinese": "乌兰巴托",
@@ -1781,7 +1899,8 @@
     "continent_name": "Asia",
     "subregion_name": "Eastern Asia",
     "country_code2": "MN",
-    "country_code3": "MNG"
+    "country_code3": "MNG",
+    "phone_code": "496"
   },
   {
     "capital_name_chinese": "努瓦克肖特",
@@ -1796,7 +1915,8 @@
     "continent_name": "Africa",
     "subregion_name": "Western Africa",
     "country_code2": "MR",
-    "country_code3": "MRT"
+    "country_code3": "MRT",
+    "phone_code": "478"
   },
   {
     "capital_name_chinese": "马普托",
@@ -1811,7 +1931,8 @@
     "continent_name": "Africa",
     "subregion_name": "Eastern Africa",
     "country_code2": "MZ",
-    "country_code3": "MOZ"
+    "country_code3": "MOZ",
+    "phone_code": "508"
   },
   {
     "capital_name_chinese": "路易港",
@@ -1826,7 +1947,8 @@
     "continent_name": "Africa",
     "subregion_name": "Eastern Africa",
     "country_code2": "MU",
-    "country_code3": "MUS"
+    "country_code3": "MUS",
+    "phone_code": "480"
   },
   {
     "capital_name_chinese": "利隆圭",
@@ -1841,7 +1963,8 @@
     "continent_name": "Africa",
     "subregion_name": "Eastern Africa",
     "country_code2": "MW",
-    "country_code3": "MWI"
+    "country_code3": "MWI",
+    "phone_code": "454"
   },
   {
     "capital_name_chinese": "吉隆坡",
@@ -1856,7 +1979,8 @@
     "continent_name": "Asia",
     "subregion_name": "South-Eastern Asia",
     "country_code2": "MY",
-    "country_code3": "MYS"
+    "country_code3": "MYS",
+    "phone_code": "458"
   },
   {
     "capital_name_chinese": "温得和克",
@@ -1871,7 +1995,8 @@
     "continent_name": "Africa",
     "subregion_name": "Southern Africa",
     "country_code2": "NA",
-    "country_code3": "NAM"
+    "country_code3": "NAM",
+    "phone_code": "516"
   },
   {
     "capital_name_chinese": "尼亚美",
@@ -1886,7 +2011,8 @@
     "continent_name": "Africa",
     "subregion_name": "Western Africa",
     "country_code2": "NE",
-    "country_code3": "NER"
+    "country_code3": "NER",
+    "phone_code": "562"
   },
   {
     "capital_name_chinese": "阿布贾",
@@ -1901,7 +2027,8 @@
     "continent_name": "Africa",
     "subregion_name": "Western Africa",
     "country_code2": "NG",
-    "country_code3": "NGA"
+    "country_code3": "NGA",
+    "phone_code": "566"
   },
   {
     "capital_name_chinese": "马那瓜",
@@ -1916,7 +2043,8 @@
     "continent_name": "North America",
     "subregion_name": "Central America",
     "country_code2": "NI",
-    "country_code3": "NIC"
+    "country_code3": "NIC",
+    "phone_code": "558"
   },
   {
     "capital_name_chinese": "阿姆斯特丹",
@@ -1931,7 +2059,8 @@
     "continent_name": "Europe",
     "subregion_name": "Western Europe",
     "country_code2": "NL",
-    "country_code3": "NLD"
+    "country_code3": "NLD",
+    "phone_code": "528"
   },
   {
     "capital_name_chinese": "奥斯陆",
@@ -1946,7 +2075,8 @@
     "continent_name": "Europe",
     "subregion_name": "Northern Europe",
     "country_code2": "NO",
-    "country_code3": "NOR"
+    "country_code3": "NOR",
+    "phone_code": "578"
   },
   {
     "capital_name_chinese": "加德满都",
@@ -1961,7 +2091,8 @@
     "continent_name": "Asia",
     "subregion_name": "Southern Asia",
     "country_code2": "NP",
-    "country_code3": "NPL"
+    "country_code3": "NPL",
+    "phone_code": "524"
   },
   {
     "capital_name_chinese": "亚伦",
@@ -1976,7 +2107,8 @@
     "continent_name": "Oceania",
     "subregion_name": "Micronesia",
     "country_code2": "NR",
-    "country_code3": "NRU"
+    "country_code3": "NRU",
+    "phone_code": "520"
   },
   {
     "capital_name_chinese": "惠灵顿",
@@ -1991,7 +2123,8 @@
     "continent_name": "Oceania",
     "subregion_name": "Australia and New Zealand",
     "country_code2": "NZ",
-    "country_code3": "NZL"
+    "country_code3": "NZL",
+    "phone_code": "554"
   },
   {
     "capital_name_chinese": "马斯喀特",
@@ -2006,7 +2139,8 @@
     "continent_name": "Asia",
     "subregion_name": "Western Asia",
     "country_code2": "OM",
-    "country_code3": "OMN"
+    "country_code3": "OMN",
+    "phone_code": "512"
   },
   {
     "capital_name_chinese": "伊斯兰堡",
@@ -2021,7 +2155,8 @@
     "continent_name": "Asia",
     "subregion_name": "Southern Asia",
     "country_code2": "PK",
-    "country_code3": "PAK"
+    "country_code3": "PAK",
+    "phone_code": "586"
   },
   {
     "capital_name_chinese": "巴拿马城",
@@ -2036,7 +2171,8 @@
     "continent_name": "North America",
     "subregion_name": "Central America",
     "country_code2": "PA",
-    "country_code3": "PAN"
+    "country_code3": "PAN",
+    "phone_code": "591"
   },
   {
     "capital_name_chinese": "利马",
@@ -2051,7 +2187,8 @@
     "continent_name": "South America",
     "subregion_name": "South America",
     "country_code2": "PE",
-    "country_code3": "PER"
+    "country_code3": "PER",
+    "phone_code": "604"
   },
   {
     "capital_name_chinese": "马尼拉",
@@ -2066,7 +2203,8 @@
     "continent_name": "Asia",
     "subregion_name": "South-Eastern Asia",
     "country_code2": "PH",
-    "country_code3": "PHL"
+    "country_code3": "PHL",
+    "phone_code": "608"
   },
   {
     "capital_name_chinese": "梅莱凯奥克",
@@ -2081,7 +2219,8 @@
     "continent_name": "Oceania",
     "subregion_name": "Micronesia",
     "country_code2": "PW",
-    "country_code3": "PLW"
+    "country_code3": "PLW",
+    "phone_code": "585"
   },
   {
     "capital_name_chinese": "莫尔斯比港",
@@ -2096,7 +2235,8 @@
     "continent_name": "Oceania",
     "subregion_name": "Melanesia",
     "country_code2": "PG",
-    "country_code3": "PNG"
+    "country_code3": "PNG",
+    "phone_code": "598"
   },
   {
     "capital_name_chinese": "华沙",
@@ -2111,7 +2251,8 @@
     "continent_name": "Europe",
     "subregion_name": "Eastern Europe",
     "country_code2": "PL",
-    "country_code3": "POL"
+    "country_code3": "POL",
+    "phone_code": "616"
   },
   {
     "capital_name_chinese": "平壤",
@@ -2126,7 +2267,8 @@
     "continent_name": "Asia",
     "subregion_name": "Eastern Asia",
     "country_code2": "KP",
-    "country_code3": "PRK"
+    "country_code3": "PRK",
+    "phone_code": "408"
   },
   {
     "capital_name_chinese": "里斯本",
@@ -2141,7 +2283,8 @@
     "continent_name": "Europe",
     "subregion_name": "Southern Europe",
     "country_code2": "PT",
-    "country_code3": "PRT"
+    "country_code3": "PRT",
+    "phone_code": "620"
   },
   {
     "capital_name_chinese": "亚松森",
@@ -2156,7 +2299,8 @@
     "continent_name": "South America",
     "subregion_name": "South America",
     "country_code2": "PY",
-    "country_code3": "PRY"
+    "country_code3": "PRY",
+    "phone_code": "600"
   },
   {
     "capital_name_chinese": "布加勒斯特",
@@ -2171,7 +2315,8 @@
     "continent_name": "Europe",
     "subregion_name": "Eastern Europe",
     "country_code2": "RO",
-    "country_code3": "ROM"
+    "country_code3": "ROM",
+    "phone_code": "642"
   },
   {
     "capital_name_chinese": "莫斯科",
@@ -2186,7 +2331,8 @@
     "continent_name": "Europe",
     "subregion_name": "Eastern Europe",
     "country_code2": "RU",
-    "country_code3": "RUS"
+    "country_code3": "RUS",
+    "phone_code": "643"
   },
   {
     "capital_name_chinese": "多哈",
@@ -2201,7 +2347,8 @@
     "continent_name": "Asia",
     "subregion_name": "Western Asia",
     "country_code2": "QA",
-    "country_code3": "QAT"
+    "country_code3": "QAT",
+    "phone_code": "634"
   },
   {
     "capital_name_chinese": "基加利",
@@ -2216,7 +2363,8 @@
     "continent_name": "Africa",
     "subregion_name": "Eastern Africa",
     "country_code2": "RW",
-    "country_code3": "RWA"
+    "country_code3": "RWA",
+    "phone_code": "646"
   },
   {
     "capital_name_chinese": "利雅得",
@@ -2231,7 +2379,8 @@
     "continent_name": "Asia",
     "subregion_name": "Western Asia",
     "country_code2": "SA",
-    "country_code3": "SAU"
+    "country_code3": "SAU",
+    "phone_code": "682"
   },
   {
     "capital_name_chinese": "喀土穆",
@@ -2246,7 +2395,8 @@
     "continent_name": "Africa",
     "subregion_name": "Northern Africa",
     "country_code2": "SD",
-    "country_code3": "SDN"
+    "country_code3": "SDN",
+    "phone_code": "736"
   },
   {
     "capital_name_chinese": "朱巴",
@@ -2261,7 +2411,8 @@
     "continent_name": "Africa",
     "subregion_name": "Eastern Africa",
     "country_code2": "SS",
-    "country_code3": "SSD"
+    "country_code3": "SSD",
+    "phone_code": "728"
   },
   {
     "capital_name_chinese": "达喀尔",
@@ -2276,7 +2427,8 @@
     "continent_name": "Africa",
     "subregion_name": "Western Africa",
     "country_code2": "SN",
-    "country_code3": "SEN"
+    "country_code3": "SEN",
+    "phone_code": "686"
   },
   {
     "capital_name_chinese": "新加坡",
@@ -2291,7 +2443,8 @@
     "continent_name": "Asia",
     "subregion_name": "South-Eastern Asia",
     "country_code2": "SG",
-    "country_code3": "SGP"
+    "country_code3": "SGP",
+    "phone_code": "702"
   },
   {
     "capital_name_chinese": "圣萨尔瓦多",
@@ -2306,7 +2459,8 @@
     "continent_name": "North America",
     "subregion_name": "Central America",
     "country_code2": "SV",
-    "country_code3": "SLV"
+    "country_code3": "SLV",
+    "phone_code": "222"
   },
   {
     "capital_name_chinese": "圣马力诺",
@@ -2321,7 +2475,8 @@
     "continent_name": "Europe",
     "subregion_name": "Southern Europe",
     "country_code2": "SM",
-    "country_code3": "SMR"
+    "country_code3": "SMR",
+    "phone_code": "674"
   },
   {
     "capital_name_chinese": "弗里敦",
@@ -2336,7 +2491,8 @@
     "continent_name": "Africa",
     "subregion_name": "Western Africa",
     "country_code2": "SL",
-    "country_code3": "SLE"
+    "country_code3": "SLE",
+    "phone_code": "694"
   },
   {
     "capital_name_chinese": "霍尼亚拉",
@@ -2351,7 +2507,8 @@
     "continent_name": "Oceania",
     "subregion_name": "Melanesia",
     "country_code2": "SB",
-    "country_code3": "SLB"
+    "country_code3": "SLB",
+    "phone_code": "90"
   },
   {
     "capital_name_chinese": "摩加迪沙",
@@ -2366,7 +2523,8 @@
     "continent_name": "Africa",
     "subregion_name": "Eastern Africa",
     "country_code2": "SO",
-    "country_code3": "SOM"
+    "country_code3": "SOM",
+    "phone_code": "706"
   },
   {
     "capital_name_chinese": "贝尔格莱德",
@@ -2381,7 +2539,8 @@
     "continent_name": "Europe",
     "subregion_name": "Southern Europe",
     "country_code2": "RS",
-    "country_code3": "RSB"
+    "country_code3": "RSB",
+    "phone_code": "688"
   },
   {
     "capital_name_chinese": "圣多美",
@@ -2396,7 +2555,8 @@
     "continent_name": "Africa",
     "subregion_name": "Middle Africa",
     "country_code2": "ST",
-    "country_code3": "STP"
+    "country_code3": "STP",
+    "phone_code": "678"
   },
   {
     "capital_name_chinese": "帕拉马里博",
@@ -2411,7 +2571,8 @@
     "continent_name": "South America",
     "subregion_name": "South America",
     "country_code2": "SR",
-    "country_code3": "SUR"
+    "country_code3": "SUR",
+    "phone_code": "740"
   },
   {
     "capital_name_chinese": "布拉迪斯拉发",
@@ -2426,7 +2587,8 @@
     "continent_name": "Europe",
     "subregion_name": "Eastern Europe",
     "country_code2": "SK",
-    "country_code3": "SVK"
+    "country_code3": "SVK",
+    "phone_code": "703"
   },
   {
     "capital_name_chinese": "斯德哥尔摩",
@@ -2441,7 +2603,8 @@
     "continent_name": "Europe",
     "subregion_name": "Northern Europe",
     "country_code2": "SE",
-    "country_code3": "SWE"
+    "country_code3": "SWE",
+    "phone_code": "752"
   },
   {
     "capital_name_chinese": "卢布尔雅那",
@@ -2456,7 +2619,8 @@
     "continent_name": "Europe",
     "subregion_name": "Southern Europe",
     "country_code2": "SI",
-    "country_code3": "SVN"
+    "country_code3": "SVN",
+    "phone_code": "705"
   },
   {
     "capital_name_chinese": "维多利亚",
@@ -2471,7 +2635,8 @@
     "continent_name": "Africa",
     "subregion_name": "Eastern Africa",
     "country_code2": "SC",
-    "country_code3": "SYC"
+    "country_code3": "SYC",
+    "phone_code": "690"
   },
   {
     "capital_name_chinese": "姆巴巴内",
@@ -2486,7 +2651,8 @@
     "continent_name": "Africa",
     "subregion_name": "Southern Africa",
     "country_code2": "SZ",
-    "country_code3": "SWZ"
+    "country_code3": "SWZ",
+    "phone_code": "748"
   },
   {
     "capital_name_chinese": "大马士革",
@@ -2501,7 +2667,8 @@
     "continent_name": "Asia",
     "subregion_name": "Western Asia",
     "country_code2": "SY",
-    "country_code3": "SYR"
+    "country_code3": "SYR",
+    "phone_code": "760"
   },
   {
     "capital_name_chinese": "恩贾梅纳",
@@ -2516,7 +2683,8 @@
     "continent_name": "Africa",
     "subregion_name": "Middle Africa",
     "country_code2": "TD",
-    "country_code3": "TCD"
+    "country_code3": "TCD",
+    "phone_code": "148"
   },
   {
     "capital_name_chinese": "洛美",
@@ -2531,7 +2699,8 @@
     "continent_name": "Africa",
     "subregion_name": "Western Africa",
     "country_code2": "TG",
-    "country_code3": "TGO"
+    "country_code3": "TGO",
+    "phone_code": "768"
   },
   {
     "capital_name_chinese": "曼谷",
@@ -2546,7 +2715,8 @@
     "continent_name": "Asia",
     "subregion_name": "South-Eastern Asia",
     "country_code2": "TH",
-    "country_code3": "THA"
+    "country_code3": "THA",
+    "phone_code": "764"
   },
   {
     "capital_name_chinese": "杜尚别",
@@ -2561,7 +2731,8 @@
     "continent_name": "Asia",
     "subregion_name": "Central Asia",
     "country_code2": "TJ",
-    "country_code3": "TJK"
+    "country_code3": "TJK",
+    "phone_code": "762"
   },
   {
     "capital_name_chinese": "帝力",
@@ -2576,7 +2747,8 @@
     "continent_name": "Asia",
     "subregion_name": "South-Eastern Asia",
     "country_code2": "TL",
-    "country_code3": "TLS"
+    "country_code3": "TLS",
+    "phone_code": "626"
   },
   {
     "capital_name_chinese": "阿什哈巴德",
@@ -2591,7 +2763,8 @@
     "continent_name": "Asia",
     "subregion_name": "Central Asia",
     "country_code2": "TM",
-    "country_code3": "TKM"
+    "country_code3": "TKM",
+    "phone_code": "795"
   },
   {
     "capital_name_chinese": "努库阿洛法",
@@ -2606,7 +2779,8 @@
     "continent_name": "Oceania",
     "subregion_name": "Polynesia",
     "country_code2": "TO",
-    "country_code3": "TON"
+    "country_code3": "TON",
+    "phone_code": "776"
   },
   {
     "capital_name_chinese": "西班牙港",
@@ -2621,7 +2795,8 @@
     "continent_name": "North America",
     "subregion_name": "Caribbean",
     "country_code2": "TT",
-    "country_code3": "TTO"
+    "country_code3": "TTO",
+    "phone_code": "780"
   },
   {
     "capital_name_chinese": "安卡拉",
@@ -2636,7 +2811,8 @@
     "continent_name": "Asia",
     "subregion_name": "Western Asia",
     "country_code2": "TR",
-    "country_code3": "TUR"
+    "country_code3": "TUR",
+    "phone_code": "792"
   },
   {
     "capital_name_chinese": "突尼斯",
@@ -2651,7 +2827,8 @@
     "continent_name": "Africa",
     "subregion_name": "Northern Africa",
     "country_code2": "TN",
-    "country_code3": "TUN"
+    "country_code3": "TUN",
+    "phone_code": "788"
   },
   {
     "capital_name_chinese": "富纳富提",
@@ -2666,7 +2843,8 @@
     "continent_name": "Oceania",
     "subregion_name": "Polynesia",
     "country_code2": "TV",
-    "country_code3": "TUV"
+    "country_code3": "TUV",
+    "phone_code": "798"
   },
   {
     "capital_name_chinese": "多多马",
@@ -2681,7 +2859,8 @@
     "continent_name": "Africa",
     "subregion_name": "Eastern Africa",
     "country_code2": "TZ",
-    "country_code3": "TZA"
+    "country_code3": "TZA",
+    "phone_code": "834"
   },
   {
     "capital_name_chinese": "基辅",
@@ -2696,7 +2875,8 @@
     "continent_name": "Europe",
     "subregion_name": "Eastern Europe",
     "country_code2": "UA",
-    "country_code3": "UKR"
+    "country_code3": "UKR",
+    "phone_code": "804"
   },
   {
     "capital_name_chinese": "坎帕拉",
@@ -2711,7 +2891,8 @@
     "continent_name": "Africa",
     "subregion_name": "Eastern Africa",
     "country_code2": "UG",
-    "country_code3": "UGA"
+    "country_code3": "UGA",
+    "phone_code": "800"
   },
   {
     "capital_name_chinese": "蒙得维的亚",
@@ -2726,7 +2907,8 @@
     "continent_name": "South America",
     "subregion_name": "South America",
     "country_code2": "UY",
-    "country_code3": "URY"
+    "country_code3": "URY",
+    "phone_code": "858"
   },
   {
     "capital_name_chinese": "华盛顿哥伦比亚特区",
@@ -2741,7 +2923,8 @@
     "continent_name": "North America",
     "subregion_name": "Northern America",
     "country_code2": "US",
-    "country_code3": "USA"
+    "country_code3": "USA",
+    "phone_code": "840"
   },
   {
     "capital_name_chinese": "塔什干",
@@ -2756,7 +2939,8 @@
     "continent_name": "Asia",
     "subregion_name": "Central Asia",
     "country_code2": "UZ",
-    "country_code3": "UZB"
+    "country_code3": "UZB",
+    "phone_code": "860"
   },
   {
     "capital_name_chinese": "加拉加斯",
@@ -2771,7 +2955,8 @@
     "continent_name": "South America",
     "subregion_name": "South America",
     "country_code2": "VE",
-    "country_code3": "VEN"
+    "country_code3": "VEN",
+    "phone_code": "862"
   },
   {
     "capital_name_chinese": "金斯敦",
@@ -2786,7 +2971,8 @@
     "continent_name": "North America",
     "subregion_name": "Caribbean",
     "country_code2": "VC",
-    "country_code3": "VCT"
+    "country_code3": "VCT",
+    "phone_code": "670"
   },
   {
     "capital_name_chinese": "河内",
@@ -2801,7 +2987,8 @@
     "continent_name": "Asia",
     "subregion_name": "South-Eastern Asia",
     "country_code2": "VN",
-    "country_code3": "VNM"
+    "country_code3": "VNM",
+    "phone_code": "704"
   },
   {
     "capital_name_chinese": "维拉港",
@@ -2816,7 +3003,8 @@
     "continent_name": "Oceania",
     "subregion_name": "Melanesia",
     "country_code2": "VU",
-    "country_code3": "VUT"
+    "country_code3": "VUT",
+    "phone_code": "548"
   },
   {
     "capital_name_chinese": "阿皮亚",
@@ -2831,7 +3019,8 @@
     "continent_name": "Oceania",
     "subregion_name": "Polynesia",
     "country_code2": "WS",
-    "country_code3": "WSM"
+    "country_code3": "WSM",
+    "phone_code": "882"
   },
   {
     "capital_name_chinese": "萨那",
@@ -2846,7 +3035,8 @@
     "continent_name": "Asia",
     "subregion_name": "Western Asia",
     "country_code2": "YE",
-    "country_code3": "YEM"
+    "country_code3": "YEM",
+    "phone_code": "887"
   },
   {
     "capital_name_chinese": "比勒陀利亚",
@@ -2861,7 +3051,8 @@
     "continent_name": "Africa",
     "subregion_name": "Southern Africa",
     "country_code2": "ZA",
-    "country_code3": "ZAF"
+    "country_code3": "ZAF",
+    "phone_code": "710"
   },
   {
     "capital_name_chinese": "卢萨卡",
@@ -2876,7 +3067,8 @@
     "continent_name": "Africa",
     "subregion_name": "Eastern Africa",
     "country_code2": "ZM",
-    "country_code3": "ZMB"
+    "country_code3": "ZMB",
+    "phone_code": "894"
   },
   {
     "capital_name_chinese": "哈拉雷",
@@ -2891,6 +3083,7 @@
     "continent_name": "Africa",
     "subregion_name": "Eastern Africa",
     "country_code2": "ZW",
-    "country_code3": "ZWE"
+    "country_code3": "ZWE",
+    "phone_code": "716"
   }
 ]
