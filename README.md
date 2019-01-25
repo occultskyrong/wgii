@@ -238,7 +238,7 @@ pull request
 ### 5.3. 工具
 
 > - [geojson.io](http://geojson.io) 一个可以测试边界在`Google`地图展示效果的在线应用
-> - [wandergis/coordtransform][GitHub - wandergis/coordtransform] 提供了百度坐标（`BD09`）、国测局坐标（火星坐标，`GCJ0`2）、和`WGS84`坐标系之间的转换
+> - [wandergis/coordtransform][GitHub - wandergis/coordtransform] 提供了百度坐标（`BD09`）、国测局坐标（火星坐标，`GCJ02`）、和`WGS84`坐标系之间的转换
 
 ### 5.4. 数据来源
 
