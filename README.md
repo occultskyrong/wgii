@@ -253,7 +253,7 @@ pull request
 #### 5.4.1. `Geo.json`数据源
 
 > - [GitHub - johan/world.geo.json][] ，绝大多数国家 `GeoJSON` 数据来源于此项目，**特此感谢**
-> - [GitHub - jawish/maldives-geo][] ，马尔代夫 `GeoJSON` 数据来源
+> - [GitHub - jawish/maldives-geo][] ，马尔代夫 🇲🇻 `GeoJSON` 数据来源
 
 #### 5.4.2. 高德开放平台
 
