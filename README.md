@@ -191,6 +191,7 @@ sequelize-auto -o './models' -h localhost -p 3306 -u root -x root -d test
 | 0.0.1   | 2019-01-11 | 完成联合国会员国国家信息数据输出，见`dist/countries_info.json` |
 | 0.0.1   | 2019-01-14 | 完成中华人民共和国省级信息数据整理                             |
 | 0.0.1   | 2019-01-22 | 完成世界国家数据与ISO3316-1的交叉比对                          |
+| 0.0.1   | 2019-01-29 | 完成与 `world.geo.json` 项目的数据合并                         |
 
 ### 4.3. Todo list
 
@@ -248,11 +249,11 @@ pull request
 > - [GitHub - pissang/starbucks][]
 > - [World Capital Cities][]
 > - [Wiki - List of national capitals][]
-> - [GitHub - johan/world.geo.json][]
 
 #### 5.4.1. `Geo.json`数据源
 
-> - 马尔代夫 [GitHub - jawish/maldives-geo][]
+> - [GitHub - johan/world.geo.json][] ，绝大多数国家 `GeoJSON` 数据来源于此项目，**特此感谢**
+> - [GitHub - jawish/maldives-geo][] ，马尔代夫 `GeoJSON` 数据来源
 
 #### 5.4.2. 高德开放平台
 
@@ -280,11 +281,11 @@ pull request
 [CSDN - echarts世界地图各个国家及中国城市的经纬度数组]: https://blog.csdn.net/xiaozhi_free/article/details/79654529
 [CSDN - echarts世界国家中英文对照]: https://blog.csdn.net/u012557538/article/details/78490267
 <!-- GitHub -->
-[GitHub - pissang/starbucks]: https://github.com/pissang/starbucks
-[GitHub - wandergis/coordtransform]: https://github.com/wandergis/coordtransform
 [GitHub - johan/world.geo.json]: https://github.com/johan/world.geo.json
 [GitHub - mledoze/countries]: https://github.com/mledoze/countries
+[GitHub - wandergis/coordtransform]: https://github.com/wandergis/coordtransform
 [GitHub - LiuTangLei/Douglas-Peucker-js]: https://github.com/LiuTangLei/Douglas-Peucker-js/blob/master/douglas.js
+[GitHub - pissang/starbucks]: https://github.com/pissang/starbucks
 [GitHub - jawish/maldives-geo]: https://github.com/jawish/maldives-geo/blob/master/administrative_atolls.geojson
 <!-- Google -->
 [Google翻译 » 主权国家]: https://translate.google.com/#view=home&op=translate&sl=zh-CN&tl=en&text=%E4%B8%BB%E6%9D%83%E5%9B%BD%E5%AE%B6
