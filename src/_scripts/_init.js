@@ -34,7 +34,7 @@ countries.forEach((country) => {
       type: 'FeatureCollection',
       features: [{
         type: 'Feature',
-        geometry: { type: 'MultiPolygon', coordinates },
+        geometry: { type: 'MultiPolygon', coordinates: [coordinates] },
         properties: { name, code: countryCode3, coordinatesSystem: 'BD09' },
       }],
     };
