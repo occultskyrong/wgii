@@ -33,13 +33,13 @@ countries.forEach((country) => {
     // const delFilePath = path.join(distDirpath, countryCode3, 'country.bd09.geo.json');
     // fs.unlinkSync(delFilePath); // 删除 bd09 原文件
     const resource = require(geoJsonFilepath);
-    const { features: [{ geometry: { coordinates } }] } = resource;
+    const { features: [{ geometry: { coordinates, type } }] } = resource;
     const geojson = {
       type: 'FeatureCollection',
       features: [{
         type: 'Feature',
         id: countryCode3,
-        geometry: { type: 'MultiPolygon', coordinates: [coordinates] },
+        geometry: { type: 'MultiPolygon', coordinates: type.toLocaleLowerCase() === 'multipolygon' ? coordinates : [coordinates] },
         properties: { name, code: countryCode3, coordinatesSystem: 'WGS84' },
       }],
     };
