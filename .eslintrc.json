@@ -20,6 +20,7 @@
     "no-mixed-operators": "warn",
     "no-param-reassign": "warn",
     "no-underscore-dangle": "warn",
-    "object-curly-newline": "warn"
+    "object-curly-newline": "warn",
+    "import/no-dynamic-require": "warn"
   }
 }
