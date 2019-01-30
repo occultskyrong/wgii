@@ -2,6 +2,7 @@
   "type": "FeatureCollection",
   "features": [{
     "type": "Feature",
+    "id": "CHN",
     "geometry": {
       "type": "MultiPolygon",
       "coordinates": [
