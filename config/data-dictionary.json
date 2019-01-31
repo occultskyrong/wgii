@@ -8,15 +8,18 @@
   "countries": {
     "comment": "国家、地区",
     "country_iso_code": "国家ISO标准码",
-    "capital_name": "国家英文名称",
-    "capital_name_chinese": "国家中文名称",
+    "capital_name": "首都英文名称",
+    "capital_name_chinese": "首都中文名称",
+    "country_name_chinese": "国家中文名称",
     "country_name_chinese_short": "国家中文缩写",
-    "country_name_chinese_UN": "国家中文联合国用名",
+    "country_name_chinese_UN": "国家联合国用名中文名称",
     "country_name_english_abbreviation": "国家英文短名",
     "country_name_english_formal": "国家英文全名",
-    "country_name_english_short": "国家英文缩写名称",
-    "country_name_english_UN": "国家英文联合国用名",
-    "country_type": "国家类型"
+    "country_name_english_UN": "国家联合国用名英文名称",
+    "country_code2": "2位国家英文缩写名称，ISO 3316-1 国家代码",
+    "country_code3": "3位国家英文缩写名称，ISO 3316-1 国家代码",
+    "country_type": "国家类型",
+    "phone_code": "国际电话区号"
   },
   "region": {
     "comment": "国家下级行政区划，省、州",
