@@ -292,6 +292,7 @@ pull request
 > - [GitHub - johan/world.geo.json][] ，非特别标明的国家 `GeoJSON` 数据来源于此项目，**特此感谢**
 > - [GitHub - jawish/maldives-geo][] ，马尔代夫 🇲🇻  `GeoJSON` 数据来源
 > - [inditex.cn][] ， 安道尔 🇦🇩  `GeoJSON` 数据来源
+> - [GitHub - arm0th/CountryGeoJSONCollection][] ， 安提瓜和巴布达  🇦🇬  `GeoJSON` 数据来源
 
 #### 5.4.2. 高德开放平台
 
@@ -326,6 +327,7 @@ pull request
 [GitHub - pissang/starbucks]: https://github.com/pissang/starbucks
 [GitHub - jawish/maldives-geo]: https://github.com/jawish/maldives-geo/blob/master/administrative_atolls.geojson
 [GitHub - greencoder/geobatch]: https://github.com/greencoder/geobatch
+[GitHub - arm0th/CountryGeoJSONCollection]: [https://github.com/arm0th/CountryGeoJSONCollection/blob/master/geojson/ATG.geojson?short_path=b8453c0](https://github.com/arm0th/CountryGeoJSONCollection)
 <!-- Google -->
 [Google翻译 » 主权国家]: https://translate.google.com/#view=home&op=translate&sl=zh-CN&tl=en&text=%E4%B8%BB%E6%9D%83%E5%9B%BD%E5%AE%B6
 <!-- ISO -->
