@@ -291,6 +291,7 @@ pull request
 
 > - [GitHub - johan/world.geo.json][] ，非特别标明的国家 `GeoJSON` 数据来源于此项目，**特此感谢**
 > - [GitHub - jawish/maldives-geo][] ，马尔代夫 🇲🇻  `GeoJSON` 数据来源
+> - [inditex.cn][] ， 安道尔 🇦🇩  `GeoJSON` 数据来源
 
 #### 5.4.2. 高德开放平台
 
@@ -324,6 +325,7 @@ pull request
 [GitHub - LiuTangLei/Douglas-Peucker-js]: https://github.com/LiuTangLei/Douglas-Peucker-js/blob/master/douglas.js
 [GitHub - pissang/starbucks]: https://github.com/pissang/starbucks
 [GitHub - jawish/maldives-geo]: https://github.com/jawish/maldives-geo/blob/master/administrative_atolls.geojson
+[GitHub - greencoder/geobatch]: https://github.com/greencoder/geobatch
 <!-- Google -->
 [Google翻译 » 主权国家]: https://translate.google.com/#view=home&op=translate&sl=zh-CN&tl=en&text=%E4%B8%BB%E6%9D%83%E5%9B%BD%E5%AE%B6
 <!-- ISO -->
@@ -340,6 +342,7 @@ pull request
 [Highmaps 地图数据集]: https://img.hcharts.cn/mapdata/
 [World Capital Cities]: https://geographyfieldwork.com/WorldCapitalCities.htm
 [【 地图系列 】 世界地图和主要国家的 JSON 文件]: http://www.ourd3js.com/wordpress/668/
+[inditex.cn]: https://www.inditex.com/documents/10279/235691/countries.geojson/304ca55c-9242-42c3-811e-4e8c1d2b464d?version=1.5
 
 <!-- 待归档 -->
 
