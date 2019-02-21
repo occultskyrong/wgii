@@ -5,7 +5,7 @@ Geographic Information Integration of World，世界地理信息集成
 ## 1. 太长不看版 -- QuickStart
 
 - `GeoJSON` 数据均在 `/dist` 目录下，按照国家编码分目录存储
-    - **仍然缺失部分国家 `GeoJSON` 数据*
+    - **仍然缺失部分国家 `GeoJSON` 数据，具体见 `/resource/original/noSuchCountries.json`*
 - 国家基础信息在 `/dist/countries.info.json` 中
 
 # 目录
@@ -290,9 +290,9 @@ pull request
 #### 5.4.1. `Geo.json`数据源
 
 > - [GitHub - johan/world.geo.json][] ，非特别标明的国家 `GeoJSON` 数据来源于此项目，**特此感谢**
-> - [GitHub - jawish/maldives-geo][] ，马尔代夫 🇲🇻  `GeoJSON` 数据来源
-> - [inditex.cn][] ， 安道尔 🇦🇩  `GeoJSON` 数据来源
-> - [GitHub - arm0th/CountryGeoJSONCollection][] ， 安提瓜和巴布达  🇦🇬  `GeoJSON` 数据来源
+> - [GitHub - jawish/maldives-geo][] ，马尔代夫 🇲🇻 `GeoJSON` 数据来源
+> - [inditex.cn][] ， 安道尔 🇦🇩 `GeoJSON` 数据来源
+> - [GitHub - arm0th/CountryGeoJSONCollection][] ， 安提瓜和巴布达 🇦🇬 `GeoJSON` 数据来源
 
 #### 5.4.2. 高德开放平台
 
