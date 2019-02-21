@@ -112,7 +112,7 @@ Geographic Information Integration of World，世界地理信息集成
             - `陕西`的英文名为`Shaanxi`，`山西`的英文名`Shanxi`，注意区分；
             - `香港` 🇭🇰 、`澳门` 🇲🇴 、`台湾`的简称使用`港`、`澳`、`台`
     - `Country_Code` 使用 `ISO3166-1` 编码，具体见[ISO3166-1][]，及[百度百科 - ISO 3166-1][]
-    - 国家对应的 `GeoJSON` 数据来源见[6. 参考](#6-参考) 中 [6.4. 数据来源](#64-数据来源)
+    - 国家对应的 `GeoJSON` 数据来源见[5. 参考](#6-参考) 中 [5.4. 数据来源](#54-数据来源)
 
 ### 2.5. 数据修正
 
@@ -327,7 +327,7 @@ pull request
 [GitHub - pissang/starbucks]: https://github.com/pissang/starbucks
 [GitHub - jawish/maldives-geo]: https://github.com/jawish/maldives-geo/blob/master/administrative_atolls.geojson
 [GitHub - greencoder/geobatch]: https://github.com/greencoder/geobatch
-[GitHub - arm0th/CountryGeoJSONCollection]: [https://github.com/arm0th/CountryGeoJSONCollection/blob/master/geojson/ATG.geojson?short_path=b8453c0](https://github.com/arm0th/CountryGeoJSONCollection)
+[GitHub - arm0th/CountryGeoJSONCollection]: https://github.com/arm0th/CountryGeoJSONCollection
 <!-- Google -->
 [Google翻译 » 主权国家]: https://translate.google.com/#view=home&op=translate&sl=zh-CN&tl=en&text=%E4%B8%BB%E6%9D%83%E5%9B%BD%E5%AE%B6
 <!-- ISO -->
