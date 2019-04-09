@@ -293,6 +293,7 @@ pull request
 > - [GitHub - jawish/maldives-geo][] ，马尔代夫 🇲🇻 `GeoJSON` 数据来源
 > - [inditex.cn][] ， 安道尔 🇦🇩 `GeoJSON` 数据来源
 > - [GitHub - arm0th/CountryGeoJSONCollection][] ， 安提瓜和巴布达 🇦🇬 `GeoJSON` 数据来源
+> - [GitHub - misterbisson/bgeo-data][]，巴林王国  🇧🇭 `GeoJSON` 数据来源
 
 #### 5.4.2. 高德开放平台
 
@@ -328,6 +329,7 @@ pull request
 [GitHub - jawish/maldives-geo]: https://github.com/jawish/maldives-geo/blob/master/administrative_atolls.geojson
 [GitHub - greencoder/geobatch]: https://github.com/greencoder/geobatch
 [GitHub - arm0th/CountryGeoJSONCollection]: https://github.com/arm0th/CountryGeoJSONCollection
+[GitHub - misterbisson/bgeo-data]: https://github.com/misterbisson/bgeo-data
 <!-- Google -->
 [Google翻译 » 主权国家]: https://translate.google.com/#view=home&op=translate&sl=zh-CN&tl=en&text=%E4%B8%BB%E6%9D%83%E5%9B%BD%E5%AE%B6
 <!-- ISO -->
@@ -347,6 +349,12 @@ pull request
 [inditex.cn]: https://www.inditex.com/documents/10279/235691/countries.geojson/304ca55c-9242-42c3-811e-4e8c1d2b464d?version=1.5
 
 <!-- 待归档 -->
+
+[高德地图行政区域下载]: https://giser.xyz/2018/04/25/20180425-GetDistrictByAMap/
+[Is there a API which return the geojson data for a countries borders?]: https://gis.stackovernet.com/cn/q/28424
+[Seeking administrative boundaries for various countries?]: https://gis.stackovernet.com/cn/q/122
+[Where I can find API for Countries, States, Cities and airports]: https://gis.stackovernet.com/cn/q/48021
+[Download GADM data (version 3.6)]: https://gadm.org/download_country_v3.html
 
 [1]: https://stackoverflow.com/questions/9542834/geojson-world-database
 [2]: https://github.com/AshKyd/geojson-regions
