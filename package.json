@@ -23,11 +23,11 @@
     "cheerio": "^1.0.0-rc.3",
     "coordtransform": "^2.1.2",
     "lodash": "^4.17.11",
-    "log4js": "^3.0.6",
+    "log4js": "^4.1.0",
     "mysql2": "^1.6.5",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
-    "sequelize": "^4.43.1"
+    "sequelize": "^5.3.3"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^2.1.0",
