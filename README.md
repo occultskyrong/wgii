@@ -290,9 +290,9 @@ pull request
 #### 5.4.1. `Geo.json`数据源
 
 > - [GitHub - johan/world.geo.json][] ，非特别标明的国家 `GeoJSON` 数据来源于此项目，**特此感谢**
+> - [GitHub - arm0th/CountryGeoJSONCollection][] ， 安提瓜和巴布达 🇦🇬 、巴巴多斯 🇧🇧 `GeoJSON` 数据来源
 > - [GitHub - jawish/maldives-geo][] ，马尔代夫 🇲🇻 `GeoJSON` 数据来源
 > - [inditex.cn][] ， 安道尔 🇦🇩 `GeoJSON` 数据来源
-> - [GitHub - arm0th/CountryGeoJSONCollection][] ， 安提瓜和巴布达 🇦🇬 `GeoJSON` 数据来源
 > - [GitHub - misterbisson/bgeo-data][]，巴林王国  🇧🇭 `GeoJSON` 数据来源
 
 #### 5.4.2. 高德开放平台
@@ -362,3 +362,4 @@ pull request
 [4]: http://mbostock.github.io/protovis/ex/countries.js
 [5]: ftp://ftp.fu-berlin.de/doc/iso/iso3166-countrycodes.txt
 [GeoLite2数据库]: https://dev.maxmind.com/zh-hans/geoip/geoip2/geolite2/
+[国家信息库]: https://github.com/therebelrobot/countryjs
