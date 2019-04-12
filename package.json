@@ -19,15 +19,15 @@
   },
   "homepage": "https://github.com/occultskyrong/wgii#readme",
   "dependencies": {
-    "bluebird": "^3.5.3",
-    "cheerio": "^1.0.0-rc.2",
+    "bluebird": "^3.5.4",
+    "cheerio": "^1.0.0-rc.3",
     "coordtransform": "^2.1.2",
     "lodash": "^4.17.11",
     "log4js": "^3.0.6",
-    "mysql2": "^1.6.4",
+    "mysql2": "^1.6.5",
     "request": "^2.88.0",
-    "request-promise": "^4.2.2",
-    "sequelize": "^4.42.0"
+    "request-promise": "^4.2.4",
+    "sequelize": "^4.43.1"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^2.1.0",
