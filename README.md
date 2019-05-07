@@ -289,11 +289,12 @@ pull request
 
 #### 5.4.1. `Geo.json`数据源
 
-> - [GitHub - johan/world.geo.json][] ，非特别标明的国家 `GeoJSON` 数据来源于此项目，**特此感谢**
-> - [GitHub - arm0th/CountryGeoJSONCollection][] ， 安提瓜和巴布达 🇦🇬 、巴巴多斯 🇧🇧 `GeoJSON` 数据来源
+> - [GitHub - johan/world.geo.json][] ，绝大多数国家 `GeoJSON` 数据来源于此项目，**特此感谢**
+> - [GitHub - arm0th/CountryGeoJSONCollection][] ，部分国家 `GeoJSON` 数据来源
 > - [GitHub - jawish/maldives-geo][] ，马尔代夫 🇲🇻 `GeoJSON` 数据来源
 > - [inditex.cn][] ， 安道尔 🇦🇩 `GeoJSON` 数据来源
 > - [GitHub - misterbisson/bgeo-data][]，巴林王国  🇧🇭 `GeoJSON` 数据来源
+> - [GitHub - codeforamerica/click_that_hood][]
 
 #### 5.4.2. 高德开放平台
 
@@ -330,6 +331,7 @@ pull request
 [GitHub - greencoder/geobatch]: https://github.com/greencoder/geobatch
 [GitHub - arm0th/CountryGeoJSONCollection]: https://github.com/arm0th/CountryGeoJSONCollection
 [GitHub - misterbisson/bgeo-data]: https://github.com/misterbisson/bgeo-data
+[GitHub - codeforamerica/click_that_hood]: https://github.com/codeforamerica/click_that_hood
 <!-- Google -->
 [Google翻译 » 主权国家]: https://translate.google.com/#view=home&op=translate&sl=zh-CN&tl=en&text=%E4%B8%BB%E6%9D%83%E5%9B%BD%E5%AE%B6
 <!-- ISO -->
