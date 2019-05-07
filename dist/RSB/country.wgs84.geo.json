@@ -1,0 +1,12 @@
+{
+  "type": "FeatureCollection",
+  "features": [{
+    "type": "Feature",
+    "id": "COM",
+    "geometry": {
+      "type": "MultiPolygon",
+      "coordinates": []
+    },
+    "properties": { "name": "", "code": "RSB", "coordinatesSystem": "WGS84" }
+  }]
+}
