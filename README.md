@@ -2,6 +2,8 @@
 
 Geographic Information Integration of World，世界地理信息集成
 
+searchKeys: `世界各国GEO数据`,`Geo data of countries around the world`
+
 ## 1. 太长不看版 -- QuickStart
 
 - `GeoJSON` 数据均在 `/dist` 目录下，按照国家编码分目录存储
