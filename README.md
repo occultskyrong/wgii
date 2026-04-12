@@ -2,7 +2,7 @@
 
 World Geographic Information Integration - 世界地理信息集成
 
-[![Node.js Version](https://img.shields.io/node/v/wgii.svg)](https://nodejs.org)
+[![Node.js](https://img.shields.io/badge/Node.js-%3E%3D20.11.1-green.svg)](https://nodejs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6.svg)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/License-ISC-green.svg)](https://opensource.org/licenses/ISC)
 [![GitHub](https://img.shields.io/badge/GitHub-occultskyrong/wgii-black.svg)](https://github.com/occultskyrong/wgii)
