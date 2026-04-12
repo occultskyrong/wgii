@@ -3,10 +3,40 @@
 World Geographic Information Integration - 世界地理信息集成
 
 [![Node.js Version](https://img.shields.io/node/v/wgii.svg)](https://nodejs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6.svg)](https://www.typescriptlang.org/)
+[![License](https://img.shields.io/badge/License-ISC-green.svg)](https://opensource.org/licenses/ISC)
+[![GitHub](https://img.shields.io/badge/GitHub-occultskyrong/wgii-black.svg)](https://github.com/occultskyrong/wgii)
 
-## Quick Start
+## 目录
 
-### 安装
+- [1. Quick Start](#1-quick-start)
+  - [1.1 安装](#11-安装)
+  - [1.2 CLI使用](#12-cli使用)
+  - [1.3 npm包使用](#13-npm包使用)
+- [2. 坐标系说明](#2-坐标系说明)
+  - [2.1 坐标系定义](#21-坐标系定义)
+  - [2.2 法律法规](#22-法律法规)
+- [3. 行政区划说明](#3-行政区划说明)
+  - [3.1 国家承认原则](#31-国家承认原则)
+  - [3.2 争议地区说明](#32-争议地区说明)
+  - [3.3 中国行政区划](#33-中国行政区划)
+  - [3.4 特殊说明](#34-特殊说明)
+  - [3.5 国家编码](#35-国家编码)
+- [4. 数据结构](#4-数据结构)
+  - [4.1 目录结构](#41-目录结构)
+  - [4.2 文件类型说明](#42-文件类型说明)
+- [5. API文档](#5-api文档)
+- [6. 配置](#6-配置)
+- [7. 技术栈](#7-技术栈)
+- [8. 开发](#8-开发)
+- [9. 数据来源](#9-数据来源)
+- [10. 参考文档与工具](#10-参考文档与工具)
+- [11. 历史版本](#11-历史版本)
+- [12. License](#12-license)
+
+## 1. Quick Start
+
+### 1.1 安装
 
 ```bash
 # 克隆仓库
@@ -20,7 +50,7 @@ yarn install
 npm run build
 ```
 
-### CLI使用
+### 1.2 CLI使用
 
 ```bash
 # 查看帮助
@@ -45,7 +75,7 @@ node dist/cli.js transform --from GCJ02 --to WGS84 --input china.json
 node dist/cli.js list
 ```
 
-### npm包使用
+### 1.3 npm包使用
 
 ```typescript
 import {
@@ -71,15 +101,17 @@ const transformed = CoordinateTransformer.transformGeoJSON(geojson, 'GCJ02', 'WG
 const sparse = Sparse.simplify(coordinates, 100);
 ```
 
-## 坐标系说明
+## 2. 坐标系说明
 
-### 坐标系定义
+### 2.1 坐标系定义
 
-- **WGS84**: 国际大地坐标系，也是目前广泛使用的 GPS 全球卫星定位系统使用的坐标系。
-- **GCJ02**: 又称火星坐标系，是由中国国家测绘局制定的地理坐标系统，由 WGS84 加密后得到。高德地图、腾讯地图等国内主流地图使用此坐标系。
-- **BD09**: 百度坐标系，在 GCJ02 坐标系基础上二次加密。其中 `bd09ll` 表示百度经纬度坐标，`bd09mc` 表示百度墨卡托米制坐标。
+| 坐标系 | 说明 | 使用场景 |
+|--------|------|----------|
+| **WGS84** | 国际大地坐标系，GPS全球卫星定位系统使用的坐标系 | Google地图、国际通用 |
+| **GCJ02** | 火星坐标系，由国家测绘局制定，WGS84加密后得到 | 高德地图、腾讯地图等国内主流地图 |
+| **BD09** | 百度坐标系，GCJ02基础上二次加密 | 百度地图 |
 
-### 法律法规
+### 2.2 法律法规
 
 **根据《中华人民共和国测绘法》第十条、第十一条、第三十八条、第五十二条、第六十二条之规定：**
 
@@ -89,34 +121,38 @@ const sparse = Sparse.simplify(coordinates, 100);
 
 > 参考: [中华人民共和国测绘法](http://www.npc.gov.cn/npc/xinwen/2017-04/27/content_2020927.htm)
 
-## 行政区划说明
+## 3. 行政区划说明
 
-### 国家承认原则
+### 3.1 国家承认原则
 
 仅处理被"中华人民共和国"承认的主权国家和地区。
 
-- **联合国会员国**: 193个 - [United Nations » Member States](http://www.un.org/en/member-states/index.html)
-- **联合国观察员国**: 2个 (梵蒂冈 🇻🇦、巴勒斯坦 🇵🇸)
-- **国际普遍承认**: 3个 (纽埃、库克群岛、马耳他骑士团)
+| 类型 | 数量 | 说明 |
+|------|------|------|
+| 联合国会员国 | 193个 | [United Nations » Member States](http://www.un.org/en/member-states/index.html) |
+| 联合国观察员国 | 2个 | 梵蒂冈 🇻🇦、巴勒斯坦 🇵🇸 |
+| 国际普遍承认 | 3个 | 纽埃、库克群岛、马耳他骑士团 |
 
-### 争议地区说明
+### 3.2 争议地区说明
 
 - **台湾**: 大陆和台湾同属一个中国，台湾是中国领土不可分割的一部分
 - **南沙群岛**: 中国对南沙群岛及其附近海域拥有无可争辩的主权
 - **藏南地区**: 藏南地区是中华人民共和国固有的主权领土
 
-### 中国行政区划
+### 3.3 中国行政区划
 
 中华人民共和国使用四级区划体系：
 
-1. **省级**: 省、自治区、直辖市
-2. **地级**: 市、州、盟
-3. **县级**: 区、市、旗
-4. **乡级**: 镇、街道
+| 级别 | 类型 |
+|------|------|
+| **省级** | 省、自治区、直辖市 |
+| **地级** | 市、州、盟 |
+| **县级** | 区、市、旗 |
+| **乡级** | 镇、街道 |
 
 > 参考: [中华人民共和国民政部 > 行政区划统计表](http://xzqh.mca.gov.cn/statistics)
 
-### 特殊说明
+### 3.4 特殊说明
 
 - **台湾省**: 行政编码为 `71`，台湾身份号码地址码使用 `830000`
   > 参考: [国务院办公厅《港澳台居民居住证申领发放办法》](http://www.gov.cn/zhengce/content/2018-08-19/content_5314865.htm)
@@ -124,13 +160,15 @@ const sparse = Sparse.simplify(coordinates, 100);
 - **宁夏回族自治区**: 英文名为 `Ningxia Hui Autonomous Region`
 - **香港 🇭🇰、澳门 🇲🇴、台湾**: 简称使用 `港`、`澳`、`台`
 
-### 国家编码
+### 3.5 国家编码
 
 使用 `ISO3166-1` 编码标准。
 
 > 参考: [ISO3166-1](https://www.iso.org/obp/ui/#search) | [百度百科 - ISO 3166-1](https://baike.baidu.com/item/ISO%203166-1)
 
-## 数据结构
+## 4. 数据结构
+
+### 4.1 目录结构
 
 `dist/` 目录包含生成的GeoJSON数据：
 
@@ -148,15 +186,17 @@ dist/
 └── ...                          # 其他国家
 ```
 
-### 文件类型说明
+### 4.2 文件类型说明
 
-- `*.info.json`: 基础信息（国家名称、编码、首都等）
-- `*.geo.json`: 结构化GEO数据
-- `*.sparse.*.geo.json`: 抽稀后的数据（按距离阈值）
+| 文件类型 | 说明 |
+|----------|------|
+| `*.info.json` | 基础信息（国家名称、编码、首都等） |
+| `*.geo.json` | 结构化GEO数据 |
+| `*.sparse.*.geo.json` | 抽稀后的数据（按距离阈值） |
 
 > 数据字段定义见: [数据字典](./config/data-dictionary.json)
 
-## API文档
+## 5. API文档
 
 ### CountryManager
 
@@ -196,7 +236,7 @@ dist/
 | `calcDistance(p1, p2)` | 计算球面距离(米) |
 | `calcHeight(point, start, end)` | 计算点到弦的高度 |
 
-## 配置
+## 6. 配置
 
 创建 `config/default.js`:
 
@@ -214,17 +254,19 @@ export default {
 };
 ```
 
-## 技术栈
+## 7. 技术栈
 
-- **TypeScript 5.x** - 类型安全
-- **ES Modules** - 现代模块系统
-- **Node.js 20.x** - 运行环境
-- **原生fetch** - HTTP请求
-- **log4js** - 日志管理
-- **commander** - CLI框架
-- **cheerio** - HTML解析
+| 技术 | 版本 | 说明 |
+|------|------|------|
+| TypeScript | 5.x | 类型安全 |
+| ES Modules | - | 现代模块系统 |
+| Node.js | 20.x | 运行环境 |
+| 原生fetch | - | HTTP请求 |
+| log4js | - | 日志管理 |
+| commander | - | CLI框架 |
+| cheerio | - | HTML解析 |
 
-## 开发
+## 8. 开发
 
 ```bash
 # 开发模式(监听编译)
@@ -237,9 +279,9 @@ npm run build
 npm run clean
 ```
 
-## 数据来源
+## 9. 数据来源
 
-### GeoJSON数据源
+### 9.1 GeoJSON数据源
 
 | 来源 | 说明 |
 |------|------|
@@ -250,39 +292,39 @@ npm run clean
 | [codeforamerica/click_that_hood](https://github.com/codeforamerica/click_that_hood) | 部分城市数据 |
 | [高德开放平台](https://lbs.amap.com/) | 中国行政区划数据 |
 
-### 其他数据源
+### 9.2 其他数据源
 
 | 来源 | 说明 |
 |------|------|
 | [Wikipedia - List of national capitals](https://en.wikipedia.org/wiki/List_of_national_capitals) | 首都数据 |
-| [中华人民共和国外交部 > 国家和组织](https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/) | 国家信息 |
+| [中华人民共和国外交部](https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/yz_676205/) | 国家信息 |
 | [World Capital Cities](https://geographyfieldwork.com/WorldCapitalCities.htm) | 世界首都 |
 
-## 参考文档与工具
+## 10. 参考文档与工具
 
-### 算法参考
+### 10.1 算法参考
 
-- [Douglas-Peucker算法](https://github.com/LiuTangLei/Douglas-Peucker-js) - 道格拉斯-普克算法，用于曲线近似和点数减少
+- [Douglas-Peucker算法](https://github.com/LiuTangLei/Douglas-Peucker-js) - 道格拉斯-普克算法
 
-### 坐标转换工具
+### 10.2 坐标转换工具
 
-- [wandergis/coordtransform](https://github.com/wandergis/coordtransform) - 百度坐标(BD09)、国测局坐标(GCJ02)、WGS84坐标系转换
-- [geojson.io](http://geojson.io) - 在线GeoJSON测试和展示
+- [wandergis/coordtransform](https://github.com/wandergis/coordtransform) - 坐标系转换
+- [geojson.io](http://geojson.io) - 在线GeoJSON测试
 
-### 国家信息参考
+### 10.3 国家信息参考
 
 - [中华人民共和国民政部 > 行政区划代码](http://www.mca.gov.cn/article/sj/xzqh/2018/)
-- [中华人民共和国统计局 > 统计用区划和城乡划分代码](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/)
+- [中华人民共和国统计局](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/)
 - [Highmaps 地图数据集](https://img.hcharts.cn/mapdata/)
 
-## 历史版本
+## 11. 历史版本
 
 | 版本 | 日期 | 说明 |
 |------|------|------|
 | 1.0.0 | 2026-04-12 | ES6+TypeScript重构完成 |
 | 0.0.1 | 2018-12-09 | 初始版本，CommonJS实现 |
 
-## License
+## 12. License
 
 ISC
 
