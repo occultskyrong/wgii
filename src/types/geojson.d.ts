@@ -25,7 +25,7 @@ export interface GeoJSONProperties {
  */
 export interface GeoJSONGeometry {
   type: 'Point' | 'MultiPolygon' | 'Polygon' | 'LineString' | 'MultiLineString';
-  coordinates: Coordinate | Coordinate[][] | Coordinate[][][] | Coordinate[][][][];
+  coordinates: Coordinate | Coordinate[] | Coordinate[][] | Coordinate[][][] | Coordinate[][][][];
 }
 
 /**

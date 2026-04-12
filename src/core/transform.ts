@@ -215,13 +215,17 @@ export class CoordinateTransformer {
     /**
      * 递归转换坐标数组
      */
-    const transformCoordinateArray = (coords: number[] | number[][] | number[][][]): unknown => {
-      if (typeof coords[0] === 'number') {
+    const transformCoordinateArray = (coords: unknown): unknown => {
+      // 检查是否是坐标点（数组且第一个元素是数字）
+      if (Array.isArray(coords) && coords.length >= 2 && typeof coords[0] === 'number' && typeof coords[1] === 'number') {
         // 单个坐标点 [lng, lat]
-        return this.convert(coords[0], coords[1], from, to);
+        return this.convert(coords[0] as number, coords[1] as number, from, to);
       }
       // 坐标数组，递归处理
-      return (coords as unknown[]).map(c => transformCoordinateArray(c as number[] | number[][] | number[][][]));
+      if (Array.isArray(coords)) {
+        return coords.map(c => transformCoordinateArray(c));
+      }
+      return coords;
     };
 
     const features = geojson.features.map(feature => ({

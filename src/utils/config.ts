@@ -35,16 +35,18 @@ export async function loadConfig(): Promise<WgiiConfig> {
   try {
     // 动态导入ES Module配置
     const configModule = await import(configPath);
-    cachedConfig = configModule.default || {};
-    return cachedConfig;
+    const config = configModule.default || {} as WgiiConfig;
+    cachedConfig = config;
+    return config;
   } catch {
     // 配置文件不存在时返回默认配置
-    cachedConfig = {
+    const defaultConfig: WgiiConfig = {
       amap: { apiKey: '' },
       output: { distDir: './dist' },
       log: { level: 'info' },
     };
-    return cachedConfig;
+    cachedConfig = defaultConfig;
+    return defaultConfig;
   }
 }
 
