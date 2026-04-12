@@ -119,7 +119,7 @@ const sparse = Sparse.simplify(coordinates, 100);
 - BD09 坐标系为基于 GCJ02 加密的坐标系，亦可直接使用
 - **在中华人民共和国境内使用地图相关服务，请务必遵循国家法律法规，否则带来的一切问题，本项目贡献者不承担任何责任！**
 
-> 参考: [中华人民共和国测绘法](http://www.npc.gov.cn/npc/xinwen/2017-04/27/content_2020927.htm)
+> 参考: [中华人民共和国测绘法](https://www.npc.gov.cn/npc/xinwen/2017-04/27/content_2020927.htm)
 
 ## 3. 行政区划说明
 
@@ -129,7 +129,7 @@ const sparse = Sparse.simplify(coordinates, 100);
 
 | 类型 | 数量 | 说明 |
 |------|------|------|
-| 联合国会员国 | 193个 | [United Nations » Member States](http://www.un.org/en/member-states/index.html) |
+| 联合国会员国 | 193个 | [United Nations » Member States](https://www.un.org/en/member-states/index.html) |
 | 联合国观察员国 | 2个 | 梵蒂冈 🇻🇦、巴勒斯坦 🇵🇸 |
 | 国际普遍承认 | 3个 | 纽埃、库克群岛、马耳他骑士团 |
 
@@ -150,12 +150,12 @@ const sparse = Sparse.simplify(coordinates, 100);
 | **县级** | 区、市、旗 |
 | **乡级** | 镇、街道 |
 
-> 参考: [中华人民共和国民政部 > 行政区划统计表](http://xzqh.mca.gov.cn/statistics)
+> 参考: [中华人民共和国民政部 > 行政区划统计表](https://xzqh.mca.gov.cn/statistics)
 
 ### 3.4 特殊说明
 
 - **台湾省**: 行政编码为 `71`，台湾身份号码地址码使用 `830000`
-  > 参考: [国务院办公厅《港澳台居民居住证申领发放办法》](http://www.gov.cn/zhengce/content/2018-08-19/content_5314865.htm)
+  > 参考: [国务院办公厅《港澳台居民居住证申领发放办法》](https://www.gov.cn/zhengce/content/2018-08-19/content_5314865.htm)
 - **陕西/山西**: 英文名注意区分 - 陕西为 `Shaanxi`，山西为 `Shanxi`
 - **宁夏回族自治区**: 英文名为 `Ningxia Hui Autonomous Region`
 - **香港 🇭🇰、澳门 🇲🇴、台湾**: 简称使用 `港`、`澳`、`台`
@@ -309,13 +309,13 @@ npm run clean
 ### 10.2 坐标转换工具
 
 - [wandergis/coordtransform](https://github.com/wandergis/coordtransform) - 坐标系转换
-- [geojson.io](http://geojson.io) - 在线GeoJSON测试
+- [geojson.io](https://geojson.io) - 在线GeoJSON测试
 
 ### 10.3 国家信息参考
 
-- [中华人民共和国民政部 > 行政区划代码](http://www.mca.gov.cn/article/sj/xzqh/2018/)
-- [中华人民共和国统计局](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/)
-- [Highmaps 地图数据集](https://img.hcharts.cn/mapdata/)
+- [中华人民共和国民政部 > 行政区划代码](https://www.mca.gov.cn/article/sj/xzqh/)
+- [中华人民共和国统计局](https://www.stats.gov.cn/sj/tjbz/)
+- [Highmaps 地图数据集](https://code.highcharts.com/mapdata/)
 
 ## 11. 历史版本
 
