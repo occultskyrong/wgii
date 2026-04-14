@@ -2,6 +2,9 @@
 # IDE
 .vscode
 
+# compiled output
+dist/
+
 # mac
 .DS_Store
 
