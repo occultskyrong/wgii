@@ -197,21 +197,37 @@ const sparse = Sparse.simplify(coordinates, 100);
 
 ### 5.1 目录结构
 
-`dist/` 目录包含生成的GeoJSON数据：
+项目目录分为数据源和产出物：
+
+| 目录 | 说明 |
+|------|------|
+| `data/` | 数据源目录，存储各国GeoJSON边界数据 |
+| `dist/` | 产出物目录，CLI编译输出 |
+
+`data/` 目录结构：
 
 ```
-dist/
-├── AFG/                         # 阿富汗
-│   ├── country.resource.geo.json
-│   └── country.wgs84.geo.json
+data/
 ├── CHN/                         # 中国
-│   ├── country.wgs84.geo.json
-│   ├── country.gcj02.geo.json
-│   └── ...
+│   ├── country.wgs84.geo.json   # 国家边界 - WGS84
+│   ├── country.gcj02.geo.json   # 国家边界 - GCJ02
+│   ├── country.bd09.geo.json    # 国家边界 - BD09
+│   ├── *.sparse.*.geo.json      # 抽稀版本
+│   └── region/                  # 省级行政区边界
+│       ├── 110000.wgs84.geo.json
+│       ├── region.info.json
+│       └── ...                  # 其他省份
+│
 ├── USA/                         # 美国
 │   └── country.wgs84.geo.json
-└── ...                          # 其他国家
+│
+├── geo/                         # 其他地理数据
+│   └── china_admin_divisions.json
+│
+└── ...                          # 其他国家 (ISO3166-1编码)
 ```
+
+> 详细说明见: [data目录结构](./data/README.md)
 
 ### 5.2 文件类型说明
 
