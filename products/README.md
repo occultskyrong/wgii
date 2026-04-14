@@ -176,18 +176,37 @@ fetch('/products/china-provinces-bd09.json')
 
 ## 前端使用建议
 
-### 1. 压缩传输
+### 1. 使用压缩文件（推荐）
 
-使用gzip压缩可大幅减小文件体积：
+仓库中仅包含gzip压缩文件（原JSON文件太大，未提交）：
 
-| 文件 | 原大小 | gzip压缩后 |
-|------|--------|-----------|
-| china-provinces-wgs84.json | 90MB | ~10MB |
-| international-boundaries-wgs84.json | 2MB | ~200KB |
+| 文件 | 原大小 | 压缩后 |
+|------|--------|--------|
+| china-provinces-gcj02.json.gz | 96MB | 14MB |
+| china-provinces-bd09.json.gz | 96MB | 14MB |
+| china-boundary-gcj02.json.gz | 15MB | 1.3MB |
+| international-boundaries-wgs84.json.gz | 2MB | 210KB |
 
-```bash
-# 生成gzip版本
-gzip -k products/*.json
+**前端解压方式：**
+
+```javascript
+// 使用fetch + DecompressionStream（现代浏览器）
+async function loadGzippedJson(url) {
+  const response = await fetch(url);
+  const decompressed = response.body.pipeThrough(new DecompressionStream('gzip'));
+  const reader = decompressed.getReader();
+  const decoder = new TextDecoder();
+  let result = '';
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    result += decoder.decode(value);
+  }
+  return JSON.parse(result);
+}
+
+// 使用示例
+const data = await loadGzippedJson('/products/china-provinces-gcj02.json.gz');
 ```
 
 ### 2. 按需加载

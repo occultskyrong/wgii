@@ -5,6 +5,10 @@
 # compiled output
 dist/
 
+# products - 原始JSON文件太大，只提交gzip版本
+products/*.json
+!products/*.gz
+
 # API Keys (private)
 demo/api-keys.js
 
