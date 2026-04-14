@@ -183,7 +183,7 @@ const sparse = Sparse.simplify(coordinates, 100);
 
 ## 4. 主权国家列表
 
-详见: [主权国家列表文档](./docs/sovereign-countries.md)
+详见: [主权国家列表文档](./data/sovereign-countries.md)
 
 包含197个主权国家的详细信息：
 
@@ -204,27 +204,41 @@ const sparse = Sparse.simplify(coordinates, 100);
 | `data/` | 数据源目录，存储各国GeoJSON边界数据 |
 | `dist/` | 产出物目录，CLI编译输出 |
 
-`data/` 目录结构：
+`data/` 目录按大洲分类：
 
-```
+```text
 data/
-├── CHN/                         # 中国
+├── CHN/                         # 中国（单独目录）
 │   ├── country.wgs84.geo.json   # 国家边界 - WGS84
 │   ├── country.gcj02.geo.json   # 国家边界 - GCJ02
 │   ├── country.bd09.geo.json    # 国家边界 - BD09
-│   ├── *.sparse.*.geo.json      # 抽稀版本
-│   └── region/                  # 省级行政区边界
+│   ├── *.sparse.*.geo.json      # 抽稀版本 (1/2/5/10/20米)
+│   └── region/                  # 省级行政区边界 (34个)
 │       ├── 110000.wgs84.geo.json
 │       ├── region.info.json
-│       └── ...                  # 其他省份
+│       └── ...
 │
-├── USA/                         # 美国
-│   └── country.wgs84.geo.json
+├── Asia/                        # 亚洲 (48个国家)
+│   ├── JPN/                     # 日本
+│   ├── KOR/                     # 韩国
+│   ├── PLE/                     # 巴勒斯坦 (观察员国)
+│   └── ...
 │
-├── geo/                         # 其他地理数据
-│   └── china_admin_divisions.json
+├── Europe/                      # 欧洲 (45个国家)
+│   ├── DEU/                     # 德国
+│   ├── FRA/                     # 法国
+│   ├── VAT/                     # 梵蒂冈 (观察员国)
+│   └── ...
 │
-└── ...                          # 其他国家 (ISO3166-1编码)
+├── Africa/                      # 非洲 (54个国家)
+├── NorthAmerica/                # 北美洲 (23个国家)
+├── SouthAmerica/                # 南美洲 (12个国家)
+├── Oceania/                     # 大洋洲 (15个国家)
+├── Antarctica/                  # 南极洲
+│
+├── countries.info.json          # 国家信息汇总
+├── continent.info.json          # 大洲信息汇总
+└── sovereign-countries.md       # 主权国家列表文档
 ```
 
 > 详细说明见: [data目录结构](./data/README.md)
