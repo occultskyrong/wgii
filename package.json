@@ -16,7 +16,7 @@
     "test": "node --test dist/**/*.test.js",
     "lint": "eslint src/",
     "clean": "rm -rf dist/",
-    "demo": "npx serve -p 8080"
+    "demo": "npx http-server . -p 8080 --cors"
   },
   "dependencies": {
     "cheerio": "1.0.0-rc.12",

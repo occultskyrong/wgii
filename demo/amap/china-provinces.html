@@ -69,14 +69,6 @@
       box-shadow: 0 2px 12px rgba(0,0,0,0.1);
       z-index: 1000;
     }
-    .error-panel {
-      background: #f8d7da;
-      border: 1px solid #f5c6cb;
-      padding: 20px;
-      margin: 20px;
-      border-radius: 8px;
-      color: #721c24;
-    }
   </style>
 </head>
 <body>
@@ -92,29 +84,19 @@
     <p id="province-code">-</p>
   </div>
 
-  <!-- 加载API Key配置 -->
+  <!-- 加载API Key配置（从api-keys.js，该文件在gitignore中） -->
   <script src="../api-keys.js"></script>
 
+  <!-- 动态加载高德地图API -->
   <script>
-    // 检查API Key配置
-    if (!window.MAP_CONFIG || !window.MAP_CONFIG.amapKey) {
-      document.getElementById('loading').innerHTML =
-        '<div class="error-panel">' +
-        '<strong>API Key 未配置</strong><br><br>' +
-        '请按以下步骤配置：<br>' +
-        '1. 复制 demo/api-keys.example.js 为 demo/api-keys.js<br>' +
-        '2. 在 api-keys.js 中填写你的高德地图 API Key<br>' +
-        '3. API Key 获取地址：<a href="https://lbs.amap.com/" target="_blank">https://lbs.amap.com/</a>' +
-        '</div>';
-    } else {
-      // 动态加载高德地图API
+    if (window.MAP_CONFIG && window.MAP_CONFIG.amapKey) {
       const script = document.createElement('script');
       script.src = 'https://webapi.amap.com/maps?v=2.0&key=' + window.MAP_CONFIG.amapKey;
       script.onload = function() {
         initMap();
       };
       script.onerror = function() {
-        document.getElementById('loading').textContent = '高德地图API加载失败';
+        document.getElementById('loading').textContent = '高德地图API加载失败，请检查API Key是否正确';
       };
       document.head.appendChild(script);
     }
@@ -149,46 +131,12 @@
           Object.values(data.provinces).forEach(province => {
             if (province.boundary && province.boundary.features) {
               province.boundary.features.forEach(feature => {
-                if (feature.geometry.type === 'Polygon') {
-                  const polygon = new AMap.Polygon({
-                    path: feature.geometry.coordinates[0],
-                    fillColor: getRandomColor(),
-                    fillOpacity: 0.7,
-                    strokeColor: '#3ba272',
-                    strokeWeight: 1,
-                    strokeOpacity: 0.8,
-                    extData: {
-                      name: province.name,
-                      adcode: province.adcode
-                    }
-                  });
+                const geometry = feature.geometry;
 
-                  polygon.on('click', function(e) {
-                    const panel = document.getElementById('info-panel');
-                    panel.style.display = 'block';
-                    document.getElementById('province-name').textContent = '名称: ' + province.name;
-                    document.getElementById('province-code').textContent = '编码: ' + province.adcode;
-                  });
-
-                  polygon.on('mouseover', function() {
-                    this.setOptions({
-                      fillOpacity: 0.9,
-                      strokeWeight: 2
-                    });
-                  });
-
-                  polygon.on('mouseout', function() {
-                    this.setOptions({
-                      fillOpacity: 0.7,
-                      strokeWeight: 1
-                    });
-                  });
-
-                  map.add(polygon);
-                } else if (feature.geometry.type === 'MultiPolygon') {
-                  feature.geometry.coordinates.forEach(coords => {
+                if (geometry.type === 'Polygon') {
+                  geometry.coordinates.forEach(ring => {
                     const polygon = new AMap.Polygon({
-                      path: coords[0],
+                      path: ring,
                       fillColor: getRandomColor(),
                       fillOpacity: 0.7,
                       strokeColor: '#3ba272',
@@ -200,14 +148,48 @@
                       }
                     });
 
-                    polygon.on('click', function(e) {
+                    polygon.on('click', function() {
                       const panel = document.getElementById('info-panel');
                       panel.style.display = 'block';
                       document.getElementById('province-name').textContent = '名称: ' + province.name;
                       document.getElementById('province-code').textContent = '编码: ' + province.adcode;
                     });
 
+                    polygon.on('mouseover', function() {
+                      this.setOptions({ fillOpacity: 0.9, strokeWeight: 2 });
+                    });
+
+                    polygon.on('mouseout', function() {
+                      this.setOptions({ fillOpacity: 0.7, strokeWeight: 1 });
+                    });
+
                     map.add(polygon);
+                  });
+                } else if (geometry.type === 'MultiPolygon') {
+                  geometry.coordinates.forEach(polygonCoords => {
+                    polygonCoords.forEach(ring => {
+                      const polygon = new AMap.Polygon({
+                        path: ring,
+                        fillColor: getRandomColor(),
+                        fillOpacity: 0.7,
+                        strokeColor: '#3ba272',
+                        strokeWeight: 1,
+                        strokeOpacity: 0.8,
+                        extData: {
+                          name: province.name,
+                          adcode: province.adcode
+                        }
+                      });
+
+                      polygon.on('click', function() {
+                        const panel = document.getElementById('info-panel');
+                        panel.style.display = 'block';
+                        document.getElementById('province-name').textContent = '名称: ' + province.name;
+                        document.getElementById('province-code').textContent = '编码: ' + province.adcode;
+                      });
+
+                      map.add(polygon);
+                    });
                   });
                 }
               });
