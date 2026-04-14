@@ -7,13 +7,16 @@
 | 文件 | 大小 | 说明 |
 |------|------|------|
 | china-boundary-wgs84.json | 17MB | 中国边境线（WGS84）- 国际通用 |
-| china-boundary-gcj02.json | 15MB | 中国边境线（GCJ02）- 国内地图服务使用 |
-| china-boundary-bd09.json | 17MB | 中国边境线（BD09）- 百度地图使用 |
-| china-provinces-wgs84.json | 90MB | 34省份边境线（WGS84） |
-| china-provinces-bd09.json | 90MB | 34省份边境线（BD09） |
+| china-boundary-gcj02.json | 15MB | 中国边境线（GCJ02）- 高德/腾讯地图 |
+| china-boundary-bd09.json | 17MB | 中国边境线（BD09）- 百度地图 |
+| china-provinces-gcj02.json | 90MB | 34省份边境线（GCJ02）- 高德/腾讯地图 |
+| china-provinces-bd09.json | 90MB | 34省份边境线（BD09）- 百度地图 |
 | international-boundaries-wgs84.json | 2MB | 192国际国家边境线（WGS84） |
 
-**说明**：省份边境线仅保留WGS84和BD09两种坐标系。
+**说明**：
+- 中国边境线保留全部3种坐标系（国际通用+国内服务）
+- 省份边境线仅保留GCJ02和BD09（国内地图服务专用）
+- 所有数据均为原始边界，不含抽稀版本
 
 ---
 
@@ -79,6 +82,95 @@
   }
 }
 ```
+
+---
+
+---
+
+## 前端使用示例
+
+### ECharts（推荐）
+
+ECharts 5.x 需要手动注册GeoJSON地图数据：
+
+```javascript
+import * as echarts from 'echarts';
+
+// 加载中国边境线
+fetch('/products/china-boundary-gcj02.json')
+  .then(res => res.json())
+  .then(data => {
+    echarts.registerMap('china', data.boundary);
+    
+    const chart = echarts.init(document.getElementById('chart'));
+    chart.setOption({
+      geo: {
+        map: 'china',
+        roam: true,
+        label: { show: true },
+        itemStyle: {
+          areaColor: '#f3f3f3',
+          borderColor: '#999'
+        }
+      },
+      series: [{
+        type: 'map',
+        map: 'china',
+        data: [] // 各省数据
+      }]
+    });
+  });
+```
+
+### 高德地图
+
+```javascript
+// 使用GCJ02坐标系数据
+fetch('/products/china-provinces-gcj02.json')
+  .then(res => res.json())
+  .then(data => {
+    const map = new AMap.Map('container');
+    
+    // 绘制省份边界
+    Object.values(data.provinces).forEach(province => {
+      new AMap.Polygon({
+        path: province.boundary.features[0].geometry.coordinates,
+        fillColor: '#f3f3f3',
+        strokeColor: '#999'
+      }).setMap(map);
+    });
+  });
+```
+
+### 百度地图
+
+```javascript
+// 使用BD09坐标系数据
+fetch('/products/china-provinces-bd09.json')
+  .then(res => res.json())
+  .then(data => {
+    const map = new BMap.Map('container');
+    
+    Object.values(data.provinces).forEach(province => {
+      const polygon = new BMap.Polygon(
+        province.boundary.features[0].geometry.coordinates,
+        { fillColor: '#f3f3f3', strokeColor: '#999' }
+      );
+      map.addOverlay(polygon);
+    });
+  });
+```
+
+---
+
+## 相关资源
+
+| 资源 | 链接 | 说明 |
+|------|------|------|
+| ECharts 地图 | https://echarts.apache.org/zh/option.html#geo | Apache ECharts官方文档 |
+| 阿里云 DataV | https://datav.aliyun.com/portal/school/atlas/area_selector | 阿里云地图数据选择器 |
+| 高德地图 JS API | https://lbs.amap.com/api/javascript-api/summary | 高德地图Web API |
+| 百度地图 JS API | https://lbsyun.baidu.com/index.php?title=jspopularGL | 百度地图Web API |
 
 ---
 

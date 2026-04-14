@@ -136,11 +136,11 @@ function generateChinaProvinces() {
     console.log(`  - ${provinceName} (${adcode})`);
   }
 
-  // 写入各坐标系文件（仅WGS84和BD09）
-  fs.writeFileSync(path.join(PRODUCTS_DIR, 'china-provinces-wgs84.json'), JSON.stringify(results.wgs84, null, 2));
+  // 写入各坐标系文件（仅GCJ02和BD09，国内省份不需要WGS84）
+  fs.writeFileSync(path.join(PRODUCTS_DIR, 'china-provinces-gcj02.json'), JSON.stringify(results.gcj02, null, 2));
   fs.writeFileSync(path.join(PRODUCTS_DIR, 'china-provinces-bd09.json'), JSON.stringify(results.bd09, null, 2));
 
-  console.log(`省份边境线已生成: ${provinceCodes.length}个省份 × 2坐标系 = 2个文件（仅WGS84和BD09）`);
+  console.log(`省份边境线已生成: ${provinceCodes.length}个省份 × 2坐标系 = 2个文件（GCJ02+BD09）`);
 }
 
 /**
