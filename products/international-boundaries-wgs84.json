@@ -2,7 +2,7 @@
   "metadata": {
     "name": "国际国家边境线",
     "version": "1.0.0",
-    "generatedAt": "2026-04-14T14:23:56.551Z",
+    "generatedAt": "2026-04-14T14:51:32.217Z",
     "description": "世界各国边界GeoJSON数据（除中国外）",
     "coordinateSystem": "WGS84",
     "totalCountries": 196,

@@ -15,7 +15,7 @@ if (!API_KEY) {
   process.exit(1);
 }
 
-const OUTPUT_DIR = './dist/CHN/region';
+const OUTPUT_DIR = './data/CHN/region';
 
 async function syncProvinceRegions() {
   logger.info('开始同步中国省级行政区边界数据');

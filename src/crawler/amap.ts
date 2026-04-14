@@ -80,9 +80,15 @@ export class AmapCrawler {
 
   /**
    * 解析高德polyline字符串为坐标数组
-   * 高德返回的polyline格式: "lng1,lat1;lng2,lat2;..."
+   * 高德返回的polyline格式:
+   * - 单段落: "lng1,lat1;lng2,lat2;..."
+   * - 多段落: "lng1,lat1;lng2,lat2;...|lng1,lat1;lng2,lat2;..."
+   * - 或数组形式: ["lng1,lat1;lng2,lat2;...", "lng1,lat1;lng2,lat2;..."]
+   *
+   * 注意：管道符 | 用于分隔不同的边界段落（如岛屿、不连续边界）
+   *
    * @param polyline polyline字符串或字符串数组
-   * @returns 坐标数组
+   * @returns 坐标数组，每个元素是一个polygon的坐标点数组
    */
   private parsePolyline(polyline: string | string[]): Coordinate[][] {
     if (!polyline) {
@@ -111,12 +117,36 @@ export class AmapCrawler {
       return coordinates;
     };
 
+    // 处理多段落分隔符 |
+    const parseMultiSegmentPolyline = (str: string): Coordinate[][] => {
+      // 先按 | 分隔成多个段落
+      const segments = str.split('|');
+      const result: Coordinate[][] = [];
+
+      for (const segment of segments) {
+        const trimmed = segment.trim();
+        if (!trimmed) continue;
+
+        const coords = parseSinglePolyline(trimmed);
+        if (coords.length >= 3) {
+          result.push(coords);
+        }
+      }
+
+      return result;
+    };
+
     if (Array.isArray(polyline)) {
-      // 多个polygon
-      return polyline.map(p => parseSinglePolyline(p));
+      // 数组形式，每个元素可能包含多个段落
+      const allPolygons: Coordinate[][] = [];
+      for (const p of polyline) {
+        const polygons = parseMultiSegmentPolyline(p);
+        allPolygons.push(...polygons);
+      }
+      return allPolygons;
     } else {
-      // 单个polygon
-      return [parseSinglePolyline(polyline)];
+      // 字符串形式，按 | 分隔多个段落
+      return parseMultiSegmentPolyline(polyline);
     }
   }
 

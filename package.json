@@ -15,7 +15,8 @@
     "sparse": "node dist/cli.js sparse",
     "test": "node --test dist/**/*.test.js",
     "lint": "eslint src/",
-    "clean": "rm -rf dist/"
+    "clean": "rm -rf dist/",
+    "demo": "npx serve -p 8080"
   },
   "dependencies": {
     "cheerio": "1.0.0-rc.12",

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>高德地图 - 中国省份边界</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .header {
+      background: white;
+      padding: 15px 20px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header h1 {
+      font-size: 18px;
+      color: #333;
+    }
+    .back-link {
+      color: #666;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .back-link:hover {
+      color: #333;
+    }
+    #container {
+      width: 100%;
+      height: calc(100vh - 60px);
+    }
+    .info-panel {
+      position: fixed;
+      right: 20px;
+      top: 80px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      max-width: 200px;
+      font-size: 13px;
+      z-index: 100;
+    }
+    .info-panel h3 {
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+    .info-panel p {
+      color: #666;
+      margin-bottom: 5px;
+    }
+    .loading {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    .error-panel {
+      background: #f8d7da;
+      border: 1px solid #f5c6cb;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 8px;
+      color: #721c24;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>高德地图 - 中国省份边界</h1>
+    <a class="back-link" href="../index.html">返回</a>
+  </div>
+  <div id="container"></div>
+  <div class="loading" id="loading">正在加载地图...</div>
+  <div class="info-panel" id="info-panel" style="display: none;">
+    <h3>省份信息</h3>
+    <p id="province-name">-</p>
+    <p id="province-code">-</p>
+  </div>
+
+  <!-- 加载API Key配置 -->
+  <script src="../api-keys.js"></script>
+
+  <script>
+    // 检查API Key配置
+    if (!window.MAP_CONFIG || !window.MAP_CONFIG.amapKey) {
+      document.getElementById('loading').innerHTML =
+        '<div class="error-panel">' +
+        '<strong>API Key 未配置</strong><br><br>' +
+        '请按以下步骤配置：<br>' +
+        '1. 复制 demo/api-keys.example.js 为 demo/api-keys.js<br>' +
+        '2. 在 api-keys.js 中填写你的高德地图 API Key<br>' +
+        '3. API Key 获取地址：<a href="https://lbs.amap.com/" target="_blank">https://lbs.amap.com/</a>' +
+        '</div>';
+    } else {
+      // 动态加载高德地图API
+      const script = document.createElement('script');
+      script.src = 'https://webapi.amap.com/maps?v=2.0&key=' + window.MAP_CONFIG.amapKey;
+      script.onload = function() {
+        initMap();
+      };
+      script.onerror = function() {
+        document.getElementById('loading').textContent = '高德地图API加载失败';
+      };
+      document.head.appendChild(script);
+    }
+
+    function initMap() {
+      document.getElementById('loading').textContent = '正在加载边界数据...';
+
+      // 初始化地图
+      const map = new AMap.Map('container', {
+        zoom: 4,
+        center: [104, 36],
+        mapStyle: 'amap://styles/normal'
+      });
+
+      // 加载省份边界数据
+      fetch('../../products/china-provinces-gcj02.json')
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById('loading').style.display = 'none';
+
+          // 随机颜色生成
+          function getRandomColor() {
+            const colors = [
+              '#e8f4f8', '#a8d8ea', '#5fb3b3', '#c4e7d4',
+              '#f9e4b7', '#f5cac3', '#f0e6ef', '#d4e7d4',
+              '#e6f2f5', '#c9e4de', '#fde2e4', '#dfe6e9'
+            ];
+            return colors[Math.floor(Math.random() * colors.length)];
+          }
+
+          // 绘制每个省份
+          Object.values(data.provinces).forEach(province => {
+            if (province.boundary && province.boundary.features) {
+              province.boundary.features.forEach(feature => {
+                if (feature.geometry.type === 'Polygon') {
+                  const polygon = new AMap.Polygon({
+                    path: feature.geometry.coordinates[0],
+                    fillColor: getRandomColor(),
+                    fillOpacity: 0.7,
+                    strokeColor: '#3ba272',
+                    strokeWeight: 1,
+                    strokeOpacity: 0.8,
+                    extData: {
+                      name: province.name,
+                      adcode: province.adcode
+                    }
+                  });
+
+                  polygon.on('click', function(e) {
+                    const panel = document.getElementById('info-panel');
+                    panel.style.display = 'block';
+                    document.getElementById('province-name').textContent = '名称: ' + province.name;
+                    document.getElementById('province-code').textContent = '编码: ' + province.adcode;
+                  });
+
+                  polygon.on('mouseover', function() {
+                    this.setOptions({
+                      fillOpacity: 0.9,
+                      strokeWeight: 2
+                    });
+                  });
+
+                  polygon.on('mouseout', function() {
+                    this.setOptions({
+                      fillOpacity: 0.7,
+                      strokeWeight: 1
+                    });
+                  });
+
+                  map.add(polygon);
+                } else if (feature.geometry.type === 'MultiPolygon') {
+                  feature.geometry.coordinates.forEach(coords => {
+                    const polygon = new AMap.Polygon({
+                      path: coords[0],
+                      fillColor: getRandomColor(),
+                      fillOpacity: 0.7,
+                      strokeColor: '#3ba272',
+                      strokeWeight: 1,
+                      strokeOpacity: 0.8,
+                      extData: {
+                        name: province.name,
+                        adcode: province.adcode
+                      }
+                    });
+
+                    polygon.on('click', function(e) {
+                      const panel = document.getElementById('info-panel');
+                      panel.style.display = 'block';
+                      document.getElementById('province-name').textContent = '名称: ' + province.name;
+                      document.getElementById('province-code').textContent = '编码: ' + province.adcode;
+                    });
+
+                    map.add(polygon);
+                  });
+                }
+              });
+            }
+          });
+
+          // 添加地图控件
+          AMap.plugin(['AMap.ToolBar', 'AMap.Scale'], function() {
+            map.addControl(new AMap.ToolBar());
+            map.addControl(new AMap.Scale());
+          });
+        })
+        .catch(err => {
+          document.getElementById('loading').textContent = '加载失败: ' + err.message;
+          console.error(err);
+        });
+    }
+  </script>
+</body>
+</html>

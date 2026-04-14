@@ -5,6 +5,9 @@
 # compiled output
 dist/
 
+# API Keys (private)
+demo/api-keys.js
+
 # mac
 .DS_Store
 

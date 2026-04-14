@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WGII Demo - 地图边界展示示例</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      max-width: 800px;
+      width: 90%;
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+    .subtitle {
+      color: #666;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section-title {
+      color: #444;
+      font-size: 18px;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #eee;
+    }
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .demo-item {
+      display: block;
+      padding: 15px 20px;
+      background: #f8f9fa;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #333;
+      transition: all 0.2s ease;
+      border: 1px solid #e9ecef;
+    }
+    .demo-item:hover {
+      background: #e9ecef;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .demo-item .title {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .demo-item .desc {
+      font-size: 12px;
+      color: #666;
+    }
+    .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      margin-right: 8px;
+    }
+    .tag-green {
+      background: #d4edda;
+      color: #155724;
+    }
+    .tag-orange {
+      background: #fff3cd;
+      color: #856404;
+    }
+    .note {
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      border-radius: 8px;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 13px;
+      color: #856404;
+    }
+    .note strong {
+      color: #664d03;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>WGII Demo</h1>
+    <p class="subtitle">地图边界展示示例 - 使用 products/ 目录中的GeoJSON数据</p>
+
+    <div class="section">
+      <h2 class="section-title">
+        <span class="tag tag-green">推荐</span>
+        ECharts 示例
+      </h2>
+      <div class="demo-grid">
+        <a class="demo-item" href="echarts/china-boundary.html">
+          <div class="title">中国边境线</div>
+          <div class="desc">显示中国国家边界轮廓</div>
+        </a>
+        <a class="demo-item" href="echarts/china-provinces.html">
+          <div class="title">省份边界</div>
+          <div class="desc">显示34个省级行政区边界</div>
+        </a>
+        <a class="demo-item" href="echarts/international.html">
+          <div class="title">国际国家边界</div>
+          <div class="desc">显示192个国家边界</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">
+        <span class="tag tag-orange">需API Key</span>
+        高德地图 示例
+      </h2>
+      <div class="demo-grid">
+        <a class="demo-item" href="amap/china-provinces.html">
+          <div class="title">省份边界</div>
+          <div class="desc">使用高德地图显示省份</div>
+        </a>
+        <a class="demo-item" href="amap/README.md">
+          <div class="title">配置说明</div>
+          <div class="desc">如何获取和配置API Key</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">
+        <span class="tag tag-orange">需API Key</span>
+        百度地图 示例
+      </h2>
+      <div class="demo-grid">
+        <a class="demo-item" href="baidu/china-provinces.html">
+          <div class="title">省份边界</div>
+          <div class="desc">使用百度地图显示省份</div>
+        </a>
+        <a class="demo-item" href="baidu/README.md">
+          <div class="title">配置说明</div>
+          <div class="desc">如何获取和配置API Key</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>提示:</strong> 需要启动本地HTTP服务器才能运行demo。<br>
+      例如: <code>npx http-server -p 8080</code> 或使用VS Code Live Server插件。
+    </div>
+  </div>
+</body>
+</html>
