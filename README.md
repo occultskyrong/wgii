@@ -75,6 +75,8 @@ WGII（World Geographic Information Integration）是一个世界地理信息集
 | 大洋洲 | 14 |
 | **总计** | **193** |
 
+> 详细国家列表见 [主权国家列表](data/sovereign-countries.md)
+
 ---
 
 ## 3. 快速开始
@@ -133,7 +135,8 @@ wgii/
 │   ├── NorthAmerica/                # 北美洲国家
 │   ├── SouthAmerica/                # 南美洲国家
 │   ├── Oceania/                     # 大洋洲国家
-│   └── countries.info.json          # 国家信息汇总
+│   ├── countries.info.json          # 国家信息汇总
+│   ├── sovereign-countries.md       # 主权国家列表
 │
 ├── products/                        # 前端产出物（gzip压缩）
 │   ├── china-boundary-gcj02.json.gz     # 中国国家边界
