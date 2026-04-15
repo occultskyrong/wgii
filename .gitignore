@@ -9,6 +9,14 @@ dist/
 products/*.json
 !products/*.gz
 
+# data - 只保留GCJ02火星坐标系数据，其他坐标系不提交
+data/CHN/*.wgs84.geo.json
+data/CHN/*.bd09.geo.json
+data/CHN/region/*.wgs84.geo.json
+data/CHN/region/*.bd09.geo.json
+data/Asia/GEO/*.json
+resource/raw/*.json
+
 # API Keys (private)
 demo/api-keys.js
 
