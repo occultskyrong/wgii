@@ -11,15 +11,15 @@ World Geographic Information Integration - 世界地理信息集成
 
 ## 效果展示
 
-### ECharts - 中国省份边界
+### 1. ECharts - 中国省份边界
 
 ![ECharts - 中国省份边界](demo/assets/ECharts%20-%20中国省份边界.png)
 
-### ECharts - 国际国家边界
+### 2. ECharts - 国际国家边界
 
 ![ECharts - 国际国家边界](demo/assets/Echarts%20-%20国际国家边界.png)
 
-### 高德地图 - 中国省份边界
+### 3. 高德地图 - 中国省份边界
 
 ![高德地图 - 中国省份边界](demo/assets/高德地图%20-%20中国省份边界.png)
 
@@ -27,26 +27,26 @@ World Geographic Information Integration - 世界地理信息集成
 
 ## 目录
 
-- [项目简介](#项目简介)
-- [数据内容](#数据内容)
-- [快速开始](#快速开始)
-- [目录结构](#目录结构)
-- [Products产出物](#products产出物)
-- [Demo演示](#demo演示)
-- [法律与规范](#法律与规范)
-- [API文档](#api文档)
-- [开发指南](#开发指南)
-- [数据来源](#数据来源)
-- [License](#license)
+- [1. 项目简介](#1-项目简介)
+- [2. 数据内容](#2-数据内容)
+- [3. 快速开始](#3-快速开始)
+- [4. 目录结构](#4-目录结构)
+- [5. Products产出物](#5-products产出物)
+- [6. Demo演示](#6-demo演示)
+- [7. 法律与规范](#7-法律与规范)
+- [8. API文档](#8-api文档)
+- [9. 开发指南](#9-开发指南)
+- [10. 数据来源](#10-数据来源)
+- [11. License](#11-license)
 
 ---
 
-## 项目简介
+## 1. 项目简介
 
 WGII（World Geographic Information Integration）是一个世界地理信息集成项目，提供：
 
 - **中国边界数据**：国家边界 + 34省级行政区边界（GCJ02火星坐标系）
-- **国际国家边界**：192个国家GeoJSON边界数据（WGS84坐标系）
+- **国际国家边界**：193个国家GeoJSON边界数据（WGS84坐标系，含中国）
 - **前端产出物**：gzip压缩文件，可直接导入前端项目
 - **Demo演示**：ECharts、高德地图、百度地图展示示例
 
@@ -54,32 +54,32 @@ WGII（World Geographic Information Integration）是一个世界地理信息集
 
 ---
 
-## 数据内容
+## 2. 数据内容
 
-### 中国数据（GCJ02火星坐标系）
+### 2.1 中国数据（GCJ02火星坐标系）
 
 | 数据 | 说明 | 适用场景 |
 |------|------|----------|
 | 中国国家边界 | 中华人民共和国全境边界 | 高德地图、腾讯地图 |
 | 34省级行政区边界 | 23省、5自治区、4直辖市、2特别行政区 | 省份级地图展示 |
 
-### 国际数据（WGS84坐标系）
+### 2.2 国际数据（WGS84坐标系）
 
 | 大洲 | 国家数量 |
 |------|----------|
-| 亚洲 | 45 |
+| 亚洲（含中国） | 46 |
 | 欧洲 | 44 |
 | 非洲 | 54 |
 | 北美洲 | 23 |
 | 南美洲 | 12 |
 | 大洋洲 | 14 |
-| **总计** | **192** |
+| **总计** | **193** |
 
 ---
 
-## 快速开始
+## 3. 快速开始
 
-### 安装
+### 3.1 安装
 
 ```bash
 # 克隆仓库
@@ -93,7 +93,7 @@ yarn install
 npm run build
 ```
 
-### CLI使用
+### 3.2 CLI使用
 
 ```bash
 # 查看帮助
@@ -106,7 +106,7 @@ node dist/cli.js sync --amap
 node dist/cli.js list
 ```
 
-### 运行Demo
+### 3.3 运行Demo
 
 ```bash
 npm run demo
@@ -116,7 +116,7 @@ npm run demo
 
 ---
 
-## 目录结构
+## 4. 目录结构
 
 ```
 wgii/
@@ -138,7 +138,7 @@ wgii/
 ├── products/                        # 前端产出物（gzip压缩）
 │   ├── china-boundary-gcj02.json.gz     # 中国国家边界
 │   ├── china-provinces-gcj02.json.gz    # 中国省份边界
-│   └ international-boundaries-wgs84.json.gz # 国际国家边界
+│   └ international-boundaries-wgs84.json.gz # 国际国家边界（含中国）
 │   └ README.md                      # 使用说明
 │
 ├── demo/                            # Demo演示
@@ -146,7 +146,7 @@ wgii/
 │   ├── echarts/                     # ECharts示例
 │   ├── amap/                        # 高德地图示例
 │   ├── baidu/                       # 百度地图示例
-│   └── assets/                      # 效果截图
+│   └ assets/                        # 效果截图
 │
 ├── scripts/                         # 工具脚本
 ├── src/                             # 源代码
@@ -155,7 +155,7 @@ wgii/
 
 ---
 
-## Products产出物
+## 5. Products产出物
 
 Products目录提供gzip压缩的JSON文件，可直接在前端使用：
 
@@ -163,9 +163,9 @@ Products目录提供gzip压缩的JSON文件，可直接在前端使用：
 |------|--------|--------|------|
 | china-boundary-gcj02.json.gz | 15MB | 1.3MB | 中国国家边界（GCJ02） |
 | china-provinces-gcj02.json.gz | 96MB | 14MB | 34省份边界（GCJ02） |
-| international-boundaries-wgs84.json.gz | 2MB | 210KB | 192国际国家边界（WGS84） |
+| international-boundaries-wgs84.json.gz | ~20MB | 2.9MB | 193国家边界（WGS84，含中国） |
 
-### 前端使用示例
+### 5.1 前端使用示例
 
 ```javascript
 // 解压gzip文件
@@ -192,31 +192,31 @@ echarts.registerMap('china', mergedGeoJSON);
 
 ---
 
-## Demo演示
+## 6. Demo演示
 
 Demo目录包含三种地图库的展示示例：
 
-### ECharts（推荐，无需API Key）
+### 6.1 ECharts（推荐，无需API Key）
 
 | 示例 | 文件 | 说明 |
 |------|------|------|
 | 中国边境线 | [echarts/china-boundary.html](demo/echarts/china-boundary.html) | 国家边界轮廓 |
 | 省份边界 | [echarts/china-provinces.html](demo/echarts/china-provinces.html) | 34省份交互展示 |
-| 国际国家边界 | [echarts/international.html](demo/echarts/international.html) | 192国家边界 |
+| 国际国家边界 | [echarts/international.html](demo/echarts/international.html) | 193国家边界（含中国） |
 
-### 高德地图（需API Key）
+### 6.2 高德地图（需API Key）
 
 | 示例 | 文件 | 说明 |
 |------|------|------|
 | 省份边界 | [amap/china-provinces.html](demo/amap/china-provinces.html) | 高德地图展示 |
 
-### 百度地图（需API Key）
+### 6.3 百度地图（需API Key）
 
 | 示例 | 文件 | 说明 |
 |------|------|------|
 | 省份边界 | [baidu/china-provinces.html](demo/baidu/china-provinces.html) | 百度地图展示 |
 
-### API Key配置
+### 6.4 API Key配置
 
 高德/百度地图示例需要配置API Key：
 
@@ -231,9 +231,9 @@ Demo目录包含三种地图库的展示示例：
 
 ---
 
-## 法律与规范
+## 7. 法律与规范
 
-### 坐标系说明
+### 7.1 坐标系说明
 
 | 坐标系 | 说明 | 使用场景 |
 |--------|------|----------|
@@ -248,7 +248,7 @@ Demo目录包含三种地图库的展示示例：
 
 > 参考: [中华人民共和国测绘法](https://www.npc.gov.cn/npc/xinwen/2017-04/27/content_2020927.htm)
 
-### 国家承认原则
+### 7.2 国家承认原则
 
 本项目仅包含中华人民共和国承认的主权国家。
 
@@ -256,16 +256,16 @@ Demo目录包含三种地图库的展示示例：
 
 ---
 
-## API文档
+## 8. API文档
 
-### CountryManager
+### 8.1 CountryManager
 
 ```typescript
 const countries = await CountryManager.loadAll();
 const china = await CountryManager.findByCode('CHN');
 ```
 
-### CoordinateTransformer
+### 8.2 CoordinateTransformer
 
 ```typescript
 // 坐标转换
@@ -279,9 +279,9 @@ const transformed = CoordinateTransformer.transformGeoJSON(geojson, 'GCJ02', 'WG
 
 ---
 
-## 开发指南
+## 9. 开发指南
 
-### 技术栈
+### 9.1 技术栈
 
 | 技术 | 版本 | 说明 |
 |------|------|------|
@@ -290,7 +290,7 @@ const transformed = CoordinateTransformer.transformGeoJSON(geojson, 'GCJ02', 'WG
 | commander | - | CLI框架 |
 | log4js | - | 日志管理 |
 
-### 开发命令
+### 9.2 开发命令
 
 ```bash
 npm run build    # 构建
@@ -301,16 +301,16 @@ npm run clean    # 清理编译输出
 
 ---
 
-## 数据来源
+## 10. 数据来源
 
-### GeoJSON数据源
+### 10.1 GeoJSON数据源
 
 | 来源 | 说明 |
 |------|------|
 | [johan/world.geo.json](https://github.com/johan/world.geo.json) | 国际国家GeoJSON数据 |
 | [高德开放平台](https://lbs.amap.com/) | 中国行政区划数据 |
 
-### 参考资源
+### 10.2 参考资源
 
 | 资源 | 说明 |
 |------|------|
@@ -320,6 +320,6 @@ npm run clean    # 清理编译输出
 
 ---
 
-## License
+## 11. License
 
 ISC
